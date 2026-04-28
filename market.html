@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market — The Trade Orchestration Engine | Watoko</title>
+    <meta name="description" content="The trade orchestration engine. 13+ autonomous agents running the full trade-orchestration stack — price, quality, biological provenance, compliance, sustainability, environmental certification, contracts, matching, auctions, FX, futures, disputes, admin. Every commodity carries a complete data passport — a biological record of what the crop actually is, with its full environmental footprint. Built first for African smallholders. Architected for every market that moves.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-product="market">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-index">02</span>
+                <span class="page-hero-tag"><span class="page-hero-dot dot-market"></span>Market</span>
+            </div>
+            <h1 class="page-hero-title">The Trade<br>Orchestration Engine</h1>
+            <p class="page-hero-desc">From a coffee farmer's first lot to a million-ton commodity contract — every commercial decision that moves a crop from farmer to buyer, executed end-to-end on the platform. 13+ autonomous agents running the full trade-orchestration stack: price discovery, quality verification, biological provenance, sustainability scoring, environmental compliance, order matching and execution, auctions, FX, futures, disputes, and admin. Buyers and sellers meet, negotiate, settle, and ship without leaving Watoko. Every commodity carries a complete data passport — a biological record of what the crop actually is, with its full environmental footprint, from seed to shipment. Traded without waste, delivered with its biological and environmental integrity intact. Built first for African smallholders — architected for every market that moves on Earth, and the closed-loop economies that will form beyond it.</p>
+            <div class="system-stats">
+                <div class="system-stats-pill"><span class="count-up">13+</span> <span>Agents</span></div>
+                <div class="system-stats-pill"><span class="count-up">Global</span> <span>Price Intelligence</span></div>
+                <div class="system-stats-pill"><span class="count-up">Full</span> <span>Traceability</span></div>
+            </div>
+            <div class="page-hero-users">
+                <span class="page-hero-user">For Farmers & Cooperatives</span>
+                <span class="page-hero-user">For Local Buyers</span>
+                <span class="page-hero-user">For International Exporters</span>
+                <span class="page-hero-user">For Compliance Officers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Agents -->
+    <section class="page-section section-accent-dots">
+        <div class="container">
+            <h2 class="page-section-label">The Agents</h2>
+            <h3 class="page-section-title">Agents orchestrating every trade</h3>
+            <p class="page-section-desc">From price discovery to order execution to currency hedging to compliance to sustainability scoring to environmental certification, each agent handles a critical piece of the trade lifecycle. Buyers and sellers meet, negotiate, settle, and ship on the platform — with every lot priced fairly, verified at every step, traded without waste, and delivered with its biological and environmental integrity intact. Every quarter, a new specialist joins the fleet.</p>
+            <div class="agent-grid">
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Price Intelligence Agent</span>
+                            <p class="agent-card-oneliner">Real-time fair pricing across every market that moves</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Ingests thousands of price feeds across regional spot markets, international exchanges, currency pairs, logistics corridors, and trade-policy signals. Produces fair price per commodity per location — and explains why. Starts with the African markets where no such system has ever existed. Architected to extend to every market on Earth.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Market feeds</span>
+                                    <span class="agent-tag">Currency APIs</span>
+                                    <span class="agent-tag">Trade policy</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Fair price per commodity per location + price alerts</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Eliminates information asymmetry on price, quality, and provenance</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Quality Verification Agent</span>
+                            <p class="agent-card-oneliner">Automated grading and quality certificates</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Grades lots using sensor and camera data at point of harvest or collection. Captures biological attributes beyond the grade — variety, moisture profile, defect signature. Produces standardized quality certificates.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Moisture sensors</span>
+                                    <span class="agent-tag">Defect cameras</span>
+                                    <span class="agent-tag">Weight scales</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Standardized quality certificates (AA, AB, etc.)</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Premium discovery for high-quality lots</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Forward Contract Agent</span>
+                            <p class="agent-card-oneliner">Structure future sales from yield predictions</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Structures future sales using satellite-verified yield predictions, weather forecasts, and market trends.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Brain yield data</span>
+                                    <span class="agent-tag">Weather forecasts</span>
+                                    <span class="agent-tag">Market trends</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Binding contracts with dynamic pricing</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Price certainty before harvest</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Order Book &amp; Execution Agent</span>
+                            <p class="agent-card-oneliner">Match, execute, and settle trades on the platform</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Runs the transparent order book. Matches lots to buyers on quality, biological profile, volume, and location — then executes the trade on the platform. Both parties confirm, the contract generates automatically, escrow releases, and settlement happens without leaving Watoko. No phone calls, no back-channel brokers, no trust gap between match and money.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Registered lots</span>
+                                    <span class="agent-tag">Buyer requirements</span>
+                                    <span class="agent-tag">Escrow rails</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Matched orders, executed trades, automated settlement</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Every trade lives end-to-end on the platform</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">EUDR Compliance Agent</span>
+                            <p class="agent-card-oneliner">Automated EU deforestation regulation documentation</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Automated geolocation mapping, forest monitoring, and due diligence statements for EU-ready compliance documentation.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Satellite imagery</span>
+                                    <span class="agent-tag">GPS coordinates</span>
+                                    <span class="agent-tag">Regulatory databases</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">EU-ready compliance documentation per lot</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">15-25% premium for compliant commodities</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Data Passport Agent</span>
+                            <p class="agent-card-oneliner">Complete biological record from seed to shipment</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Compiles complete traceability: biological provenance, origin, quality, chain-of-custody, and environmental data for every lot. The passport records what the crop is at a biological level — not just the grade it received.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">All agent data</span>
+                                    <span class="agent-tag">Logistics tracking</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Full biological and commercial lot history from seed to shipment</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Commodities become verified products with biological provenance</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Auction Agent</span>
+                            <p class="agent-card-oneliner">Competitive bidding for premium and specialty lots</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Runs timed competitive bidding for specialty and premium lots. Seller sets reserve price and confirms final bid.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Quality grades</span>
+                                    <span class="agent-tag">Lot details</span>
+                                    <span class="agent-tag">Registered buyers</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Highest-bid sale for premium lots</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">10-30% above standard market price</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="8 8 4 8"/><polyline points="20 8 16 8"/><path d="M4 8l-2 6h8L8 8"/><path d="M16 8l-2 6h8l-2-6"/><line x1="8" y1="3" x2="16" y2="3"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Dispute Resolution Agent</span>
+                            <p class="agent-card-oneliner">Automated mediation for trade disputes</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Automated mediation for quality, delivery, and payment disputes. Analyzes contract terms, quality grades, delivery receipts, and GPS logs to produce fair resolution proposals with escrow release or hold decisions. Both parties review the resolution.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Contract terms</span>
+                                    <span class="agent-tag">Quality grades</span>
+                                    <span class="agent-tag">Delivery receipts</span>
+                                    <span class="agent-tag">GPS logs</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Fair resolution proposals, escrow release/hold decisions</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Trust in the marketplace without courts</div>
+                    </div>
+                </div>
+
+                <!-- NEW: FX & Currency Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">FX &amp; Currency Agent</span>
+                            <p class="agent-card-oneliner">Multi-currency settlement, hedging, and FX optimization</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Handles the currency layer of every cross-border trade. Optimizes FX routing across African, European, Asian, and American corridors. Hedges exposure for farmers and cooperatives whose local currency swings can wipe out a season's margin overnight. Settles in whichever currency the farmer actually wants — local, USD, EUR, stablecoin — without the farmer ever needing to think about it.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Currency markets</span>
+                                    <span class="agent-tag">Trade corridors</span>
+                                    <span class="agent-tag">Volatility signals</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Optimized FX routing, automated hedges, multi-currency settlement</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Protects margins from currency swings farmers can't see coming</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Futures & Derivatives Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Futures &amp; Derivatives Agent</span>
+                            <p class="agent-card-oneliner">Hedge price risk before the harvest even happens</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Connects cooperatives and buyers to commodity futures and options markets that were historically off-limits to anyone without a broker and a six-figure account. Structures hedges sized to the cooperative's expected yield. Locks in floor prices months before harvest. Unwinds positions automatically when physical delivery completes. Every farmer gets the same risk protection hedge funds have had for decades.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Futures markets</span>
+                                    <span class="agent-tag">Brain yield forecasts</span>
+                                    <span class="agent-tag">Volatility models</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Hedged positions, floor prices, auto-unwind at settlement</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Hedge-fund-grade risk protection for smallholders</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Trade Admin Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="19" x2="13" y2="19"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Trade Admin Agent</span>
+                            <p class="agent-card-oneliner">The back office of every deal, handled automatically</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Handles the paperwork nobody wants to handle — invoices, export permits, phytosanitary certificates, shipping documents, tax filings, customs declarations, insurance claims. Every document generated from verified lot data. Every filing submitted to the right authority in the right format. The back office that used to take a cooperative a month runs in the background in minutes.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Lot data passports</span>
+                                    <span class="agent-tag">Regulatory templates</span>
+                                    <span class="agent-tag">Shipping manifests</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Complete trade documentation, automated filings, clean audit trail</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">A month of back-office work, done in minutes</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Sustainability & Carbon Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Sustainability &amp; Carbon Agent</span>
+                            <p class="agent-card-oneliner">Carbon footprint per lot, sustainability premiums, environmental scorecards</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Tracks the environmental footprint of every lot from field to buyer. Calculates carbon emissions per kilogram, water usage, soil health impact, and biodiversity contribution across the full supply chain. Generates sustainability scorecards that travel with the Data Passport. Connects farmers to carbon credit markets and sustainability premium buyers. Reduces post-harvest loss by flagging waste-to-value opportunities — turning crop residues, processing byproducts, and unsold inventory into compost, bioenergy, or secondary products instead of landfill. The same lot that earns a quality premium can earn a sustainability premium — and the farmer sees both.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Brain field data</span>
+                                    <span class="agent-tag">Supply chain logs</span>
+                                    <span class="agent-tag">Carbon registries</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Carbon footprint per lot, sustainability scorecards, waste-to-value alerts, premium matching</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Every lot carries its environmental story — and earns a premium for it</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Environmental Compliance Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Environmental Compliance Agent</span>
+                            <p class="agent-card-oneliner">Multi-standard certification across every framework that matters</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">EUDR is one regulation. This agent handles all of them. Automates compliance across GlobalG.A.P., Rainforest Alliance, organic certification, fair trade, regenerative agriculture standards, and the emerging Kunming-Montreal biodiversity credit framework. Tracks every requirement per standard, per lot, per market — and generates the documentation automatically from verified platform data. One lot can be simultaneously EUDR-compliant, Rainforest Alliance certified, carbon-neutral verified, and biodiversity-positive scored. The compliance burden that used to require dedicated staff and consultants runs autonomously in the background.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Certification standards</span>
+                                    <span class="agent-tag">Platform lot data</span>
+                                    <span class="agent-tag">Audit requirements</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Multi-standard compliance documentation, biodiversity credits, certification-ready audit trails</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">One platform, every standard — from EUDR to Rainforest Alliance to biodiversity credits</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote I -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"I used to sell to the first buyer who showed up. Now I see every price, in every market, in my own currency — and I choose the best."</blockquote>
+            <cite>— Grace M., Smallholder coffee farmer · Meru, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How It Works</h2>
+            <h3 class="page-section-title">From farm registration to settled trade</h3>
+            <p class="page-section-desc">Every trade on Market follows 5 steps. Quality verified at origin. Pricing set by intelligence. Settlement instant.</p>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="workflow-step-number">1</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Register</div>
+                        <div class="workflow-step-desc">Farm lots registered with GPS coordinates, crop type, expected volume, cooperative membership</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">2</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Verify</div>
+                        <div class="workflow-step-desc">Quality and biological attributes graded automatically from sensor + camera data at point of harvest or collection</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">3</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Price</div>
+                        <div class="workflow-step-desc">AI determines fair price from multi-market intelligence, quality grade, logistics costs, FX corridors, and EUDR compliance — explaining every input the number depends on</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">4</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Match</div>
+                        <div class="workflow-step-desc">Buyers and sellers matched: spot trades, forward contracts, or auctions for premium lots</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">5</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Settle</div>
+                        <div class="workflow-step-desc">Transaction completed with full Data Passport — the biological record travels with the lot. Payment processed instantly through Ecosystem</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- How You Interact -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How You Interact</h2>
+            <h3 class="page-section-title">Every participant gets the right interface</h3>
+            <p class="page-section-desc">Farmers trade via WhatsApp. Cooperatives manage through dashboards. International buyers access full trading platforms.</p>
+            <div class="interface-grid">
+                <div class="interface-card">
+                    <div class="interface-card-user">Farmer</div>
+                    <div class="interface-card-channel">WhatsApp / SMS</div>
+                    <p class="interface-card-desc">Price alerts, trade offers ("Buyer X wants 200kg AA. Accept? Reply YES"), contract confirmations.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Cooperative Manager</div>
+                    <div class="interface-card-channel">Web Marketplace Dashboard</div>
+                    <p class="interface-card-desc">Aggregate inventory, pooled selling, member lot tracking, revenue distribution, compliance reports.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Local Buyer / Aggregator</div>
+                    <div class="interface-card-channel">Mobile App + Web</div>
+                    <p class="interface-card-desc">Browse verified lots by quality, biological profile, location, and volume. Place orders, track deliveries, manage purchases.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">International Exporter</div>
+                    <div class="interface-card-channel">Web Trading Platform</div>
+                    <p class="interface-card-desc">Full order book, RFQ system for large volumes, EUDR compliance dashboard, Data Passport downloads, API integration.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Compliance Officer</div>
+                    <div class="interface-card-channel">EUDR Dashboard</div>
+                    <p class="interface-card-desc">Geolocation maps, forest-cover monitoring, due diligence statement generator, audit trail, risk scoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote II -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"The quality certificates changed how buyers see us. They know the biology now — the variety, the profile. We went from anonymous sellers to verified suppliers with provenance."</blockquote>
+            <cite>— Faith N., Cooperative chairperson · Kiambu, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- Data Sources -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Data Sources</h2>
+            <h3 class="page-section-title">Intelligence from every corner of the market</h3>
+            <p class="page-section-desc">We aggregate 5 distinct data streams to produce the most accurate pricing, biological verification, and provenance on the continent.</p>
+            <div class="datasource-grid">
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Market Data</div>
+                    <p class="datasource-card-desc">Prices across regional spot markets, international commodity exchanges, futures, and currency pairs. API feeds from exchanges and field agents. Starts with 54 African markets. Built to scale to every market on Earth.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Real-time</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Satellite Verification</div>
+                    <p class="datasource-card-desc">Yield estimation, farm boundaries, deforestation monitoring via Sentinel-2.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Daily</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Quality Sensors</div>
+                    <p class="datasource-card-desc">Moisture, defect detection, weight, biological composition, and grading at collection points.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Per lot</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Trade Policy</div>
+                    <p class="datasource-card-desc">Tariffs, export regulations, EUDR requirements, phytosanitary rules from government APIs.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Daily</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Brain Farm Data</div>
+                    <p class="datasource-card-desc">Yield predictions, input history, varietal biology, environmental practices flowing in continuously from Brain.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Continuous</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Cross-Product Connections -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Cross-Product Connections</h2>
+            <h3 class="page-section-title">Market powers the trade layer</h3>
+            <p class="page-section-desc">Every trade on Market triggers actions across Brain, Ecosystem, and Labs — and their data makes Market smarter.</p>
+            <div class="connections-grid">
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Market</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Brain</span>
+                    </div>
+                    <p class="connection-card-desc">Price signals optimize harvest timing and next-season crop selection. Brain's yield predictions power forward contracts and quality verification.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Market</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Ecosystem</span>
+                    </div>
+                    <p class="connection-card-desc">Every trade triggers payments, insurance adjustments, credit updates, and logistics coordination through Ecosystem's service mesh.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Market</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Labs</span>
+                    </div>
+                    <p class="connection-card-desc">Transaction data reveals market patterns, demand shifts, price elasticity, and variety premiums — feeding Labs' plant genomics and climate-resilient breeding models. Biological data from every traded lot informs which crops and protocols Earth-and-space science prioritizes next.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Getting Started -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Getting Started</h2>
+            <h3 class="page-section-title">First trade in under 3 weeks</h3>
+            <p class="page-section-desc">We handle everything: market registration, quality verification setup, buyer matching, and compliance configuration. You just trade.</p>
+            <div class="onboarding">
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">1</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Registration</div>
+                        <div class="onboarding-step-desc">Register your cooperative or enterprise, verify identity via KYC.</div>
+                        <div class="onboarding-step-time">Day 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">2</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Lot Registration</div>
+                        <div class="onboarding-step-desc">GPS-map your farms, register crop types and expected volumes.</div>
+                        <div class="onboarding-step-time">Week 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">3</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Quality Setup</div>
+                        <div class="onboarding-step-desc">Quality sensors calibrated at your collection points.</div>
+                        <div class="onboarding-step-time">Week 1-2</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">4</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">First Price Check</div>
+                        <div class="onboarding-step-desc">See real-time fair prices for your commodities across every market in the network — starting with 54 African markets and growing.</div>
+                        <div class="onboarding-step-time">Week 2</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">5</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">First Trade</div>
+                        <div class="onboarding-step-desc">List, match, and settle your first verified transaction with full Data Passport — biological record included.</div>
+                        <div class="onboarding-step-time">Week 2-3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Security & Trust -->
+    <section class="page-section security-section">
+        <div class="container">
+            <h2 class="page-section-label">Security & Trust</h2>
+            <h3 class="page-section-title">Your data, your rules</h3>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <div class="security-card-title">Data Encryption</div>
+                    <p class="security-card-desc">End-to-end encryption for all data. AES-256 at rest, TLS 1.3 in transit. Your farm data is never exposed.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg></div>
+                    <div class="security-card-title">Farmer Data Sovereignty</div>
+                    <p class="security-card-desc">Farmers own their data. Export or delete anytime. No lock-in, no hidden data monetization.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <div class="security-card-title">Privacy by Design</div>
+                    <p class="security-card-desc">Anonymization before any research use. GDPR-compliant processing. Consent-first approach to all data sharing.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <div class="security-card-title">SOC 2 Compliance</div>
+                    <p class="security-card-desc">Annual audits, strict access controls, documented incident response. Enterprise-grade security for every farmer.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="security-card-title">Local Data Residency</div>
+                    <p class="security-card-desc">Data stored in-region on AWS Africa (Cape Town) and Nairobi. Your data stays close to home.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="security-card-title">Open Audit Trail</div>
+                    <p class="security-card-desc">Every AI decision is logged, traceable, and explainable. Full transparency on what the agents do and why.</p>
+                </div>
+            </div>
+            <div class="security-badges">
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> SOC 2 Type II</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> GDPR</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> ISO 27001</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="page-section integrations-section">
+        <div class="container">
+            <h2 class="page-section-label">Integrations</h2>
+            <h3 class="page-section-title">Connected to the tools you already use</h3>
+            <div class="integration-categories">
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                    </div>
+                    <h4>Payments</h4>
+                    <p class="integration-category-desc">Mobile money and banking rails across Africa.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">M-Pesa</span>
+                        <span class="integration-tag">MTN MoMo</span>
+                        <span class="integration-tag">Airtel Money</span>
+                        <span class="integration-tag">Orange Money</span>
+                        <span class="integration-tag">Bank APIs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4"/><path d="m16 8-4-4"/><path d="M9 21a9 9 0 0 0-9-9"/></svg>
+                    </div>
+                    <h4>Satellite</h4>
+                    <p class="integration-category-desc">Earth observation imagery providers.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Sentinel-2</span>
+                        <span class="integration-tag">SatLogic</span>
+                        <span class="integration-tag">Planet Labs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h4>Communication</h4>
+                    <p class="integration-category-desc">Reach farmers wherever they are.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">WhatsApp Business API</span>
+                        <span class="integration-tag">Twilio (SMS/Voice)</span>
+                        <span class="integration-tag">USSD</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <h4>IoT</h4>
+                    <p class="integration-category-desc">Long-range sensor connectivity.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">LoRaWAN</span>
+                        <span class="integration-tag">Sigfox</span>
+                        <span class="integration-tag">Cellular IoT</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                    </div>
+                    <h4>Government</h4>
+                    <p class="integration-category-desc">Authoritative data and compliance.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">National Ag Databases</span>
+                        <span class="integration-tag">Export Authorities</span>
+                        <span class="integration-tag">Tax Systems</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Partners</h4>
+                    <p class="integration-category-desc">Insurance, finance, and field operations.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Pula (Insurance)</span>
+                        <span class="integration-tag">OKO Finance</span>
+                        <span class="integration-tag">Local Agro-dealers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- FAQs + Blog -->
+    <section class="pricing-faqs pricing-faqs-compact">
+        <div class="container">
+            <div class="pricing-faqs-grid">
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Frequently asked questions about Market</h2>
+                    <div class="pricing-faq-list">
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>How is the fair price calculated?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>The Price Intelligence Agent aggregates real-time data from 54 African markets, international commodity exchanges, currency rates, futures, and local supply/demand signals. It produces a fair price range per commodity per location, updated continuously, and shows its work — every farmer, cooperative, and buyer can see exactly what inputs the number depends on. Both sides of every trade see the same transparent pricing.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>What if a buyer doesn't pay or a seller doesn't deliver?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>All trades use escrow — buyer funds are held until delivery is confirmed via GPS tracking and quality verification at destination. If there's a dispute, the Dispute Resolution Agent mediates using contract terms, delivery receipts, and quality grades. Funds are released only when both parties agree or after automated resolution.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>Can I sell to international buyers without an export license?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Market handles export documentation through the Compliance Agent. For individual farmers, we facilitate aggregation through cooperatives that hold export licenses. The EUDR Compliance Agent auto-generates the deforestation-free documentation required for EU markets.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>How does EUDR compliance work for my farm?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>The EUDR Compliance Agent automatically maps your farm boundaries via GPS, monitors forest cover change using satellite imagery, and generates due diligence statements. This process is continuous and automated — your compliance documentation is always current and audit-ready.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>What are the fees for using Market?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Market charges a small transaction fee on completed trades — typically 1-3% depending on volume and commodity type. There are no listing fees, no subscription fees for basic access, and no hidden charges. See our pricing page for full details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing-faqs-view-link">View all FAQs &rarr;</a>
+                </div>
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Latest from the blog</h2>
+                    <div class="pricing-blog-list">
+                        <a href="blog/founder-letter.html" class="pricing-blog-item">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Founder's Letter</span>
+                                <span class="pricing-blog-item-title">For All of Humanity</span>
+                            </div>
+                            <span class="pricing-blog-item-arrow">&#8599;</span>
+                        </a>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Compliance</span>
+                                <span class="pricing-blog-item-title">The Case for EUDR Compliance as a Competitive Advantage</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Trade</span>
+                                <span class="pricing-blog-item-title">Verified Data Passports: Ending the Trust Tax in Commodity Trading</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Case Study</span>
+                                <span class="pricing-blog-item-title">Coffee Circle: Direct Trade With Verified Provenance</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <a href="blog/" class="pricing-faqs-view-link">View blog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start in days, not months -->
+    <section class="pricing-start">
+        <div class="container">
+            <div class="pricing-start-header">
+                <div class="pricing-start-header-content">
+                    <h2 class="pricing-start-title">Start in days, not months.</h2>
+                    <p class="pricing-start-desc">Get started with minimal setup and hands-on support. See what Watoko Market can do for your buyers, traders, and exporters.</p>
+                </div>
+            </div>
+            <div class="pricing-start-grid">
+                <!-- Left: Market pricing card -->
+                <div class="pricing-start-card">
+                    <h3 class="pricing-start-card-label">Pay only when you trade</h3>
+                    <div class="pricing-start-card-stat">
+                        <span class="pricing-start-card-stat-value">Free + 1.5%</span>
+                        <span class="pricing-start-card-stat-unit">on completed trades</span>
+                    </div>
+                    <p class="pricing-start-card-desc">Platform access is free &mdash; browse prices, list lots, connect with buyers. 1.5% transaction fee only on completed trades. EUDR compliance from $250/shipment, or $2,500/year unlimited.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Talk to sales <span class="btn-arrow">&rarr;</span></a>
+                        <a href="pricing.html#market-detail" class="pricing-start-text-link">See Market pricing &rarr;</a>
+                    </div>
+                </div>
+                <!-- Right: Grant program card -->
+                <div class="pricing-start-card pricing-start-card-grant">
+                    <h3 class="pricing-start-card-label">Watoko Grant Program for cooperatives & smallholders</h3>
+                    <div class="pricing-start-card-stats">
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">2,400+</span>
+                            <span class="pricing-start-card-stat-unit">Farmers funded</span>
+                        </div>
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">12 Months</span>
+                            <span class="pricing-start-card-stat-unit">Free access</span>
+                        </div>
+                    </div>
+                    <p class="pricing-start-card-desc">Hardware, onboarding, and your first season &mdash; covered. Because access to intelligence shouldn't depend on what you can afford today.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Apply for a grant <span class="btn-arrow">&rarr;</span></a>
+                        <a href="grants.html" class="pricing-start-text-link">Learn more about grants &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">See Market in action.</h2>
+            <p class="page-cta-desc">Real-time price intelligence, complete biological data passports, verified quality and provenance, automated compliance across every standard, and sustainability scoring per lot. Trade African commodities with full transparency — down to what the crop actually contains and what it costs the environment.</p>
+            <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

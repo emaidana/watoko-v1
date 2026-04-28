@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Circle — Watoko | Customer Story</title>
+    <meta name="description" content="How Coffee Circle uses Watoko to build the most transparent and verifiable specialty coffee supply chain in Europe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watoko.ai/customers/coffee-circle.html">
+    <meta property="og:title" content="Coffee Circle — Watoko | Customer Story">
+    <meta property="og:description" content="How Coffee Circle uses Watoko to build the most transparent and verifiable specialty coffee supply chain in Europe.">
+    <meta property="og:image" content="https://watoko.ai/favicon.svg">
+    <meta property="og:site_name" content="Watoko">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coffee Circle — Watoko | Customer Story">
+    <meta name="twitter:description" content="How Coffee Circle uses Watoko to build the most transparent and verifiable specialty coffee supply chain in Europe.">
+    <meta name="twitter:image" content="https://watoko.ai/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="../blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="../brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="../market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="../ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="../labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="../archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="../solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="../solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="../solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="../solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Agricultural policy intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="../company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="../careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="../customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="../partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="../pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="../blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Story Hero Image -->
+    <section class="story-hero">
+        <div class="story-hero-img">
+            <span class="story-hero-placeholder">Coffee Circle</span>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="story-body">
+        <div class="container">
+            <div class="story-layout">
+
+                <!-- Main Content -->
+                <article class="story-main">
+
+                    <!-- 1. Hook -->
+                    <p class="story-hook">The infrastructure that would make real-time, automated, lot-level traceability possible simply has not existed &mdash; until now.</p>
+
+                    <!-- 2. Context -->
+                    <p class="story-intro">Coffee Circle is a Berlin-based specialty coffee roaster and one of Europe's most serious practitioners of direct trade. Founded on the principle that traceability is not a marketing claim but an operational commitment, they have built their business around knowing exactly where their coffee comes from and who grew it.</p>
+
+                    <!-- 3. Company stats grid -->
+                    <div class="story-results-grid">
+                        <div class="story-result">
+                            <span class="story-result-value">269K kg</span>
+                            <span class="story-result-desc">green coffee sourced in 2024</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">84.2</span>
+                            <span class="story-result-desc">average cupping score across all lots</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">$3.20/lb</span>
+                            <span class="story-result-desc">average price paid &mdash; 40% above global market</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">5 origins</span>
+                            <span class="story-result-desc">across East Africa, including conflict-affected regions</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Foundation paragraph -->
+                    <p>Their foundation invests &euro;1 per kilogram sold into projects in growing communities &mdash; clean water, education, and sustainable farming. In 2024 that translated to &euro;450,000 invested, reaching over 75,000 people. 78.8% of volume comes from long-term partnerships of two or more years. And 65.5% of their coffee is sourced from regions facing active conflict or instability &mdash; because Coffee Circle sources where the coffee is best, not where compliance is easiest.</p>
+
+                    <!-- 5. Challenge section -->
+                    <div class="story-section">
+                        <span class="story-section-label">The challenge</span>
+                        <h2 class="story-section-title">The infrastructure gap behind direct trade</h2>
+                    </div>
+
+                    <p><strong>Manual traceability has limits.</strong> Even for the most committed buyers, traceability still depends on periodic farm visits, email correspondence, WhatsApp voice notes from cooperative managers, and manual documentation assembled by a sourcing team. Quality is assessed through samples sent to Hamburg after purchase decisions are already made.</p>
+
+                    <p><strong>The EUDR clock is ticking.</strong> Enforcement for large and medium operators is set for December 30, 2026. Non-compliance carries fines of up to 4% of EU turnover, shipment rejections, and reputational damage. Coffee Circle's direct trade model puts them ahead of most &mdash; but ahead of most is not the same as compliant.</p>
+
+                    <p><strong>Scale breaks manual processes.</strong> The EUDR requires geolocation data for every farm in the supply chain, due diligence statements per shipment, and documented evidence that no deforestation occurred after December 31, 2020 on the specific plots where coffee was grown. That documentation, generated manually, is expensive and time-consuming across multiple origins.</p>
+
+                    <!-- 6. Quote about infrastructure gap -->
+                    <blockquote class="story-quote">
+                        <p>"This is not a criticism. It is the state of the art for every specialty buyer in Europe, including the best ones. The infrastructure that would make real-time, automated, lot-level traceability possible simply has not existed &mdash; until now."</p>
+                    </blockquote>
+
+                    <!-- 7. EUDR context section -->
+                    <div class="story-section">
+                        <span class="story-section-label">The context</span>
+                        <h2 class="story-section-title">Nine months to EUDR enforcement</h2>
+                    </div>
+
+                    <p>73% of coffee roasters in the EU are still unprepared. 89% have done zero work on supply chain traceability since the regulation was announced in 2023. Coffee Circle is not in that 73%. Their direct trade model and farm-level relationships put them ahead of most. But the EUDR requires geolocation data, due diligence statements per shipment, and verified deforestation-free evidence for every plot. Watoko makes it automatic.</p>
+
+                    <!-- 8. Solution section -->
+                    <div class="story-section">
+                        <span class="story-section-label">The solution</span>
+                        <h2 class="story-section-title">Three pallets of Uganda Arabica. Full Watoko stack.</h2>
+                    </div>
+
+                    <p>The pilot starts with a single, concrete proof of value: three pallets of specialty Arabica from Uganda &mdash; approximately 4.5 metric tons &mdash; sourced through a Watoko-connected cooperative in the Mt. Elgon region, one of Uganda's premier growing areas for high-altitude Arabica.</p>
+
+                    <p><strong>Brain, the field intelligence engine</strong> &mdash; monitors the cooperative throughout the processing period &mdash; soil conditions, drying parameters, moisture levels at the washing station, fermentation tracking. Coffee Circle has live dashboard access throughout.</p>
+
+                    <p><strong>Market, the trade orchestration engine</strong> &mdash; generates the complete lot passport for all three pallets &mdash; GPS-tagged farm origin coordinates, farmer identities, processing method, fermentation and drying records, climate data, and AI-predicted cupping score generated 30 days before harvest. Uses satellite imagery to verify that the specific farm plots have not been deforested since December 31, 2020 &mdash; the EUDR cut-off date &mdash; and generates a due diligence statement automatically. This takes seconds, not weeks.</p>
+
+                    <p><strong>Ecosystem, the operations engine</strong> &mdash; settles payment to the cooperative the same day Coffee Circle confirms the shipment. The payment record is attached to the lot passport as verified proof of fair compensation.</p>
+
+                    <!-- 9. Results section -->
+                    <div class="story-section">
+                        <span class="story-section-label">The results</span>
+                        <h2 class="story-section-title">From three pallets to five origins</h2>
+                    </div>
+
+                    <div class="story-results-grid">
+                        <div class="story-result">
+                            <span class="story-result-value">100%</span>
+                            <span class="story-result-desc">lot-level traceability &mdash; from farm GPS coordinates to Hamburg delivery</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">Seconds</span>
+                            <span class="story-result-desc">to generate EUDR due diligence statements, not weeks of manual assembly</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">85%+</span>
+                            <span class="story-result-desc">target accuracy on AI-predicted SCA cupping scores, 30 days before harvest</span>
+                        </div>
+                        <div class="story-result">
+                            <span class="story-result-value">Same-day</span>
+                            <span class="story-result-desc">farmer payment verification attached to every lot passport</span>
+                        </div>
+                    </div>
+
+                    <!-- 10. Quote about verifiable data trail -->
+                    <blockquote class="story-quote">
+                        <p>"Every bag carries a verifiable data trail &mdash; not a story about visiting the farm, but a documented record of who grew it, how it was processed, what the weather was during the growing season, and confirmation that the farmer was paid fairly."</p>
+                    </blockquote>
+
+                    <!-- 11. Compound Effect section -->
+                    <div class="story-compound">
+                        <span class="story-compound-label">The compound effect</span>
+                        <p>Every buyer who joins the network makes compliance cheaper and traceability better for every other buyer. Coffee Circle's pilot generates the EUDR compliance infrastructure that benefits every East African origin in the system. The first verification is the most expensive. Every one after that is cheaper.</p>
+                    </div>
+
+                    <!-- 12. What's Next section -->
+                    <div class="story-section">
+                        <span class="story-section-label">What's next</span>
+                        <h2 class="story-section-title">The template for every origin</h2>
+                    </div>
+
+                    <p>Uganda is the pilot. Rwanda, Kenya, Ethiopia, and DRC are the expansion. If the pilot validates the model, Watoko and Coffee Circle expand the infrastructure across every origin Coffee Circle sources &mdash; making their entire East African supply chain the most transparent and verifiable in the European specialty market.</p>
+
+                    <p>The goal: Coffee Circle is not just compliant. They are the company that built the standard before the market required it.</p>
+
+                </article>
+
+                <!-- 13. Sidebar -->
+                <aside class="story-sidebar">
+                    <div class="story-sidebar-inner">
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Company</span>
+                            <span class="story-meta-value">Coffee Circle</span>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Industry</span>
+                            <span class="story-meta-value">Specialty Coffee / Direct Trade</span>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Headquarters</span>
+                            <span class="story-meta-value">Berlin, Germany</span>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Challenge</span>
+                            <span class="story-meta-value">EUDR compliance & real-time lot-level traceability across 5 East African origins</span>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Watoko engines used</span>
+                            <div class="story-meta-links">
+                                <a href="../brain.html">Brain</a>
+                                <a href="../market.html">Market</a>
+                                <a href="../ecosystem.html">Ecosystem</a>
+                            </div>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">Network contribution</span>
+                            <span class="story-meta-value story-meta-about">First European buyer pilot generating EUDR compliance infrastructure benefiting all East African origins.</span>
+                        </div>
+                        <div class="story-meta-group">
+                            <span class="story-meta-label">About</span>
+                            <span class="story-meta-value story-meta-about">Berlin-based specialty coffee roaster. 269,478 kg sourced in 2024. Average cupping score 84.2. Pays 40% above global market price. Foundation investing &euro;1/kg into growing communities.</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="customers-cta">
+        <div class="container">
+            <div class="customers-cta-inner">
+                <h2 class="customers-cta-title">Join the network.</h2>
+                <p class="customers-cta-desc">See how Watoko runs on your farm, cooperative, or supply chain.</p>
+                <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="../brain.html">Brain</a>
+                        <a href="../market.html">Market</a>
+                        <a href="../ecosystem.html">Ecosystem</a>
+                        <a href="../labs.html">Labs</a>
+                        <a href="../archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="../solutions.html#cooperatives">Cooperatives</a>
+                        <a href="../solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="../solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="../solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="../company.html">About</a>
+                        <a href="../careers.html">Careers</a>
+                        <a href="../customers.html">Customers</a>
+                        <a href="../partnerships.html">Partnerships</a>
+                        <a href="../pricing.html">Pricing</a>
+                        <a href="../blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="../pioneers.html">Fellowship</a>
+                        <a href="../grants.html">Grants</a>
+                        <a href="../developers.html">Developers</a>
+                        <a href="../security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

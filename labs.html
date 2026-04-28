@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs — Biological Intelligence for Earth and Space | Watoko</title>
+    <meta name="description" content="The biological intelligence engine. 21+ autonomous agents reading and interpreting the biology of a continent — turning it into medicine, longevity science, climate-resilient breeding, microbiome engineering, novel materials, and the knowledge base for sustaining life anywhere. Modeling future climate conditions, screening 65,000+ species for resilience traits, and engineering the microbial systems that keep crops and plants alive under stress. Operating on the Watoko Archive: the largest living biological dataset of complex-environment biology on Earth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-product="labs">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-index">04</span>
+                <span class="page-hero-tag"><span class="page-hero-dot dot-labs"></span>Labs</span>
+            </div>
+            <p class="page-hero-engine-label">The Biological Intelligence Engine</p>
+            <h1 class="page-hero-title">The science engine that reads<br>the biology of a continent.</h1>
+            <p class="page-hero-desc">Biological intelligence is what happens when you read the biology of the most complex environments on Earth, computationally, at scale, season after season, and turn what you find into medicine, longevity science, climate-resilient crops, novel materials, and the knowledge base for sustaining life on every world we reach. Labs is the engine that does this. It operates on the <a href="archive.html">Watoko Archive</a>: the largest living biological dataset of complex-environment biology on Earth. 21+ autonomous agents. 65,000+ species in scope. From a compound discovered in Ugandan soil to a commercial biotech product. From a crop protocol tested on a salt flat to a food system running in orbit. No university has this dataset. No pharma company. No government. No space agency. Nobody.</p>
+            <div class="system-stats">
+                <div class="system-stats-pill"><span class="count-up">21+</span> <span>Agents</span></div>
+                <div class="system-stats-pill"><span class="count-up">65,000+</span> <span>Species</span></div>
+                <div class="system-stats-pill"><span class="count-up">Earth → Orbit</span> <span>Scope</span></div>
+            </div>
+            <div class="page-hero-users">
+                <span class="page-hero-user">For Seed Companies &amp; Genomics Labs</span>
+                <span class="page-hero-user">For Pharma, Nutraceutical &amp; Longevity</span>
+                <span class="page-hero-user">For Insurers &amp; Reinsurers</span>
+                <span class="page-hero-user">For Governments &amp; Food Security Agencies</span>
+                <span class="page-hero-user">For Universities &amp; Research Institutions</span>
+                <span class="page-hero-user">For Space Agencies &amp; Astrobiologists</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Arc — Visionary Opening Panel -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">The Arc</h2>
+            <h3 class="page-section-title">The biology we eat. The biology we become. The biology we carry to every world after this one.</h3>
+            <p class="page-section-desc">Three frontiers. One compounding arc. Every agent in Labs serves at least one — most serve all three. The biology has to be alive to be read. And once it is read — genomically, biochemically, ecologically, season over season — it opens a continuous pipeline from food security to medicine to longevity to cosmetics to novel materials to the closed-loop life-support systems humanity will build beyond Earth. Not 3 separate research programs. One arc. One dataset. The <a href="archive.html">Watoko Archive</a> feeds all of it.</p>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="90" r="70"/>
+                            <path d="M90 20 C 60 60, 60 120, 90 160"/>
+                            <path d="M90 20 C 120 60, 120 120, 90 160"/>
+                            <path d="M20 90 C 60 60, 120 60, 160 90"/>
+                            <path d="M20 90 C 60 120, 120 120, 160 90"/>
+                            <circle cx="90" cy="90" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">The biology we eat</div>
+                        <p class="vision-card-desc">Plant genomics. Marker-assisted breeding. Soil microbiome engineering. Climate-resilient variety pipelines. The crops that will feed 10 billion people under climate stress are not being developed in the temperate research stations where most agricultural science lives. They are being developed here — on the ground most science has ignored, where the selection pressure is highest and the genetic diversity is richest. The Archive reads this biology at depth. Labs turns the reading into breeding targets, agronomic protocols, and the food systems that will define the next century.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M90 30 C 50 30, 30 60, 30 90 C 30 130, 60 150, 90 150 C 120 150, 150 130, 150 90 C 150 60, 130 30, 90 30 Z"/>
+                            <path d="M60 80 Q 90 100, 120 80"/>
+                            <path d="M60 100 Q 90 120, 120 100"/>
+                            <circle cx="70" cy="70" r="2" fill="currentColor"/>
+                            <circle cx="110" cy="70" r="2" fill="currentColor"/>
+                            <circle cx="90" cy="90" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">The biology we become</div>
+                        <p class="vision-card-desc">Plants under extreme stress produce compounds to stay alive — polyphenols, flavonoids, senolytics, mitochondrial support molecules, microbiome modulators. Compounds the industrialized food system eliminated generations ago. Compounds the longevity industry spends billions to synthesize. Labs reads the biochemistry of every species the Archive catalogs, screens it for therapeutic and cosmetic potential, and turns what it finds into commercial products — medicine, longevity, nutrition, skincare, novel biomaterials. Ngoma is the first product. The compound library has 142 candidates and grows every season.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="90" r="30"/>
+                            <ellipse cx="90" cy="90" rx="70" ry="20" transform="rotate(-20 90 90)"/>
+                            <ellipse cx="90" cy="90" rx="70" ry="20" transform="rotate(20 90 90)"/>
+                            <circle cx="30" cy="70" r="2" fill="currentColor"/>
+                            <circle cx="150" cy="110" r="2" fill="currentColor"/>
+                            <circle cx="40" cy="130" r="2" fill="currentColor"/>
+                            <circle cx="140" cy="50" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">The biology we take with us</div>
+                        <p class="vision-card-desc">Every desert margin, salt flat, and post-volcanic soil we operate on is an analogue site for the Moon, Mars, and every closed-loop habitat humanity will build. Closed-loop life support is biology under stress: water cycling, atmosphere management, food production in degraded substrate with zero external inputs. These are not theoretical space problems — they are the daily operating conditions of the farms the Archive already reads. The biological record that helps a cooperative plan next season is the same biological record a space agency uses to design a 3-year closed-loop mission. Same biology. Same physics. Different altitude.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- What Labs Produces -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">What This Actually Is</h2>
+            <h3 class="page-section-title">Not a research department. A biological intelligence pipeline.</h3>
+            <p class="page-section-desc">Five outputs, each feeding the next. The <a href="archive.html">Watoko Archive</a> provides the biological record. Labs reads that record and produces a living encyclopedia, a biotech pipeline, a simulation engine, space-ready protocols, and the instruction manual for sustaining life anywhere. Brain, Market, and Ecosystem generate the operational data. Labs is the science engine they all feed.</p>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="30" y="40" width="120" height="100" rx="8"/>
+                            <line x1="30" y1="70" x2="150" y2="70"/>
+                            <line x1="70" y1="70" x2="70" y2="140"/>
+                            <line x1="110" y1="70" x2="110" y2="140"/>
+                            <circle cx="50" cy="55" r="3" fill="currentColor"/>
+                            <circle cx="90" cy="55" r="3" fill="currentColor"/>
+                            <circle cx="130" cy="55" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">A living biological encyclopedia of the planet</div>
+                        <p class="vision-card-desc">65,000+ plant species. Most never sequenced. Most carrying compounds and adaptations the rest of science has not cataloged. The <a href="archive.html">Watoko Archive</a> reads them — genomes, phenotypes, stress responses, compound profiles, soil microbiomes, ecological niches — across every climate zone on the continent, updated every season, computationally readable at scale. Labs turns that reading into the encyclopedia: a structured, queryable, continuously growing biological record. The biological equivalent of mapping the human genome, except it is not one species. It is the biological library of the most complex environments on Earth.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M90 30 L90 150"/>
+                            <circle cx="90" cy="50" r="15"/>
+                            <circle cx="90" cy="90" r="15"/>
+                            <circle cx="90" cy="130" r="15"/>
+                            <path d="M105 50 L140 50"/>
+                            <path d="M105 90 L140 90"/>
+                            <path d="M105 130 L140 130"/>
+                            <circle cx="90" cy="50" r="3" fill="currentColor"/>
+                            <circle cx="90" cy="90" r="3" fill="currentColor"/>
+                            <circle cx="90" cy="130" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">A biotech pipeline that starts at the soil</div>
+                        <p class="vision-card-desc">Ngoma. A compound found in Ugandan soil. Screened by autonomous agents. Characterized for therapeutic potential. Validated in the lab. Now a commercial biotech product. Not a research paper filed in a database. A product on a shelf. That is the pipeline: field biology to compound discovery to medicine, longevity, nutrition, cosmetics, novel biomaterials — with the intellectual property and benefit-sharing infrastructure to match. The longevity industry spends billions synthesizing molecules in sterile labs. We find them in the dirt, where evolution already did the work. Ngoma is the first. The compound library has 142 candidates. The Archive that feeds it grows every season.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="90" r="60"/>
+                            <circle cx="90" cy="90" r="40"/>
+                            <circle cx="90" cy="90" r="20"/>
+                            <circle cx="90" cy="90" r="3" fill="currentColor"/>
+                            <line x1="90" y1="30" x2="90" y2="10"/>
+                            <line x1="150" y1="90" x2="170" y2="90"/>
+                            <line x1="90" y1="150" x2="90" y2="170"/>
+                            <line x1="30" y1="90" x2="10" y2="90"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">A simulation engine for any world</div>
+                        <p class="vision-card-desc">Pick an environment. A highland terrace at 2,400 meters. A vertical farm in Nairobi. A sealed greenhouse in a desert. A regolith plot on the lunar south pole. A pressurized dome on the surface of Mars. Now model what happens to a specific crop under those exact conditions — light, temperature, atmosphere, water, substrate, microbial ecology — and stress-test it before a single seed goes into the ground. That is what this engine does. The same simulation that helps a cooperative in Rwanda plan next season is the same simulation a space agency uses to plan a 3-year closed-loop mission. Same physics. Same biology. Different altitude.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="60" cy="110" r="40"/>
+                            <circle cx="120" cy="70" r="25"/>
+                            <path d="M60 70 L60 30"/>
+                            <path d="M50 40 L60 30 L70 40"/>
+                            <path d="M120 45 L120 20"/>
+                            <path d="M113 28 L120 20 L127 28"/>
+                            <circle cx="60" cy="110" r="3" fill="currentColor"/>
+                            <circle cx="120" cy="70" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Space R&amp;D at the cost of agriculture</div>
+                        <p class="vision-card-desc">Nobody is going to build a dedicated space agriculture research station to figure out how to feed a crew on Mars. The economics do not work. But if you are already reading biology at scale in the most extreme environments on Earth — water-scarce, nutrient-poor, temperature-volatile, with unreliable inputs and zero margin for error — then every biological protocol you develop, every closed-loop life-support system you test, every organism you adapt is simultaneously a space protocol, tested on real ground, with real biological data, at real scale. Closed-loop life support is biology under stress. That is what we already study. The Archive compounds the biological record. Labs turns it into habitat-ready science.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="90" r="70"/>
+                            <path d="M90 20 C 60 60, 60 120, 90 160"/>
+                            <path d="M90 20 C 120 60, 120 120, 90 160"/>
+                            <path d="M20 90 C 60 60, 120 60, 160 90"/>
+                            <path d="M20 90 C 60 120, 120 120, 160 90"/>
+                            <circle cx="90" cy="90" r="8" fill="currentColor" opacity="0.3"/>
+                            <circle cx="90" cy="90" r="3" fill="currentColor"/>
+                            <circle cx="40" cy="60" r="2" fill="currentColor"/>
+                            <circle cx="140" cy="120" r="2" fill="currentColor"/>
+                            <circle cx="50" cy="130" r="2" fill="currentColor"/>
+                            <circle cx="130" cy="50" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">The instruction manual for life</div>
+                        <p class="vision-card-desc">Add it all up. Which biology survives under which conditions. Which compounds those organisms produce. How those compounds become medicine, longevity interventions, functional foods, cosmetics, biomaterials. How to grow food with no rain, no soil, no atmosphere. How to close the loop on food, water, and air in a sealed system. How to simulate any of it before you build it. What you have is not a research product. It is biological intelligence: the instruction manual for keeping humans alive and healthy. On a warming Earth. In a megacity vertical farm. In a desert. In orbit. On the Moon. On Mars. On every world after. A civilizational asset, assembled season by season from the hardest ground on this planet, stored in the Archive, and interpreted by Labs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- The Agents -->
+    <section class="page-section section-accent-dots">
+        <div class="container">
+            <h2 class="page-section-label">The Agents</h2>
+            <h3 class="page-section-title">21+ autonomous agents. Each one reads the biology no one else can read.</h3>
+            <p class="page-section-desc">Every agent operates on the <a href="archive.html">Watoko Archive</a> — the living biological dataset that grows every season. Seed companies, pharma labs, longevity researchers, cosmetics companies, materials scientists, insurers, governments, universities, and space agencies access the science. Farmers never interact with Labs directly — they receive the benefits through Brain, Market, and Ecosystem getting smarter every season. 21+ agents and expanding as the Archive deepens and the biological intelligence opens new frontiers.</p>
+            <div class="agent-grid">
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Crop Optimization Agent</span>
+                            <p class="agent-card-oneliner">Outperforms regional agronomic science by Season 2</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Machine learning across thousands of microclimates on 50-meter grids. Every soil type, altitude band, and rainfall pattern gets its own protocol — variety-specific, season-adjusted, continuously improving. Most agronomic science is regional. This is plot-level. By Season 2, the protocols this agent produces outperform the best regional advice available. By Season 4, they are producing yield intelligence that doesn't exist in any public research system on the continent.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Brain sensor data</span>
+                                    <span class="agent-tag">Satellite imagery</span>
+                                    <span class="agent-tag">Yield records</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Variety-specific protocols per microclimate</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Yield intelligence that doesn't exist in any public system on the continent</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Bioactive Discovery Agent</span>
+                            <p class="agent-card-oneliner">142 compounds cataloged. Ngoma is the first product.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Plants under extreme stress produce compounds to stay alive — polyphenols, flavonoids, senolytics, mitochondrial support molecules, microbiome modulators. Compounds the industrialized food system eliminated generations ago. Compounds the longevity industry spends billions to synthesize in a lab. This agent screens them systematically from the field: phytochemical profiling, molecular analysis, therapeutic candidate identification. 142 compounds cataloged and growing. We are not inventing these molecules. We are finding them in the dirt, where 4 billion years of evolution already did the work.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Genomic data</span>
+                                    <span class="agent-tag">Phytochemical analysis</span>
+                                    <span class="agent-tag">Field trials</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Compound libraries with therapeutic potential</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">142 compounds cataloged. The library grows every season. Evolution did the R&D.</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Climate Resilience Agent</span>
+                            <p class="agent-card-oneliner">The crops that survive here survive everywhere</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">The crops that survive the hardest ground on Earth are the same crops that will survive everywhere climate change is about to reach. This agent identifies varieties and practices that don't just tolerate stress — they outperform under it. Multi-season yield data across drought, heat, salinity, flooding, altitude. The selection pressure Africa applies to biology is higher than any lab can simulate. Every season of data here is a season of data for the next 50 years of global food security.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Multi-season data</span>
+                                    <span class="agent-tag">Weather history</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Climate-adapted crop portfolios per region</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The next century's food supply is being decided in the fields we already operate</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Risk Modeling Agent</span>
+                            <p class="agent-card-oneliner">Actuarial-grade risk at a resolution insurers have never had</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Actuarial-grade risk modeling at a resolution no insurer has ever had access to. Plot-level, season-by-season, built on real operational data — not satellite estimates, not aggregated regional averages. This is what makes parametric insurance possible for the 500 million smallholders the industry has never been able to price. The same models that underwrite a farmer's season underwrite a cooperative's portfolio, a reinsurer's book, and eventually the food-production risk of an entire region under climate stress.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Brain + Market + Ecosystem data</span>
+                                    <span class="agent-tag">Weather history</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Actuarial-grade risk scores for insurers</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Making 500 million uninsurable farmers insurable for the first time</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Carbon MRV Agent</span>
+                            <p class="agent-card-oneliner">Turning farming practices into verified, tradeable environmental assets</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Measurement, reporting, and verification of carbon sequestration and biodiversity outcomes across every farming system the platform operates. Not estimates from orbit — ground-truth MRV from operational data, validated at plot resolution. Generates verified environmental credits that meet the highest registry standards. But the larger play is not carbon credits. It is building the evidentiary infrastructure for the emerging global market in ecosystem services — carbon, biodiversity, water, soil health — where the value of responsible land stewardship becomes tradeable, bankable, and defensible.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Satellite canopy</span>
+                                    <span class="agent-tag">Soil carbon sensors</span>
+                                    <span class="agent-tag">Practice records</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Verified carbon credits ready for trading</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Building the evidentiary infrastructure for the global ecosystem services market</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Food-Health Agent</span>
+                            <p class="agent-card-oneliner">What the soil produces is what the body needs</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">The relationship between how food is grown and what it does inside the human body. This agent correlates soil composition, growing conditions, and farming practices with the phytochemical and nutritional profile of every crop the platform touches — then maps those profiles against health outcomes, disease prevention data, and longevity research. The soil a crop grows in determines the compounds it produces. The compounds it produces determine what happens in the body that eats it. Nobody else has the operational pipeline to study this at scale.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Crop composition</span>
+                                    <span class="agent-tag">Nutritional databases</span>
+                                    <span class="agent-tag">Health research</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Functional food insights, longevity research</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The operational pipeline connecting soil chemistry to human health outcomes at continental scale</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="14.31" y1="8" x2="20.05" y2="17.94"/><line x1="9.69" y1="8" x2="21.17" y2="8"/><line x1="7.38" y1="12" x2="13.12" y2="2.06"/><line x1="9.69" y1="16" x2="3.95" y2="6.06"/><line x1="14.31" y1="16" x2="2.83" y2="16"/><line x1="16.62" y1="12" x2="10.88" y2="21.94"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Soil Microbiome Agent</span>
+                            <p class="agent-card-oneliner">The invisible ecosystem beneath every field we touch</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Maps soil biology across thousands of farms for regenerative agriculture. Analyzes soil samples, DNA sequencing data, practice records, and yield correlations to produce microbiome health scores and biochar/compost recommendations. Continuous autonomous analysis.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil samples</span>
+                                    <span class="agent-tag">DNA sequencing</span>
+                                    <span class="agent-tag">Practice records</span>
+                                    <span class="agent-tag">Yield correlations</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Microbiome health scores, biochar/compost recommendations</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The microbial map beneath every field we touch — the foundation of everything above it</div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Product Innovation Agent</span>
+                            <p class="agent-card-oneliner">From compound to commercial product. Not in decades. Months.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Ngoma is the proof. A bioactive compound discovered in Ugandan soil, validated for therapeutic potential, developed into a commercial wellness product, and brought to market — not in a decade-long pharma pipeline, but in months. This agent is the commercialization engine: it takes every compound, every formulation, every crop innovation the rest of Labs produces and maps the shortest path from discovery to product. Functional foods. Nutraceuticals. Supplements. Agricultural inputs. Biotech licensing. The pipeline is vertically integrated from soil to shelf.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <span class="agent-card-row-value">Compound libraries, Formulation data, Regulatory pathways, Market viability</span>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Commercial products, licensing deals, go-to-market roadmaps</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The shortest path from soil to shelf — and Ngoma is the proof it works</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Plant Genomics Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 00-7 17"/><path d="M12 22a10 10 0 007-17"/><path d="M2 12h20"/><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Plant Genomics Agent</span>
+                            <p class="agent-card-oneliner">65,000 species. Most never genetically characterized. Until now.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Links genotype to phenotype at continent scale. Cross-references DNA sequencing of thousands of African crop varieties against the operational performance data Brain collects in every field they grow in. Identifies the genetic markers behind drought tolerance, salinity tolerance, heat resistance, disease resistance, and nutrient density. Feeds breeding programs with candidates no lab-only approach could ever find. The crops that survive the hardest ground on Earth are the same crops that will survive everywhere climate change is about to reach.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Genome sequencing</span>
+                                    <span class="agent-tag">Field phenotype data</span>
+                                    <span class="agent-tag">Stress condition records</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Marker-assisted breeding targets, climate-resilient variety pipelines</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Climate-adapted breeding at planetary scale</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Longevity & Healthspan Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Longevity &amp; Healthspan Agent</span>
+                            <p class="agent-card-oneliner">Compounds the longevity industry spends billions synthesizing. We find them in the field.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Maps the biochemistry of every crop Watoko touches against the emerging science of longevity and healthspan. Polyphenols, flavonoids, senolytics, mitochondrial support compounds, microbiome modulators. Cross-references nutritional composition with health outcomes, disease prevention research, and aging biomarkers. The same soil that feeds a subsistence farmer may carry the next class of compounds extending human healthspan by decades — and we have the operational pipeline to find, validate, and deliver them at scale.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Phytochemical libraries</span>
+                                    <span class="agent-tag">Longevity research</span>
+                                    <span class="agent-tag">Aging biomarker databases</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Candidate compounds with validated longevity mechanisms</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Africa's biodiversity as the frontier of human healthspan</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Simulation & Prediction Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Simulation &amp; Prediction Agent</span>
+                            <p class="agent-card-oneliner">Stress-test any farm, any greenhouse, any sealed habitat on Mars — before a single seed goes in</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Runs high-fidelity simulations of farms, regions, and entire agroclimatic systems. Stress-tests breeding decisions, policy changes, climate scenarios, and supply-chain shocks before they happen in the physical world. Built on the same simulation stack that will one day model closed-loop habitats on the Moon, Mars, and every controlled environment in between. Every Brain decision, every Market forecast, every Ecosystem underwriting model gets pre-validated here first.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Operational field data</span>
+                                    <span class="agent-tag">Climate models</span>
+                                    <span class="agent-tag">Crop genetics</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Predictive models, scenario analyses, digital-twin environments</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The simulation layer beneath every decision on the platform</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Astrobiology Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Astrobiology Agent</span>
+                            <p class="agent-card-oneliner">Every salt flat we grow on is a proving ground for off-Earth agriculture</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Studies the extremophiles, adapted microbiomes, and resilient plant systems of the hardest environments on Earth — salt pans, high-altitude deserts, drought belts, volcanic soils — and models how they could underpin life-support systems in closed-loop habitats. Africa's most punishing ecosystems are a natural analogue for the environments life will one day need to survive on the Moon, Mars, and beyond. Astrobiology starts on Earth, and it starts where we already operate.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Extremophile genomes</span>
+                                    <span class="agent-tag">Stress ecology data</span>
+                                    <span class="agent-tag">Analogue-site samples</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Candidate biology for closed-loop life support and off-Earth habitats</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The science of life in places life shouldn't be able to live</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Planetary Habitat Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 7v14"/><path d="M21 7v14"/><path d="M3 7l9-5 9 5"/><path d="M9 21V11"/><path d="M15 21V11"/><path d="M9 11h6"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Planetary Habitat Agent</span>
+                            <p class="agent-card-oneliner">The food system for the first permanent crew off this planet</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Designs closed-loop bioregenerative life-support systems for controlled-environment agriculture, vertical farms, lunar habitats, and Mars surface operations. Takes everything the platform learns from the most resource-constrained farming on Earth — water scarcity, soil poverty, extreme temperature, unreliable inputs — and translates it into habitat-scale food, water, and atmospheric cycling. Because the food system that works on a smallholder plot in the Sahel is fundamentally closer to the food system that works on Mars than anything grown in industrial agriculture.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Resource-constrained farm data</span>
+                                    <span class="agent-tag">CEA parameters</span>
+                                    <span class="agent-tag">Life-support models</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Habitat-scale food / water / atmosphere protocols, mission-ready ag systems</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Earth's hardest ground as the blueprint for off-Earth life</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Synthetic Biology Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Synthetic Biology Agent</span>
+                            <p class="agent-card-oneliner">Engineering biology that doesn't exist yet</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Moves beyond discovery into design. Takes the compound libraries, genomic markers, and stress-adaptation pathways that the rest of Labs surfaces — and engineers new biological systems from them. Novel biosynthetic pathways for compound production at scale. Engineered photosynthesis variants optimized for low-light, high-CO₂, or artificial-spectrum environments. De novo crop traits that don't exist in nature — salinity tolerance stacked with nutrient density stacked with short-cycle harvest, designed for a specific altitude and soil type on Earth or a specific atmospheric mix in a sealed habitat. Every natural adaptation the platform catalogs becomes raw material for the next generation of designed biology. The line between what evolved and what was engineered disappears — and that's the point.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Genomic marker libraries</span>
+                                    <span class="agent-tag">Metabolic pathway models</span>
+                                    <span class="agent-tag">Stress adaptation data</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Engineered crop traits, biosynthetic pathways, novel organism designs</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">From cataloging what nature built to designing what comes next</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Biodiversity Intelligence Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.97 0 9-2.69 9-6v-4"/><path d="M12 14c4.97 0 9-2.69 9-6s-4.03-6-9-6-9 2.69-9 6 4.03 6 9 6z"/><path d="M3 8v4c0 3.31 4.03 6 9 6"/><path d="M3 12v4c0 3.31 4.03 6 9 6"/><path d="M21 12v4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Biodiversity Intelligence Agent</span>
+                            <p class="agent-card-oneliner">The biological equivalent of mapping the human genome — for an entire continent</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Building the largest living inventory of complex-environment biology on Earth. 65,000+ plant species across the African continent — most never genetically characterized, most carrying compounds and adaptations the rest of science hasn't cataloged. The agent runs continuous species discovery, genetic characterization, morphological analysis, ecological niche mapping, and conservation status tracking. Every field observation Brain makes, every sample the platform touches, feeds the library. This is not a static archive. It is a living, growing, computationally readable map of what life does when it's forced to survive under the hardest conditions on the planet. The species we catalog today are the genetic libraries humanity takes with it tomorrow — to vertical farms, to sealed habitats, to every world after this one. The biodiversity crisis is a knowledge crisis, and we are building the knowledge base at the speed the crisis demands.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Field specimens</span>
+                                    <span class="agent-tag">Satellite ecology</span>
+                                    <span class="agent-tag">Genomic sequencing</span>
+                                    <span class="agent-tag">Partner herbaria</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Species characterizations, genetic banking priorities, conservation intelligence, exploitable trait libraries</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The living library of Earth's most complex biology — readable at scale for the first time</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Environmental Remediation Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="M14.5 5.5l4 4"/><path d="M18.5 1.5c1 1 1.5 2.5 0 4l-1 1 4 4-1 1c-1.5 1.5-3 1-4 0l-4-4-1 1c-1.5 1.5-3 1-4 0"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Environmental Remediation Agent</span>
+                            <p class="agent-card-oneliner">Terraforming Earth — repairing land biology built to die</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Designs biological protocols for restoring dead and degraded landscapes. Phytoremediation: deploying hyperaccumulator plants that pull heavy metals and toxins from contaminated soil. Mycoremediation: engineering fungal networks that decompose persistent pollutants. Biosequestration at continental scale: turning carbon liabilities into living carbon sinks. Desertification reversal through microbial soil inoculation, strategic planting, and water-retention biology. Every degraded mine site, every post-conflict wasteland, every salt-crusted field the platform remediates is a rehearsal for the harder version of the same problem: activating dead regolith on the Moon, engineering soil from Martian dust, turning lifeless substrate into something that supports growth. Terraforming is not a space fantasy. It is what we already do on the worst ground on Earth — and this agent does it systematically, at scale, with compounding data from every site it touches.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil toxicology</span>
+                                    <span class="agent-tag">Degradation maps</span>
+                                    <span class="agent-tag">Fungal/microbial libraries</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Site-specific remediation protocols, bio-terraforming sequences, restoration timelines</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Terraforming is not science fiction — it is what we practice every season on the hardest ground on Earth</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Human Microbiome Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Human Microbiome Agent</span>
+                            <p class="agent-card-oneliner">The soil-gut axis. The most consequential pathway nobody is studying at scale.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Maps the axis that connects soil health to human health. The microbial composition of the soil determines the microbial and phytochemical profile of the food, which determines the microbial ecology of the human gut, which determines immune function, metabolic health, cognitive performance, and lifespan. This is the full-stack biology no one else has the operational data to study. The Soil Microbiome Agent characterizes what's in the ground. Brain tracks how it's grown. Market tracks what's eaten. The Human Microbiome Agent closes the loop — correlating soil-to-gut pathways across thousands of communities, diets, and environments. Designing food systems that optimize the human microbiome. Identifying the probiotic, prebiotic, and postbiotic compounds that African soils produce under stress — compounds the industrialized food system eliminated generations ago. The future of human health may start in the dirt beneath a smallholder's feet.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil microbiome data</span>
+                                    <span class="agent-tag">Food composition profiles</span>
+                                    <span class="agent-tag">Gut health research</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Soil-gut correlation models, microbiome-optimized food system designs, probiotic compound candidates</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The soil-gut axis — the most consequential biological pathway no one is studying at scale</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Water Systems Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Water Systems Agent</span>
+                            <p class="agent-card-oneliner">The binding constraint of life on Earth. And the binding constraint of life in space.</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Water is the binding constraint of agriculture on Earth and the binding constraint of life in space. The same constraint, the same physics, different scales. This agent models the full hydrological cycle at every site the platform operates: aquifer depletion, groundwater recharge, rainfall variability, evapotranspiration, irrigation efficiency, soil water retention, and water quality. Designs precision water management protocols that extract maximum agricultural output per liter — the exact skill required to run a food system on a space station where every milliliter of water is recycled, or on a lunar surface where there is no rain. The water scarcity Africa faces today is the water scarcity every off-Earth habitat will face permanently. We already operate in the training ground. This agent turns that operational data into the water-cycling intelligence that sustains life anywhere.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Hydrological sensors</span>
+                                    <span class="agent-tag">Satellite moisture data</span>
+                                    <span class="agent-tag">Irrigation records</span>
+                                    <span class="agent-tag">Water quality sampling</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Precision water protocols, recycling system designs, aquifer management models</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The water intelligence for sustaining life on a drying Earth and a waterless Moon</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Climate Adaptation Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Climate Adaptation Agent</span>
+                            <p class="agent-card-oneliner">Models where the growing zones are moving — and what to plant when they get there</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Integrates IPCC climate projections, regional downscaled models, and multi-decade weather trend data with the platform's operational field intelligence to model how growing conditions will shift across Africa, and the world, over the next 10, 30, and 50 years. Maps which regions will gain or lose viability for specific crops and plants. Recommends proactive adaptation strategies — variety transitions, planting calendar shifts, water infrastructure investments, agroforestry transitions — before the climate moves. The cooperatives and governments that act on this intelligence now will be the ones still feeding people in 2060. Everyone else will be reacting.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">IPCC projections</span>
+                                    <span class="agent-tag">Regional climate models</span>
+                                    <span class="agent-tag">Brain field data</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Growing-zone shift maps, adaptation roadmaps, transition timelines per region</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The difference between planning for climate change and being destroyed by it</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Crop Resilience Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 00-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Crop Resilience Agent</span>
+                            <p class="agent-card-oneliner">Screening 65,000 species for the traits that survive what's coming</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Systematically screens the Archive's 65,000+ species for climate-adaptive traits — drought tolerance, heat resistance, salinity survival, flood recovery, shortened growing cycles — that conventional breeding programs have never tested at this scale. Identifies underutilized crops and plants with resilience profiles that match future climate scenarios. Designs accelerated breeding pipelines that stack multiple resilience traits. Manages germplasm preservation priorities — cataloging and banking the genetic material of species and varieties at risk of disappearing before they're ever studied. The crops and plants that will feed humanity through climate change are already growing on African soil. This agent finds them, characterizes them, and moves them into breeding programs before the window closes.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Archive species data</span>
+                                    <span class="agent-tag">Climate scenario models</span>
+                                    <span class="agent-tag">Germplasm collections</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Resilience trait screens, accelerated breeding pipelines, germplasm preservation priorities</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The genetic library for feeding humanity through climate change — banked before it disappears</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Microbiome Resilience Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Microbiome Resilience Agent</span>
+                            <p class="agent-card-oneliner">Engineering the invisible ecosystem that keeps crops and plants alive under stress</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">The Soil Microbiome Agent maps what's in the ground. This agent engineers what should be. Identifies stress-tolerant microbial communities — bacteria, fungi, archaea — that help crops and plants survive drought, heat, salinity, and nutrient-poor soils. Designs microbiome interventions: custom biostimulant formulations, microbial inoculants, and biochar-microbe combinations tailored to specific soil types and climate conditions. Africa's soils are underrepresented in every major microbiome database on Earth. The microbial layer that produced most known antibiotics has been almost entirely sampled from temperate Northern soils. This agent reads the microbiome of the most complex soils on the planet and turns what it finds into resilience tools — for farms today, for degraded landscapes tomorrow, and for the engineered substrates of closed-loop habitats beyond Earth.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil microbiome sequences</span>
+                                    <span class="agent-tag">Stress condition data</span>
+                                    <span class="agent-tag">Crop performance records</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Custom biostimulant formulations, microbial inoculant designs, microbiome intervention protocols</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">The microbial engineering layer — designing the invisible ecosystem that keeps life growing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"The new variety they recommended yielded 40% more than what I was planting before. They told me it came from a genomics program that also feeds research on lunar habitats. I just grow maize — but now every row I plant is data for a food system that might one day run on another world."</blockquote>
+            <cite>— Sarah W., Smallholder maize farmer · Kericho, Kenya</cite>
+        </div>
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How It Works</h2>
+            <h3 class="page-section-title">Biology reading → Archive → discovery → product → habitat protocol</h3>
+            <p class="page-section-desc">Every biological observation on the hardest ground on Earth feeds the Archive. The Archive feeds Labs. Labs produces the biological intelligence — compounds, breeding targets, simulation models, habitat protocols — that flows into medicine, longevity science, and the food systems for every world we reach.</p>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="workflow-step-number">1</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Collect</div>
+                        <div class="workflow-step-desc">Every Brain observation, Market transaction, and Ecosystem interaction automatically generates research data — billions of data points from the most complex environments on Earth</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">2</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Aggregate</div>
+                        <div class="workflow-step-desc">Data pooled across farms, seasons, genomes, and microclimates into unified research datasets — anonymized, consented, and privacy-preserving</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">3</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Simulate</div>
+                        <div class="workflow-step-desc">Digital-twin models stress-test every hypothesis before it reaches a real farm — and before it reaches a habitat that doesn't yet exist</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">4</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Discover</div>
+                        <div class="workflow-step-desc">ML models surface patterns invisible to any single farm or lab: breeding targets, bioactive compounds, longevity candidates, extremophile adaptations, habitat protocols</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">5</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Apply</div>
+                        <div class="workflow-step-desc">Findings flow back into Brain, Market, and Ecosystem — and forward into partner research, breeding pipelines, longevity science, and space-agency habitat programs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- How You Interact -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How You Interact</h2>
+            <h3 class="page-section-title">The biological intelligence reaches everyone. The biology belongs to its source.</h3>
+            <p class="page-section-desc">Every partner accesses the science through a different lens. Pharma, longevity, cosmetics, materials, breeding, space — each domain draws from the same Archive, the same biological intelligence, through domain-specific portals and APIs. Every farmer benefits without ever touching Labs directly — through Brain getting smarter, Market pricing better, Ecosystem underwriting sharper. The biology compounds. The value flows everywhere.</p>
+            <div class="interface-grid">
+                <div class="interface-card">
+                    <div class="interface-card-user">Seed Company</div>
+                    <div class="interface-card-channel">Research Portal + API</div>
+                    <p class="interface-card-desc">Microclimate-specific variety performance data, trial results, recommendation engine for breeding programs.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Pharma / Nutraceutical</div>
+                    <div class="interface-card-channel">Research Portal + API</div>
+                    <p class="interface-card-desc">Bioactive compound libraries, indigenous crop screening results, partnership opportunities.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Insurance / Reinsurance</div>
+                    <div class="interface-card-channel">API + Risk Dashboard</div>
+                    <p class="interface-card-desc">Granular plot-level risk models, historical loss data, actuarial datasets.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Government</div>
+                    <div class="interface-card-channel">Intelligence Dashboard</div>
+                    <p class="interface-card-desc">Food security indicators at unprecedented resolution, regional yield forecasts, policy impact modeling.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">University / Research</div>
+                    <div class="interface-card-channel">Research Portal + API</div>
+                    <p class="interface-card-desc">Anonymized datasets, collaborative research tools, publication-ready analytics.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Space Agency / Astrobiology</div>
+                    <div class="interface-card-channel">Research Portal + API</div>
+                    <p class="interface-card-desc">Analogue-site ecology, extremophile genomics, closed-loop habitat protocols, and bioregenerative life-support candidates — validated on the hardest ground on Earth.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Longevity &amp; Healthspan Labs</div>
+                    <div class="interface-card-channel">Research Portal + API</div>
+                    <p class="interface-card-desc">Bioactive compound libraries, phytochemical profiles, and validated candidates with longevity mechanisms — sourced from one of the world's richest and least-studied biodiversities.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Farmers (indirect)</div>
+                    <div class="interface-card-channel">No direct interface</div>
+                    <p class="interface-card-desc">Benefits flow through Brain (better recommendations), Market (better pricing), Ecosystem (better insurance/credit). Every season, everything gets smarter — for them and for everyone downstream of the research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"For the first time, our research reaches farmers within the same season we publish findings. And for the first time, the field data we get back is rich enough to ask questions about closed-loop habitats, extremophile ecology, and longevity compounds — questions we could never have asked from a lab alone. This is not a research partnership. This is a new category of science."</blockquote>
+            <cite>— Dr. Joseph M., Plant scientist · University of Nairobi</cite>
+        </div>
+    </section>
+
+    <!-- Data Sources -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Data Sources</h2>
+            <h3 class="page-section-title">The <a href="archive.html">Watoko Archive</a>: the dataset that does not exist anywhere else</h3>
+            <p class="page-section-desc">No university, no pharma company, no government, no space agency has what Labs operates on — because the Archive is a byproduct of running 3 other engines at continental scale on the hardest ground on the planet. Every sensor reading, every trade, every payment, every genome, every microbiome sample, every soil reading compounds into the largest operational biological dataset of complex-environment biology on Earth. It reads the biology of a continent. It grows every season.</p>
+            <div class="datasource-grid">
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Operational Data</div>
+                    <p class="datasource-card-desc">Every sensor reading, satellite image, transaction, and payment from all engines.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Continuous</span>
+                        <span class="datasource-card-tag">Growing</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Longitudinal Records</div>
+                    <p class="datasource-card-desc">36+ months of farm-level data across thousands of plots, compounding with every season.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Historical</span>
+                        <span class="datasource-card-tag">Compounding</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Genomic &amp; Compound Libraries</div>
+                    <p class="datasource-card-desc">Whole-genome sequencing of indigenous crop varieties, phytochemical profiles, and bioactive compound libraries from field trials, lab analysis, and extremophile samples.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Seasonal</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Partner Data</div>
+                    <p class="datasource-card-desc">University research, seed company trials, pharma screening, longevity studies, space-agency analogue-site collaborations, government surveys.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Periodic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Cross-Product Connections -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Cross-Product Connections</h2>
+            <h3 class="page-section-title">The biological intelligence flywheel at the center of everything</h3>
+            <p class="page-section-desc">Labs is the reason every Watoko engine gets smarter every season. Brain, Market, and Ecosystem generate the operational data. That data feeds the <a href="archive.html">Watoko Archive</a>. Labs reads the Archive and turns it into biological intelligence — science, products, protocols. The intelligence flows back and makes the entire platform more valuable. Simultaneously, it feeds the medicine, longevity science, and habitat research that extends beyond agriculture into every domain biology touches.</p>
+            <div class="connections-grid">
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Labs</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Brain</span>
+                    </div>
+                    <p class="connection-card-desc">Optimized crop protocols improve field-level recommendations every season. Brain's sensor data feeds Labs' ML models continuously.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Labs</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Market</span>
+                    </div>
+                    <p class="connection-card-desc">Research-backed quality data and variety premiums increase commodity value. Market's transaction data reveals demand patterns for Labs.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Labs</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Ecosystem</span>
+                    </div>
+                    <p class="connection-card-desc">Granular climate, biological, and agroecological risk models enable cheaper insurance and sharper credit decisions for complex environments on Earth — and feed the same closed-loop models used to design life-support habitats beyond it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Getting Started -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Getting Started</h2>
+            <h3 class="page-section-title">First insights within 2 months</h3>
+            <p class="page-section-desc">We handle everything: data pipeline setup, research agent configuration, IP and compliance protocols, consent architecture, and ongoing support. Partners receive access to the biological intelligence produced from the <a href="archive.html">Watoko Archive</a> — the only operational biological dataset of complex-environment biology at this scale on Earth. Whether that research points at a breeding target, a longevity compound, a cosmetic feedstock, a novel biomaterial, or a closed-loop habitat protocol for the Moon.</p>
+            <div class="onboarding">
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">1</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Partnership Agreement</div>
+                        <div class="onboarding-step-desc">Define research scope, data access terms, and IP arrangements.</div>
+                        <div class="onboarding-step-time">Week 1-2</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">2</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Data Access</div>
+                        <div class="onboarding-step-desc">Connect to anonymized research datasets via secure API.</div>
+                        <div class="onboarding-step-time">Week 2-3</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">3</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">First Insights</div>
+                        <div class="onboarding-step-desc">Receive initial research outputs from your domain of interest.</div>
+                        <div class="onboarding-step-time">Month 1-2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="page-section security-section">
+        <div class="container">
+            <h2 class="page-section-label">Security & Trust</h2>
+            <h3 class="page-section-title">Your data, your rules</h3>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <div class="security-card-title">Data Encryption</div>
+                    <p class="security-card-desc">End-to-end encryption for all data. AES-256 at rest, TLS 1.3 in transit. Your farm data is never exposed.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg></div>
+                    <div class="security-card-title">Farmer Data Sovereignty</div>
+                    <p class="security-card-desc">Farmers own their data. Export or delete anytime. No lock-in, no hidden data monetization.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <div class="security-card-title">Privacy by Design</div>
+                    <p class="security-card-desc">Anonymization before any research use. GDPR-compliant processing. Consent-first approach to all data sharing.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <div class="security-card-title">SOC 2 Compliance</div>
+                    <p class="security-card-desc">Annual audits, strict access controls, documented incident response. Enterprise-grade security for every farmer.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="security-card-title">Local Data Residency</div>
+                    <p class="security-card-desc">Data stored in-region on AWS Africa (Cape Town) and Nairobi. Your data stays close to home.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="security-card-title">Open Audit Trail</div>
+                    <p class="security-card-desc">Every AI decision is logged, traceable, and explainable. Full transparency on what the agents do and why.</p>
+                </div>
+            </div>
+            <div class="security-badges">
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> SOC 2 Type II</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> GDPR</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> ISO 27001</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section integrations-section">
+        <div class="container">
+            <h2 class="page-section-label">Integrations</h2>
+            <h3 class="page-section-title">Connected to the tools you already use</h3>
+            <div class="integration-categories">
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                    </div>
+                    <h4>Payments</h4>
+                    <p class="integration-category-desc">Mobile money and banking rails across Africa.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">M-Pesa</span>
+                        <span class="integration-tag">MTN MoMo</span>
+                        <span class="integration-tag">Airtel Money</span>
+                        <span class="integration-tag">Orange Money</span>
+                        <span class="integration-tag">Bank APIs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4"/><path d="m16 8-4-4"/><path d="M9 21a9 9 0 0 0-9-9"/></svg>
+                    </div>
+                    <h4>Satellite</h4>
+                    <p class="integration-category-desc">Earth observation imagery providers.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Sentinel-2</span>
+                        <span class="integration-tag">SatLogic</span>
+                        <span class="integration-tag">Planet Labs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h4>Communication</h4>
+                    <p class="integration-category-desc">Reach farmers wherever they are.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">WhatsApp Business API</span>
+                        <span class="integration-tag">Twilio (SMS/Voice)</span>
+                        <span class="integration-tag">USSD</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <h4>IoT</h4>
+                    <p class="integration-category-desc">Long-range sensor connectivity.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">LoRaWAN</span>
+                        <span class="integration-tag">Sigfox</span>
+                        <span class="integration-tag">Cellular IoT</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                    </div>
+                    <h4>Government</h4>
+                    <p class="integration-category-desc">Authoritative data and compliance.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">National Ag Databases</span>
+                        <span class="integration-tag">Export Authorities</span>
+                        <span class="integration-tag">Tax Systems</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Partners</h4>
+                    <p class="integration-category-desc">Insurance, finance, and field operations.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Pula (Insurance)</span>
+                        <span class="integration-tag">OKO Finance</span>
+                        <span class="integration-tag">Local Agro-dealers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+    <section class="pricing-faqs pricing-faqs-compact">
+        <div class="container">
+            <div class="pricing-faqs-grid">
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Frequently asked questions about Labs</h2>
+                    <div class="pricing-faq-list">
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>How is farmer data anonymized?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>All farm-level data is stripped of personally identifiable information before entering the research pipeline. Location data is aggregated to regional clusters (never individual farms). Soil and yield data is used in aggregate statistical models. Individual farmers cannot be identified from any published research.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>Who owns the intellectual property from research findings?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Research findings that benefit farmers (crop protocols, variety recommendations, climate adaptation strategies) are shared openly with the farming community. Patentable discoveries from bioactive screening or genomic research follow a revenue-sharing model where participating farmers and cooperatives receive royalties.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>Can universities access raw data?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Universities and research institutions can access anonymized, aggregated datasets through our Research Partnership program. Raw individual farm data is never shared. Research partners sign data use agreements and all findings must benefit the farming community.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>How do research improvements reach farmers?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Labs feeds optimized protocols directly back into Brain's recommendation engine. When research identifies a better variety or practice for a specific microclimate, it automatically updates the recommendations that farmers receive via WhatsApp. The loop from research to field action happens within the same platform.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>What is the minimum partnership commitment?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Research partnerships start at 12 months to ensure meaningful data collection across at least one growing season. We offer tiered access levels from basic data subscriptions to full collaborative research programs. Contact our partnerships team for details.</p></div>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing-faqs-view-link">View all FAQs &rarr;</a>
+                </div>
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Latest from the blog</h2>
+                    <div class="pricing-blog-list">
+                        <a href="blog/founder-letter.html" class="pricing-blog-item">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Founder's Letter</span>
+                                <span class="pricing-blog-item-title">For All of Humanity</span>
+                            </div>
+                            <span class="pricing-blog-item-arrow">&#8599;</span>
+                        </a>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Case Study</span>
+                                <span class="pricing-blog-item-title">From Soil to Supplement: The Ngoma Story</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Genomics</span>
+                                <span class="pricing-blog-item-title">Genomics in the Field: Sequencing Africa's Agricultural Future</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Discovery</span>
+                                <span class="pricing-blog-item-title">Bioactive Discovery: Turning Crop Data Into New Product Lines</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <a href="blog/" class="pricing-faqs-view-link">View blog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start in days, not months -->
+    <section class="pricing-start">
+        <div class="container">
+            <div class="pricing-start-header">
+                <div class="pricing-start-header-content">
+                    <h2 class="pricing-start-title">Start in days, not months.</h2>
+                    <p class="pricing-start-desc">Get started with minimal setup and hands-on support. See what Watoko Labs can do for processors, exporters, and brands building new product lines.</p>
+                </div>
+            </div>
+            <div class="pricing-start-grid">
+                <!-- Left: Labs pricing card -->
+                <div class="pricing-start-card">
+                    <h3 class="pricing-start-card-label">Research partnerships &amp; licensing</h3>
+                    <div class="pricing-start-card-stat">
+                        <span class="pricing-start-card-stat-value">From $25K</span>
+                        <span class="pricing-start-card-stat-unit">/year</span>
+                    </div>
+                    <p class="pricing-start-card-desc">Enterprise and institutional engagements only. Compound intelligence licenses from $25K/year. Research partnerships $50K&ndash;500K/year. Advisory engagements from $10K/project. IP co-development on revenue share.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Discuss a partnership <span class="btn-arrow">&rarr;</span></a>
+                        <a href="pricing.html#labs-detail" class="pricing-start-text-link">See Labs pricing &rarr;</a>
+                    </div>
+                </div>
+                <!-- Right: Grant program card -->
+                <div class="pricing-start-card pricing-start-card-grant">
+                    <h3 class="pricing-start-card-label">Watoko Grant Program for cooperatives & smallholders</h3>
+                    <div class="pricing-start-card-stats">
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">2,400+</span>
+                            <span class="pricing-start-card-stat-unit">Farmers funded</span>
+                        </div>
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">12 Months</span>
+                            <span class="pricing-start-card-stat-unit">Free access</span>
+                        </div>
+                    </div>
+                    <p class="pricing-start-card-desc">Hardware, onboarding, and your first season &mdash; covered. Because access to intelligence shouldn't depend on what you can afford today.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Apply for a grant <span class="btn-arrow">&rarr;</span></a>
+                        <a href="grants.html" class="pricing-start-text-link">Learn more about grants &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">This is the science. Now what do you want to build with it?</h2>
+            <p class="page-cta-desc">Whether you're a seed company, insurer, pharmaceutical partner, longevity lab, government, university, or space agency — Labs has the science, the dataset, and the pipeline. From a compound discovered in the field to a product in the world. From a crop protocol tested on a salt flat to a food system running in orbit. And it compounds every season.</p>
+            <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

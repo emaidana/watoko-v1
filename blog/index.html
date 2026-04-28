@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Watoko | Stories, ideas, dispatches</title>
+    <meta name="description" content="Insights, letters, and updates from the team turning Earth's deepest biology into the food, the science, and the intelligence for better human life.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watoko.ai/blog/">
+    <meta property="og:title" content="Blog — Watoko | Stories, ideas, dispatches">
+    <meta property="og:description" content="Insights, letters, and updates from the team turning Earth's deepest biology into the food, the science, and the intelligence for better human life.">
+    <meta property="og:image" content="https://watoko.ai/favicon.svg">
+    <meta property="og:site_name" content="Watoko">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog — Watoko | Stories, ideas, dispatches">
+    <meta name="twitter:description" content="Insights, letters, and updates from the team turning Earth's deepest biology into the food, the science, and the intelligence for better human life.">
+    <meta name="twitter:image" content="https://watoko.ai/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="blog">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="../blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="../brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="../market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="../ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="../labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="../archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="../solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="../solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="../solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="../solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="../company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="../careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="../customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="../partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="../pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="../blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero blog-index-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-tag">Journal</span>
+            </div>
+            <h1 class="page-hero-title">Dispatches from the frontier.</h1>
+            <p class="page-hero-desc">Letters, field notes, research updates, and announcements from the team turning Earth's deepest biology into the food, the science, and the intelligence for better human life.</p>
+        </div>
+    </section>
+
+    <!-- Featured post -->
+    <section class="blog-featured">
+        <div class="container">
+            <a href="founder-letter.html" class="blog-featured-card">
+                <div class="blog-featured-card-body">
+                    <div class="blog-featured-card-meta">
+                        <span class="blog-featured-card-tag">Open Letter</span>
+                        <time class="blog-featured-card-date" datetime="2026-04-04">April 4, 2026</time>
+                    </div>
+                    <h2 class="blog-featured-card-title">For All of Humanity</h2>
+                    <p class="blog-featured-card-excerpt">An open letter from the founder on the mission to turn Earth's deepest biology into the food, the science, and the intelligence for better human life &mdash; and why the hardest ground on Earth is the fastest path to everywhere else.</p>
+                    <div class="blog-featured-card-author">
+                        <div>
+                            <div class="blog-featured-card-author-name">Esteban David Maidana</div>
+                            <div class="blog-featured-card-author-role">Founder &amp; CEO, Watoko</div>
+                        </div>
+                    </div>
+                    <span class="blog-featured-card-read">Read letter <span>&rarr;</span></span>
+                </div>
+                <div class="blog-featured-card-visual">
+                    <blockquote class="blog-featured-card-visual-quote">
+                        "We are living inside one of the rarest moments in human history &mdash; a moment when the laws of what is possible are being rewritten."
+                        <cite>— from the letter</cite>
+                    </blockquote>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Topic tiles — what's coming -->
+    <section class="blog-topics">
+        <div class="container">
+            <span class="page-section-label">What's Coming</span>
+            <h3 class="page-section-title">The topics we'll write about</h3>
+            <p class="page-section-desc">The journal is just starting. Over the coming months, expect dispatches across these threads &mdash; from the soil, from the satellites, from the lab, from the field.</p>
+            <div class="blog-topics-grid">
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Field Reports</h4>
+                    <p class="blog-topic-card-desc">Dispatches from cooperatives, research stations, and trial sites across the continent &mdash; what the data says and what the ground tells us.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Research Notes</h4>
+                    <p class="blog-topic-card-desc">Updates from Watoko Labs &mdash; plant genomics, soil microbiome, biomolecular discovery, and the science of complex-environment biology.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Product Updates</h4>
+                    <p class="blog-topic-card-desc">New agents, new capabilities, new integrations across Brain, Market, Ecosystem, and Labs. What shipped, what's next, and why it matters.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Partnership Announcements</h4>
+                    <p class="blog-topic-card-desc">New research partners, sovereign programs, pharma and biotech collaborations, and the institutions joining the mission.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Customer Stories</h4>
+                    <p class="blog-topic-card-desc">Longer-form profiles of cooperatives, agribusinesses, buyers, and institutions building with Watoko. What they're solving, and how.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+                <div class="blog-topic-card">
+                    <div class="blog-topic-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h4 class="blog-topic-card-title">Engineering &amp; Design</h4>
+                    <p class="blog-topic-card-desc">How we build an agent mesh that runs offline, across 63+ products, for millions of farmers &mdash; and the design principles behind it.</p>
+                    <span class="blog-topic-card-status">Coming soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Newsletter -->
+    <section class="blog-newsletter">
+        <div class="container">
+            <div class="blog-newsletter-card">
+                <span class="blog-newsletter-label">Stay in the loop</span>
+                <h3 class="blog-newsletter-title">Get the letters, the field reports, and the research as they're published.</h3>
+                <p class="blog-newsletter-desc">A dispatch when something new arrives. No noise, no marketing, no tracking pixels. Just the work.</p>
+                <form class="blog-newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe <span>&rarr;</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="../brain.html">Brain</a>
+                        <a href="../market.html">Market</a>
+                        <a href="../ecosystem.html">Ecosystem</a>
+                        <a href="../labs.html">Labs</a>
+                        <a href="../archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="../solutions.html#cooperatives">Cooperatives</a>
+                        <a href="../solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="../solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="../solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="../company.html">About</a>
+                        <a href="../careers.html">Careers</a>
+                        <a href="../customers.html">Customers</a>
+                        <a href="../partnerships.html">Partnerships</a>
+                        <a href="../pricing.html">Pricing</a>
+                        <a href="../blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="../pioneers.html">Fellowship</a>
+                        <a href="../grants.html">Grants</a>
+                        <a href="../developers.html">Developers</a>
+                        <a href="../security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Operations Lead, East Africa Cooperative</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security — Watoko | Trust the Intelligence Infrastructure for Life</title>
+    <meta name="description" content="How Watoko protects the data of farmers, cooperatives, research universities, biotech partners, and sovereign programs. Encryption, sovereignty, biological sample chain-of-custody, and the discipline of operating in complexity where others cannot.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watoko.ai/security.html">
+    <meta property="og:title" content="Security — Watoko | Trust the Intelligence Infrastructure for Life">
+    <meta property="og:description" content="How Watoko protects the data of farmers, cooperatives, research universities, biotech partners, and sovereign programs. Encryption, sovereignty, biological sample chain-of-custody, and the discipline of operating in complexity where others cannot.">
+    <meta property="og:image" content="https://watoko.ai/favicon.svg">
+    <meta property="og:site_name" content="Watoko">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Security — Watoko | Trust the Intelligence Infrastructure for Life">
+    <meta name="twitter:description" content="How Watoko protects the data of farmers, cooperatives, research universities, biotech partners, and sovereign programs. Encryption, sovereignty, biological sample chain-of-custody, and the discipline of operating in complexity where others cannot.">
+    <meta name="twitter:image" content="https://watoko.ai/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-tag">Security &amp; Trust</span>
+            </div>
+            <h1 class="page-hero-title">Trust is the architecture.</h1>
+            <p class="page-hero-desc">Watoko protects the data of farmers in remote highlands, cooperatives across the African continent, research universities, biotech partners, and sovereign programs. Encryption, jurisdictional sovereignty, biological sample chain-of-custody, and the discipline of operating in complexity where others cannot &mdash; on Earth and beyond.</p>
+        </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Foundational Principles</span>
+            <h3 class="page-section-title">Five commitments we will not break</h3>
+            <p class="page-section-desc">Security at Watoko is not a checklist. It is a posture &mdash; the same posture that allows us to operate in environments that break everything else.</p>
+            <div class="api-grid">
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+                    <div class="api-card-title">Farmer data belongs to the farmer</div>
+                    <p class="api-card-desc">Every farmer who joins the network owns the data their land produces. We hold it in trust. They can withdraw it. We never sell individual-level data.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="api-card-title">Sovereign data, sovereign rules</div>
+                    <p class="api-card-desc">Sovereign customers &mdash; ministries of agriculture, space agencies, central banks &mdash; can require in-country residency, dedicated tenancy, and audit rights. We meet them where they are.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+                    <div class="api-card-title">Biology before convenience</div>
+                    <p class="api-card-desc">Biological samples and biomolecular data move under chain-of-custody discipline derived from clinical trials and aerospace material handling. We do not cut corners on the science of life.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                    <div class="api-card-title">Audit by default</div>
+                    <p class="api-card-desc">Every agent decision &mdash; from a satellite alert to a payment instruction &mdash; is logged, signed, and replayable. Customers can inspect the chain at any moment.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <div class="api-card-title">Resilience over performance theater</div>
+                    <p class="api-card-desc">We design for the worst environment, not the best demo. Offline operation, degraded network conditions, mesh resilience, encryption at rest and in transit &mdash; in the field, on satellites, in sealed habitats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Controls -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Technical Controls</span>
+            <h3 class="page-section-title">The infrastructure beneath the trust</h3>
+            <p class="page-section-desc">A production-grade security architecture across data, identity, infrastructure, and application layers.</p>
+            <div class="page-section-grid">
+                <div>
+                    <ul class="page-capabilities-list">
+                        <li>AES-256 encryption at rest, TLS 1.3 in transit, hardware-backed key management</li>
+                        <li>Zero-trust network architecture with mTLS between every internal service</li>
+                        <li>OAuth 2.0 and OIDC with hardware security key (WebAuthn) support for staff and partner administrators</li>
+                        <li>Role-based access control with least-privilege defaults and quarterly entitlement reviews</li>
+                        <li>Immutable, tamper-evident audit logs of every agent action, exported on demand to customers</li>
+                        <li>Secrets managed in dedicated vaults &mdash; never in code, configuration, or chat</li>
+                        <li>Continuous vulnerability scanning, dependency monitoring, and automated patching</li>
+                        <li>Penetration testing by independent third parties on every major release</li>
+                    </ul>
+                </div>
+                <div class="page-highlight-box">
+                    <h3>Built for environments that break everything else</h3>
+                    <p>Most security architectures assume the cloud, the office, and a stable network. Watoko assumes none of them. The platform was designed from day one for the highlands, the harbor, the research lab, and the closed-loop habitat &mdash; environments where the cost of failure is measured in harvests, in samples, and in human lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance & Certifications -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Compliance &amp; Certifications</span>
+            <h3 class="page-section-title">Standards we are aligned to</h3>
+            <p class="page-section-desc">Watoko's security and privacy program is built to meet the obligations of every counterpart we serve &mdash; from a smallholder cooperative to a research university to a sovereign program.</p>
+            <div class="api-grid">
+                <div class="api-card">
+                    <div class="api-card-title">SOC 2 Type II</div>
+                    <p class="api-card-desc">Continuous audit of security, availability, and confidentiality controls. Report available under NDA to enterprise and institutional customers.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-title">ISO 27001</div>
+                    <p class="api-card-desc">Information security management system aligned to ISO 27001 controls, with formal certification on the 2026 roadmap.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-title">GDPR &amp; African data laws</div>
+                    <p class="api-card-desc">Full compliance with GDPR, the African Union Convention on Cyber Security and Personal Data Protection, and country-level data protection acts across our operating jurisdictions.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-title">EUDR &amp; supply chain regulation</div>
+                    <p class="api-card-desc">Cryptographically verifiable lot passports, satellite-grounded deforestation evidence, and audit-ready due diligence statements for the EU Deforestation Regulation.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-title">Research &amp; biosample standards</div>
+                    <p class="api-card-desc">Chain-of-custody, consent, and biomolecular data handling aligned to GCP, the Nagoya Protocol, and institutional review board requirements of partner universities.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-title">Aerospace-grade discipline</div>
+                    <p class="api-card-desc">For closed-loop life-support and astrobiology partnerships, Watoko applies the documentation, traceability, and configuration management practices required of payload-class systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reporting -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Responsible Disclosure</span>
+            <h3 class="page-section-title">If you find something, tell us</h3>
+            <p class="page-section-desc">Watoko welcomes responsible disclosure from security researchers. We commit to a 24-hour acknowledgment, a clear remediation timeline, and public credit when requested.</p>
+            <div class="page-section-grid">
+                <div>
+                    <ul class="page-capabilities-list">
+                        <li>Email <strong>security@watoko.ai</strong> with technical detail and reproduction steps</li>
+                        <li>Use our PGP key for sensitive reports (published at /.well-known/security.txt)</li>
+                        <li>Do not access data beyond what is necessary to demonstrate the issue</li>
+                        <li>Allow us reasonable time to remediate before public disclosure</li>
+                    </ul>
+                </div>
+                <div class="page-highlight-box">
+                    <h3>Recognition over bounty</h3>
+                    <p>Watoko maintains a researcher hall of fame and provides public recognition for valid findings. Cash bounties are offered case-by-case for high-severity issues affecting production systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">Need a deeper conversation?</h2>
+            <p class="page-cta-desc">Enterprise customers, sovereign programs, and research partners can request a security review, our SOC 2 report, or a custom data residency arrangement. Write to <strong>security@watoko.ai</strong> or talk to us directly.</p>
+            <a href="#" class="btn btn-primary demo-trigger">Talk to security <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">Talk to security.</h2>
+                    <p class="demo-modal-subtitle">Tell us what you need. We respond within 24 hours.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko's security posture is the reason we trusted them with sovereign agricultural data from day one."</blockquote>
+                        <cite>&mdash; Government Partner</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Inquiry type</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="soc2">SOC 2 report request</option>
+                                <option value="residency">Data residency / sovereign deployment</option>
+                                <option value="dpa">Data processing agreement</option>
+                                <option value="vulnerability">Vulnerability disclosure</option>
+                                <option value="research">Research / biosample handling</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Details <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us what you need"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Send to security <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>Our security team will respond within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

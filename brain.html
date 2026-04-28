@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain — The Field Intelligence Engine | Watoko</title>
+    <meta name="description" content="Autonomous agronomic intelligence at the edge. 16+ agents running the full field-intelligence stack — soil, irrigation, pests, disease, canopy, harvest, inputs, labor, weather, planning, simulation, space. Every decision made with intact soil biology in mind. Starting where Earth's biology is deepest. Built for Earth and space.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-product="brain">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-index">01</span>
+                <span class="page-hero-tag"><span class="page-hero-dot dot-brain"></span>Brain</span>
+            </div>
+            <h1 class="page-hero-title">The Field<br>Intelligence Engine</h1>
+            <p class="page-hero-desc">Soil, irrigation, pests, disease, canopy, harvest, inputs, labor, weather, planning, simulation, space — every agronomic decision a farm makes, with intact soil biology in mind. 16+ autonomous agents running the full field-intelligence stack, ingesting field data from IoT sensors, cameras, drones, and satellites, then optimizing for the lowest-input path that preserves the biological systems sustaining the field — producing healthier food, not just more food. Not dashboards. Not alerts. Decisions. Delivered via WhatsApp in the language your farmers already speak — even where the network doesn't reach. The same engine that runs a smallholder cooperative will run a vertical farm and, eventually, a closed-loop habitat off Earth.</p>
+            <div class="system-stats">
+                <div class="system-stats-pill"><span class="count-up">16+</span> <span>Agents</span></div>
+                <div class="system-stats-pill"><span class="count-up">2,000+</span> <span>Languages</span></div>
+                <div class="system-stats-pill"><span class="count-up">Offline-first</span></div>
+            </div>
+            <div class="page-hero-users">
+                <span class="page-hero-user">For Farmers</span>
+                <span class="page-hero-user">For Cooperative Managers</span>
+                <span class="page-hero-user">For Agronomists</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Agents -->
+    <section class="page-section section-accent-dots">
+        <div class="container">
+            <h2 class="page-section-label">The Agents</h2>
+            <h3 class="page-section-title">Agents working your farm 24/7</h3>
+            <p class="page-section-desc">Each agent specializes in a different aspect of field management — and every one accounts for the living biology beneath the surface. Some act autonomously. Others recommend actions and wait for your confirmation via WhatsApp. New agents are added every quarter as the fleet learns more about the land it works. Click any card to learn more.</p>
+            <div class="agent-grid">
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Soil Health Agent</span>
+                            <p class="agent-card-oneliner">Continuous soil monitoring, microbiome health, and fertilizer optimization</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Monitors soil moisture, pH, NPK, and temperature continuously. Produces fertilizer recommendations per plot — calibrated to protect microbial activity and reduce synthetic input load.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">IoT sensors</span>
+                                    <span class="agent-tag">Lab results</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Fertilizer recommendations per plot</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">30% less fertilizer waste</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Irrigation Agent</span>
+                            <p class="agent-card-oneliner">Automated irrigation from soil and weather data</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Combines soil moisture, weather forecasts, and crop water needs to trigger irrigation automatically.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil sensors</span>
+                                    <span class="agent-tag">Weather API</span>
+                                    <span class="agent-tag">Crop calendar</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Automated irrigation schedules</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">40% water savings</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Pest & Disease Agent</span>
+                            <p class="agent-card-oneliner">Computer vision for early threat detection</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Computer vision analyzes camera and drone imagery for threats. Delivers early warnings and treatment protocols via WhatsApp — prioritizing biological controls before chemical intervention.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Cameras</span>
+                                    <span class="agent-tag">Drone footage</span>
+                                    <span class="agent-tag">Satellite imagery</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Early warnings + treatment protocols</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Detect threats 14 days before visible symptoms</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Harvest Timing Agent</span>
+                            <p class="agent-card-oneliner">Optimal harvest date from maturity and market data</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Cross-references maturity indicators, weather forecasts, and market prices to determine optimal harvest date per plot.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Satellite NDVI</span>
+                                    <span class="agent-tag">Weather forecast</span>
+                                    <span class="agent-tag">Market prices</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Optimal harvest date per plot</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">15-25% quality premium from timing</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Crop Planning Agent</span>
+                            <p class="agent-card-oneliner">Next-season crop and variety recommendations</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Recommends what to plant next season based on soil history, climate projections, and market demand data. Rotation plans account for soil biology recovery between seasons.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Soil history</span>
+                                    <span class="agent-tag">Climate projections</span>
+                                    <span class="agent-tag">Market demand</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Crop rotation plan + variety recommendations</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Optimized income per hectare</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Canopy Analysis Agent</span>
+                            <p class="agent-card-oneliner">Satellite crop health scoring and shade management</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Satellite and drone data for continuous crop health scoring, shade management, and intervention zone mapping.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Sentinel-2</span>
+                                    <span class="agent-tag">SatLogic imagery</span>
+                                    <span class="agent-tag">Drone scans</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Health maps + intervention zones + pruning recommendations</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Sub-meter precision across entire farm</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Weather Intelligence Agent</span>
+                            <p class="agent-card-oneliner">Hyperlocal 72-hour forecasts and extreme alerts</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Hyperlocal forecasting fused with on-farm sensor data. 72-hour field-level forecasts and extreme weather alerts sent automatically.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Weather APIs</span>
+                                    <span class="agent-tag">On-farm sensors</span>
+                                    <span class="agent-tag">Historical patterns</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">72-hour field-level forecasts + extreme weather alerts</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Frost/heat alerts prevent crop loss</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Input Procurement Agent</span>
+                            <p class="agent-card-oneliner">Auto-order seeds and fertilizer at best prices</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Auto-calculates input needs from the crop plan, finds best prices at nearest agro-dealers, and places orders via M-Pesa.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Crop plan</span>
+                                    <span class="agent-tag">Soil recommendations</span>
+                                    <span class="agent-tag">Dealer inventory</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Purchase orders for seeds, fertilizer, pesticides via M-Pesa</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">No middleman markup on inputs</div>
+                    </div>
+                </div>
+                <!-- NEW: Voice Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Voice Agent</span>
+                            <p class="agent-card-oneliner">Speak in your language, get AI responses by voice</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Farmers speak in their language via WhatsApp voice notes or phone call. AI responds with spoken recommendations, alerts, and confirmations in 2,000+ languages. No typing, no reading required.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">WhatsApp voice notes</span>
+                                    <span class="agent-tag">Phone calls</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Spoken recommendations, alerts, confirmations in local language</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Reaches 60%+ low-literacy farmers in their own language</div>
+                    </div>
+                </div>
+                <!-- NEW: Labor Coordination Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Labor Coordination Agent</span>
+                            <p class="agent-card-oneliner">Match seasonal workers to harvest demand</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Matches seasonal labor demand with available workers based on crop calendar, harvest timing, and local labor registry. Handles worker scheduling, task assignments, and mobile money payments.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Crop calendar</span>
+                                    <span class="agent-tag">Harvest timing</span>
+                                    <span class="agent-tag">Local labor registry</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Worker scheduling, task assignments, mobile money payments</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Solves the #1 operational bottleneck at harvest</div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Space Agriculture Agent</span>
+                            <p class="agent-card-oneliner">Adapt crop optimization for controlled environments</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Labs cross-pollination agent that adapts field-tested crop optimization protocols for controlled environment agriculture. From ground to orbit — what works on African farms can feed Mars.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <span class="agent-card-row-value">Satellite imagery, Climate models, CEA parameters</span>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Controlled environment protocols</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">From ground to orbit</div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Water Management Agent</span>
+                            <p class="agent-card-oneliner">Aquifer mapping, irrigation scheduling, rainwater harvesting</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Maps aquifer levels, optimizes irrigation scheduling, and designs rainwater harvesting systems based on terrain and seasonal patterns. Maintains the moisture levels that keep soil microbiomes intact. End-to-end water resource management across the farm.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <span class="agent-card-row-value">IoT sensors, Weather data, Satellite imagery</span>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Water management plans per plot</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">40% less water waste</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Simulation Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Simulation Agent</span>
+                            <p class="agent-card-oneliner">Digital-twin simulations of your farm before you act</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Runs thousands of simulated seasons against your specific soil, climate, and crop mix. Stress-tests every recommendation before it leaves the system — drought scenarios, pest outbreaks, price shocks, input shortages, microbiome degradation. The farmer never sees a decision that hasn't already survived 10,000 bad seasons.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Historical field data</span>
+                                    <span class="agent-tag">Climate models</span>
+                                    <span class="agent-tag">Crop genetics</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Stress-tested recommendations with confidence intervals</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Every decision pre-tested against 10,000 seasons</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Agronomist Expert Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0110 10c0 5-4 9-10 9S2 17 2 12A10 10 0 0112 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Agronomist Expert Agent</span>
+                            <p class="agent-card-oneliner">Deep crop-specific expertise, on-demand, in any language</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">A specialist for every crop. Trained on decades of peer-reviewed agronomy research, Watoko field data, and the accumulated know-how of the best agronomists on the continent. Farmers ask it questions in their own language; it answers with the depth of a PhD and the plainness of a village elder. Routes the hardest cases to a human specialist on our team.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Farmer question</span>
+                                    <span class="agent-tag">Field state</span>
+                                    <span class="agent-tag">Research corpus</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Crop-specific guidance, escalated to human experts when needed</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">PhD-level agronomy for every farmer, on demand</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Customer Success Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Customer Success Agent</span>
+                            <p class="agent-card-oneliner">Onboarding, training, and continuous support for every user</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Walks every new farmer, manager, and agronomist through setup, training, and first-season operations. Detects when a user is struggling — unanswered prompts, missed irrigation windows, declining engagement — and intervenes with targeted help. The reason Watoko can onboard a rural cooperative in an afternoon instead of a quarter.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Usage patterns</span>
+                                    <span class="agent-tag">Engagement signals</span>
+                                    <span class="agent-tag">Support history</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Personalized onboarding, proactive interventions, training in local language</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Onboard a cooperative in an afternoon, not a quarter</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Legal Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Legal Agent</span>
+                            <p class="agent-card-oneliner">Contracts, compliance, and land-tenure documentation</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Drafts cooperative bylaws, buyer contracts, input-supply agreements, and land-tenure documentation. Tracks regulatory changes across every jurisdiction Watoko operates in. Flags compliance risks before they become problems. For the smallholder farmer, it replaces the lawyer she could never afford. For the cooperative manager, it replaces the quarterly stack of unread filings.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Regulatory databases</span>
+                                    <span class="agent-tag">Contract templates</span>
+                                    <span class="agent-tag">Land registry data</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Contracts, compliance filings, risk alerts</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Legal protection for the farmers who've never had any</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote I -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"Before Watoko, I was guessing. Now my phone tells me exactly what my soil needs — even on days the network is gone."</blockquote>
+            <cite>— James K., Smallholder coffee farmer · Nyeri County, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How It Works</h2>
+            <h3 class="page-section-title">From sensor to decision in minutes</h3>
+            <p class="page-section-desc">Brain operates in a continuous loop — sensing, observing, analyzing, deciding, and delivering. Every cycle makes the next one smarter. Every decision weights the biological health of the soil alongside yield and economics.</p>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="workflow-step-number">1</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Sense</div>
+                        <div class="workflow-step-desc">IoT sensors collect soil data every 15 minutes — moisture, pH, NPK, temperature</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">2</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Observe</div>
+                        <div class="workflow-step-desc">Satellites capture daily imagery; drones provide on-demand high-res scans; cameras monitor pests</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">3</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Analyze</div>
+                        <div class="workflow-step-desc">AI agents fuse multi-source data, run micro-simulations for each plot</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">4</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Decide</div>
+                        <div class="workflow-step-desc">Agents determine the lowest-input path and classify by autonomy level — act or recommend</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">5</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Deliver</div>
+                        <div class="workflow-step-desc">Autonomous actions execute immediately; recommendations sent via WhatsApp with one-tap confirm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- How You Interact -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How You Interact</h2>
+            <h3 class="page-section-title">Different interfaces for different users</h3>
+            <p class="page-section-desc">Every user gets the right tool for their role. Farmers get WhatsApp. Managers get dashboards. Agronomists get deep field-level data.</p>
+            <div class="interface-grid">
+                <div class="interface-card">
+                    <div class="interface-card-user">Farmer</div>
+                    <div class="interface-card-channel">WhatsApp / SMS</div>
+                    <p class="interface-card-desc">Daily recommendations, one-tap approvals, weather alerts, pest warnings. Voice messages for low-literacy users. Eventually: lightweight mobile app.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Cooperative Manager</div>
+                    <div class="interface-card-channel">Web Dashboard</div>
+                    <p class="interface-card-desc">Multi-farm overview, aggregate health maps, input ordering for all members, season performance reports.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Agronomist</div>
+                    <div class="interface-card-channel">Mobile App + Dashboard</div>
+                    <p class="interface-card-desc">Field-level detail, historical data, intervention tracking, side-by-side plot comparisons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote II -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"The voice agent changed everything. My mother can now get farming advice without reading a single word."</blockquote>
+            <cite>— David O., Cooperative manager · Kisii, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- Data Sources -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Data Sources</h2>
+            <h3 class="page-section-title">Where the intelligence comes from</h3>
+            <p class="page-section-desc">Brain fuses 5 distinct data streams into a single, coherent picture of every plot on your farm — above and below the surface.</p>
+            <div class="datasource-grid">
+                <div class="datasource-card">
+                    <div class="datasource-card-name">IoT Sensors</div>
+                    <p class="datasource-card-desc">Soil moisture, pH, NPK, temperature, humidity, and microbial activity proxies. LoRaWAN connectivity across all plots.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Every 15 min</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Satellite Imagery</div>
+                    <p class="datasource-card-desc">NDVI, canopy cover, field boundaries, forest monitoring. Sentinel-2 + SatLogic.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Daily</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Cameras</div>
+                    <p class="datasource-card-desc">Pest/disease detection, fruit maturity, weed identification. Edge AI processing.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Real-time</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Drones</div>
+                    <p class="datasource-card-desc">Topography, crop counting, damage assessment, shade canopy analysis.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">On-demand</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Weather APIs</div>
+                    <p class="datasource-card-desc">Forecasts, historical patterns, microclimate models from multiple providers.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Hourly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Works Everywhere — Offline-First -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Works Everywhere</h2>
+            <h3 class="page-section-title">Offline-first by design</h3>
+            <p class="page-section-desc">We built for complex environments — places where networks fail, infrastructure is thin, and the signal drops. Rural Africa was the training ground. The same architecture runs in sealed greenhouses, remote research stations, and closed-loop habitats. Intelligence does not stop when the signal does.</p>
+            <div class="offline-grid">
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+                    <div class="offline-card-title">Edge AI on LoRaWAN</div>
+                    <p class="offline-card-desc">Sensors transmit over LoRaWAN with 15km range — no cellular network required. On-device models process data at the edge.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                    <div class="offline-card-title">SMS & USSD Fallback</div>
+                    <p class="offline-card-desc">Every recommendation can be delivered via SMS or USSD on basic phones. Voice Agent works over standard phone calls — no data needed.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div>
+                    <div class="offline-card-title">Store-and-Forward</div>
+                    <p class="offline-card-desc">Actions queue locally and sync when connectivity returns. No data loss, no missed decisions, no gaps in the timeline.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="offline-card-title">Offline Maps & Models</div>
+                    <p class="offline-card-desc">Satellite imagery and crop models cached locally. Field teams access full farm intelligence without a connection.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+                    <div class="offline-card-title">Mesh Networking</div>
+                    <p class="offline-card-desc">Nearby devices relay data through mesh networks, extending coverage across valleys, hills, and areas without towers.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                    <div class="offline-card-title">Solar-Powered Hardware</div>
+                    <p class="offline-card-desc">All field sensors run on solar. No grid power, no batteries to replace. Deploy and forget — they just work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Cross-Product Connections -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Cross-Product Connections</h2>
+            <h3 class="page-section-title">Brain feeds the entire platform</h3>
+            <p class="page-section-desc">Every observation Brain makes flows into Market, Ecosystem, and Labs — and their data flows back to make Brain smarter.</p>
+            <div class="connections-grid">
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Brain</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Market</span>
+                    </div>
+                    <p class="connection-card-desc">Yield predictions power forward contracts. Harvest quality data sets fair pricing. Market price signals optimize harvest timing and next-season crop selection.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Brain</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Ecosystem</span>
+                    </div>
+                    <p class="connection-card-desc">Farm performance data enables credit scoring. Satellite data triggers insurance payouts. Credit enables farmers to invest in better inputs.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Brain</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Labs</span>
+                    </div>
+                    <p class="connection-card-desc">Every sensor reading, soil microbiome sample, and satellite image feeds research models — from smallholder farms on Earth to closed-loop life-support trials in orbit. Labs returns optimized protocols for plant genomics, climate-resilient breeding, and biomolecular discovery that improve Brain's recommendations every season.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Getting Started -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Getting Started</h2>
+            <h3 class="page-section-title">From zero to full autonomy in 4 weeks</h3>
+            <p class="page-section-desc">We handle everything: site assessment, soil biology baseline, sensor installation, satellite activation, agent configuration, training, and support. You just farm.</p>
+            <div class="onboarding">
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">1</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Site Assessment</div>
+                        <div class="onboarding-step-desc">Our team maps your farm, soil types, biological baseline, and crop plan.</div>
+                        <div class="onboarding-step-time">Week 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">2</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Sensor Deployment</div>
+                        <div class="onboarding-step-desc">IoT sensors installed at optimal points across plots.</div>
+                        <div class="onboarding-step-time">Week 2</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">3</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Satellite Activation</div>
+                        <div class="onboarding-step-desc">Farm boundaries registered with GPS, daily imagery begins.</div>
+                        <div class="onboarding-step-time">Week 2</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">4</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Agent Configuration</div>
+                        <div class="onboarding-step-desc">AI agents calibrated to your crops, soil type, soil biology, and climate zone.</div>
+                        <div class="onboarding-step-time">Week 3</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">5</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">First Recommendations</div>
+                        <div class="onboarding-step-desc">Initial soil and weather-based guidance delivered via WhatsApp.</div>
+                        <div class="onboarding-step-time">Week 3-4</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">6</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Full Autonomy</div>
+                        <div class="onboarding-step-desc">Agents running 24/7, learning from your farm every season.</div>
+                        <div class="onboarding-step-time">Week 4+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Security & Trust -->
+    <section class="page-section security-section">
+        <div class="container">
+            <h2 class="page-section-label">Security & Trust</h2>
+            <h3 class="page-section-title">Your data, your rules</h3>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <div class="security-card-title">Data Encryption</div>
+                    <p class="security-card-desc">End-to-end encryption for all data. AES-256 at rest, TLS 1.3 in transit. Your farm data is never exposed.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg></div>
+                    <div class="security-card-title">Farmer Data Sovereignty</div>
+                    <p class="security-card-desc">Farmers own their data. Export or delete anytime. No lock-in, no hidden data monetization.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <div class="security-card-title">Privacy by Design</div>
+                    <p class="security-card-desc">Anonymization before any research use. GDPR-compliant processing. Consent-first approach to all data sharing.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <div class="security-card-title">SOC 2 Compliance</div>
+                    <p class="security-card-desc">Annual audits, strict access controls, documented incident response. Enterprise-grade security for every farmer.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="security-card-title">Local Data Residency</div>
+                    <p class="security-card-desc">Data stored in-region on AWS Africa (Cape Town) and Nairobi. Your data stays close to home.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="security-card-title">Open Audit Trail</div>
+                    <p class="security-card-desc">Every AI decision is logged, traceable, and explainable. Full transparency on what the agents do and why.</p>
+                </div>
+            </div>
+            <div class="security-badges">
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> SOC 2 Type II</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> GDPR</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> ISO 27001</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="page-section integrations-section">
+        <div class="container">
+            <h2 class="page-section-label">Integrations</h2>
+            <h3 class="page-section-title">Connected to the tools you already use</h3>
+            <div class="integration-categories">
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                    </div>
+                    <h4>Payments</h4>
+                    <p class="integration-category-desc">Mobile money and banking rails across Africa.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">M-Pesa</span>
+                        <span class="integration-tag">MTN MoMo</span>
+                        <span class="integration-tag">Airtel Money</span>
+                        <span class="integration-tag">Orange Money</span>
+                        <span class="integration-tag">Bank APIs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4"/><path d="m16 8-4-4"/><path d="M9 21a9 9 0 0 0-9-9"/></svg>
+                    </div>
+                    <h4>Satellite</h4>
+                    <p class="integration-category-desc">Earth observation imagery providers.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Sentinel-2</span>
+                        <span class="integration-tag">SatLogic</span>
+                        <span class="integration-tag">Planet Labs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h4>Communication</h4>
+                    <p class="integration-category-desc">Reach farmers wherever they are.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">WhatsApp Business API</span>
+                        <span class="integration-tag">Twilio (SMS/Voice)</span>
+                        <span class="integration-tag">USSD</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <h4>IoT</h4>
+                    <p class="integration-category-desc">Long-range sensor connectivity.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">LoRaWAN</span>
+                        <span class="integration-tag">Sigfox</span>
+                        <span class="integration-tag">Cellular IoT</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                    </div>
+                    <h4>Government</h4>
+                    <p class="integration-category-desc">Authoritative data and compliance.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">National Ag Databases</span>
+                        <span class="integration-tag">Export Authorities</span>
+                        <span class="integration-tag">Tax Systems</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Partners</h4>
+                    <p class="integration-category-desc">Insurance, finance, and field operations.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Pula (Insurance)</span>
+                        <span class="integration-tag">OKO Finance</span>
+                        <span class="integration-tag">Local Agro-dealers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- FAQs + Blog -->
+    <section class="pricing-faqs pricing-faqs-compact">
+        <div class="container">
+            <div class="pricing-faqs-grid">
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Frequently asked questions about Brain</h2>
+                    <div class="pricing-faq-list">
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>How does Watoko Brain work without internet in rural areas?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Brain uses LoRaWAN connectivity for sensor data, which works independently of cellular networks with ranges up to 15km. Satellite imagery is processed in the cloud. Recommendations are delivered via SMS when WhatsApp isn't available, and the Voice Agent works over basic phone calls. The system is designed for low-connectivity environments from the ground up.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>What happens if a sensor fails or sends bad data?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Each agent cross-validates data against multiple sources. If a soil sensor sends anomalous readings, the system flags it and compensates using satellite data and neighboring sensor readings. You'll receive a maintenance alert, and our field team can replace faulty hardware within 48 hours.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>How long until the AI learns my specific farm?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Brain starts delivering value from day one using regional models trained on thousands of farms. Within 1 season, the system calibrates to your specific soil biology, microclimate, and practices. By season 2, recommendations are highly personalized and outperform regional averages.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>Do I need to buy all the sensors at once?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>No. Brain works with whatever data is available. You can start with satellite imagery alone (zero hardware cost) and add sensors progressively. Each additional data source improves precision, but the system provides value at every level. See our Grants program for subsidized hardware.</p>
+                            </div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question">
+                                <span>Can I use Brain if I don't have a smartphone?</span>
+                                <span class="pricing-faq-icon">+</span>
+                            </button>
+                            <div class="pricing-faq-answer">
+                                <p>Yes. Brain delivers recommendations via SMS and USSD for basic phones. The Voice Agent works over standard phone calls — just dial in and speak. Cooperative managers with smartphones can also relay information to members during group meetings.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing-faqs-view-link">View all FAQs &rarr;</a>
+                </div>
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Latest from the blog</h2>
+                    <div class="pricing-blog-list">
+                        <a href="blog/founder-letter.html" class="pricing-blog-item">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Founder's Letter</span>
+                                <span class="pricing-blog-item-title">For All of Humanity</span>
+                            </div>
+                            <span class="pricing-blog-item-arrow">&#8599;</span>
+                        </a>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Intelligence</span>
+                                <span class="pricing-blog-item-title">How Satellite Intelligence Is Transforming Smallholder Agriculture</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Edge Computing</span>
+                                <span class="pricing-blog-item-title">LoRaWAN at the Edge: Connectivity Without Compromise</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Case Study</span>
+                                <span class="pricing-blog-item-title">Tooro Coffee: From Survival to Sovereignty</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <a href="blog/" class="pricing-faqs-view-link">View blog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start in days, not months -->
+    <section class="pricing-start">
+        <div class="container">
+            <div class="pricing-start-header">
+                <div class="pricing-start-header-content">
+                    <h2 class="pricing-start-title">Start in days, not months.</h2>
+                    <p class="pricing-start-desc">Minimal setup. Hands-on support. See what Brain can do for your cooperative or operation.</p>
+                </div>
+            </div>
+            <div class="pricing-start-grid">
+                <!-- Left: Brain pricing card -->
+                <div class="pricing-start-card">
+                    <h3 class="pricing-start-card-label">Per-farm pricing for cooperatives</h3>
+                    <div class="pricing-start-card-stat">
+                        <span class="pricing-start-card-stat-value">From $1.20</span>
+                        <span class="pricing-start-card-stat-unit">/farm/month</span>
+                    </div>
+                    <p class="pricing-start-card-desc">Volume-tiered subscription &mdash; from $2.50 at 1&ndash;100 farms down to $1.20 at 501&ndash;2,000 farms. Includes satellite monitoring, WhatsApp advisories, and local language support. 30-day free trial, no credit card required.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Talk to sales <span class="btn-arrow">&rarr;</span></a>
+                        <a href="pricing.html#brain-detail" class="pricing-start-text-link">See Brain pricing &rarr;</a>
+                    </div>
+                </div>
+                <!-- Right: Grant program card -->
+                <div class="pricing-start-card pricing-start-card-grant">
+                    <h3 class="pricing-start-card-label">Watoko Grant Program for cooperatives & smallholders</h3>
+                    <div class="pricing-start-card-stats">
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">2,400+</span>
+                            <span class="pricing-start-card-stat-unit">Farmers funded</span>
+                        </div>
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">12 Months</span>
+                            <span class="pricing-start-card-stat-unit">Free access</span>
+                        </div>
+                    </div>
+                    <p class="pricing-start-card-desc">Hardware, onboarding, and your first season &mdash; covered. Because access to intelligence shouldn't depend on what you can afford today.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Apply for a grant <span class="btn-arrow">&rarr;</span></a>
+                        <a href="grants.html" class="pricing-start-text-link">Learn more about grants &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">See Brain in action.</h2>
+            <p class="page-cta-desc">Get Brain running on your farms. Real-time data in, autonomous decisions out — preserving the biological systems that sustain the field, getting smarter every season.</p>
+            <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

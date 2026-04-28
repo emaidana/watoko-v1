@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers — Watoko | Build on the Autonomous Intelligence Platform for Biology</title>
+    <meta name="description" content="Build on the autonomous intelligence platform for biology. REST APIs, webhooks, SDKs, and MCP integration — expose Watoko's 63+ autonomous agents as tools for any application, on Earth or beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watoko.ai/developers.html">
+    <meta property="og:title" content="Developers — Watoko | Build on the Autonomous Intelligence Platform for Biology">
+    <meta property="og:description" content="Build on the autonomous intelligence platform for biology. REST APIs, webhooks, SDKs, and MCP integration — expose Watoko's 63+ autonomous agents as tools for any application, on Earth or beyond.">
+    <meta property="og:image" content="https://watoko.ai/favicon.svg">
+    <meta property="og:site_name" content="Watoko">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Developers — Watoko | Build on the Autonomous Intelligence Platform for Biology">
+    <meta name="twitter:description" content="Build on the autonomous intelligence platform for biology. REST APIs, webhooks, SDKs, and MCP integration — expose Watoko's 63+ autonomous agents as tools for any application, on Earth or beyond.">
+    <meta name="twitter:image" content="https://watoko.ai/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-tag">Developers</span>
+            </div>
+            <h1 class="page-hero-title">Build on Watoko.</h1>
+            <p class="page-hero-desc">The autonomous intelligence platform for biology, exposed as developer primitives. REST APIs, webhooks, SDKs, and MCP tools &mdash; integrate field telemetry, market microstructure, biomolecular data, and 63+ autonomous agents into any application, on Earth or beyond.</p>
+            <p class="page-hero-desc" style="margin-top: 1rem;">We are building on the largest operational biological dataset of a continent &mdash; species, microbiomes, compounds, soil readings. The <a href="archive.html">Watoko Archive Project</a> is the foundation. That is a developer story.</p>
+        </div>
+    </section>
+
+    <!-- API Overview -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">API Overview</span>
+            <h3 class="page-section-title">One API, 4 engines</h3>
+            <p class="page-section-desc">Access the full Watoko platform &mdash; and the biological intelligence APIs behind it &mdash; programmatically. RESTful endpoints, consistent response formats, and webhooks for every real-time event in the system.</p>
+            <div class="api-grid api-grid-flashlight">
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                    <div class="api-card-title">REST API</div>
+                    <p class="api-card-desc">JSON-based REST API with OAuth 2.0 authentication. Rate-limited, versioned, and designed for production use from day one.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg></div>
+                    <div class="api-card-title">Webhooks</div>
+                    <p class="api-card-desc">Real-time event notifications for farm alerts, trade executions, payment completions, and agent decisions. HMAC-signed payloads.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+                    <div class="api-card-title">SDKs</div>
+                    <p class="api-card-desc">Official client libraries for Python, JavaScript/TypeScript, and Go. Type-safe, well-documented, and built for developer experience.</p>
+                </div>
+            </div>
+            <div class="api-endpoints-list">
+                <div class="api-endpoints-list-header">
+                    <span>Example endpoints</span>
+                    <span class="api-endpoints-list-header-label">v1 &middot; Public</span>
+                </div>
+                <div class="api-endpoint">
+                    <span class="api-method get">GET</span>
+                    <span class="api-path">/v1/farms/{farm_id}/health</span>
+                </div>
+                <div class="api-endpoint">
+                    <span class="api-method get">GET</span>
+                    <span class="api-path">/v1/markets/prices?crop=maize&region=east-africa</span>
+                </div>
+                <div class="api-endpoint">
+                    <span class="api-method post">POST</span>
+                    <span class="api-path">/v1/trades</span>
+                </div>
+                <div class="api-endpoint">
+                    <span class="api-method get">GET</span>
+                    <span class="api-path">/v1/lots/{lot_id}/passport</span>
+                </div>
+                <div class="api-endpoint">
+                    <span class="api-method post">POST</span>
+                    <span class="api-path">/v1/payments/disburse</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MCP Integration -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">MCP Integration</span>
+            <h3 class="page-section-title">The intelligence of life as AI tools</h3>
+            <p class="page-section-desc">Expose Watoko's 63+ agents as Model Context Protocol (MCP) tools. Let any AI assistant access real-time field telemetry, market prices, weather forecasts, biomolecular data, and trade execution &mdash; the same primitives that power research stations and closed-loop habitats.</p>
+            <div class="page-section-grid">
+                <div>
+                    <ul class="page-capabilities-list">
+                        <li>Farm health queries — soil moisture, crop status, pest alerts in natural language</li>
+                        <li>Market intelligence — real-time prices, historical trends, trade opportunities</li>
+                        <li>Weather forecasting — hyperlocal 72-hour forecasts for any registered farm</li>
+                        <li>Compliance checking — EUDR status, data passport generation on demand</li>
+                        <li>Payment execution — trigger mobile money disbursements with approval flows</li>
+                    </ul>
+                </div>
+                <div class="page-highlight-box">
+                    <h3>Why MCP</h3>
+                    <p>MCP turns Watoko into a tool that any AI agent can use. Biological intelligence becomes composable &mdash; available to chatbots, copilots, autonomous agents, and any system that speaks MCP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Access -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Data Access</span>
+            <h3 class="page-section-title">The intelligence record of complex environments</h3>
+            <p class="page-section-desc">Anonymized, aggregated biological data spanning soil microbiome, crop genomics, climate exposure, market microstructure, and biomolecular signal &mdash; drawn from the <a href="archive.html">Watoko Archive</a>, born in Africa, built for Earth and space. From open public datasets to enterprise-grade research access for universities, biotech, and sovereign programs.</p>
+            <div class="api-grid">
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="api-card-title">Public Tier</div>
+                    <p class="api-card-desc">Aggregated regional data: crop prices, weather summaries, yield indices. Free for research and development use.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+                    <div class="api-card-title">Partner Tier</div>
+                    <p class="api-card-desc">Granular anonymized farm data, soil analytics, and market microstructure. For approved research institutions and development organizations.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+                    <div class="api-card-title">Enterprise Tier</div>
+                    <p class="api-card-desc">Full API access to biological data, custom data pipelines, dedicated support, and SLA guarantees. For companies building products on the Watoko Archive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Use Cases</span>
+            <h3 class="page-section-title">What developers are building</h3>
+            <p class="page-section-desc">Not just agricultural data. The largest operational biological dataset of a continent &mdash; species, microbiomes, compounds, soil readings &mdash; available through biological intelligence APIs backed by the <a href="archive.html">Watoko Archive</a>.</p>
+            <div class="api-grid">
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                    <div class="api-card-title">Agricultural Lending</div>
+                    <p class="api-card-desc">Banks and fintechs using farm performance data and credit scores to underwrite agricultural loans — collateral-free, based on real yield data.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+                    <div class="api-card-title">Supply Chain Platforms</div>
+                    <p class="api-card-desc">Traceability systems pulling lot passports, quality scores, and compliance documentation through the API for end-to-end supply chain visibility.</p>
+                </div>
+                <div class="api-card">
+                    <div class="api-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg></div>
+                    <div class="api-card-title">Climate & Insurance</div>
+                    <p class="api-card-desc">Insurers building parametric products using Watoko's plot-level risk models, weather data, and satellite imagery for granular agricultural insurance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Example -->
+    <section class="page-section">
+        <div class="container">
+            <span class="page-section-label">Quick Start</span>
+            <h3 class="page-section-title">Get farm health in 3 lines</h3>
+            <div class="code-block-header">
+                <span>Python</span>
+                <span style="color: var(--text-secondary);">watoko-sdk</span>
+            </div>
+            <div class="code-block">
+                <pre><span class="code-keyword">from</span> watoko <span class="code-keyword">import</span> Watoko
+
+client = Watoko(api_key=<span class="code-string">"wk_live_..."</span>)
+
+<span class="code-comment"># Get real-time health for a farm</span>
+health = client.farms.get_health(<span class="code-string">"farm_abc123"</span>)
+
+<span class="code-keyword">print</span>(health.soil_moisture)    <span class="code-comment"># 34.2%</span>
+<span class="code-keyword">print</span>(health.ndvi_score)       <span class="code-comment"># 0.72 (healthy)</span>
+<span class="code-keyword">print</span>(health.pest_risk)        <span class="code-comment"># "low"</span>
+<span class="code-keyword">print</span>(health.next_action)      <span class="code-comment"># "Irrigate plot B — soil below threshold"</span>
+
+<span class="code-comment"># Get market prices</span>
+prices = client.markets.prices(crop=<span class="code-string">"maize"</span>, region=<span class="code-string">"east-africa"</span>)
+
+<span class="code-keyword">for</span> p <span class="code-keyword">in</span> prices:
+    <span class="code-keyword">print</span>(<span class="code-string">f"</span>{p.market}: {p.currency} {p.price}/{p.unit}<span class="code-string">"</span>)</pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">Get API access.</h2>
+            <p class="page-cta-desc">Start building on the autonomous intelligence platform for biology. Free tier available for development and testing &mdash; from a fintech prototype to a sovereign research program.</p>
+            <a href="#" class="btn btn-primary demo-trigger">Request API access <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">Get API access.</h2>
+                    <p class="demo-modal-subtitle">Tell us what you're building and we'll get you set up with the right access tier.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko's API gave us the agricultural data layer we needed to launch our lending product in 3 months instead of 18."</blockquote>
+                        <cite>— Fintech CTO</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">What are you building? <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your project"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request access <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours with your API credentials.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

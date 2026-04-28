@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem — The Operations Engine | Watoko</title>
+    <meta name="description" content="The operations engine. 13+ autonomous agents running the full operations stack — payments, insurance, credit, logistics, warehousing, accounting, legal, HR, grants, compliance. Insurance grounded in field data. Credit scored on farm health. Logistics preserving crop integrity. Partners bring the licenses and the balance sheets. We run them as one system.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-product="ecosystem">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-index">03</span>
+                <span class="page-hero-tag"><span class="page-hero-dot dot-ecosystem"></span>Ecosystem</span>
+            </div>
+            <h1 class="page-hero-title">The Operations<br>Engine</h1>
+            <p class="page-hero-desc">We identify what every farm, cooperative, and agribusiness needs to run autonomously — and deliver it. 13+ agents run the full operations stack through one engine: payments, insurance, credit, logistics, warehousing, accounting, legal, HR, grants, compliance. Each agent sits on top of a partner service — a bank, an insurer, a logistics provider, an accounting firm. Partners bring the licenses and the balance sheets. We make them AI-native — agentic, farmer-accessible, continent-scale. Insurance grounded in field data, not just satellite estimates. Credit scored on farm health indicators, not just collateral. Logistics preserving crop integrity — cold chain for bioactive material, not just perishables. From a smallholder in the Rwenzori highlands settling a mobile payment, drought insurance, working capital, EUDR certification, and a verified export contract through one WhatsApp conversation, to the closed-loop greenhouse that will one day feed the first permanent crew off Earth — every operation that keeps life growing runs through one engine.</p>
+            <div class="system-stats">
+                <div class="system-stats-pill"><span class="count-up">13+</span> <span>Agents</span></div>
+                <div class="system-stats-pill"><span>Every essential service</span></div>
+                <div class="system-stats-pill"><span class="count-up">Revenue</span> <span>Share Model</span></div>
+            </div>
+            <div class="page-hero-users">
+                <span class="page-hero-user">For Farmers &amp; Cooperatives</span>
+                <span class="page-hero-user">For Buyers &amp; Exporters</span>
+                <span class="page-hero-user">For Banks &amp; Insurers</span>
+                <span class="page-hero-user">For Logistics &amp; Warehousing</span>
+                <span class="page-hero-user">For Accounting, Legal &amp; HR Firms</span>
+                <span class="page-hero-user">For Governments &amp; Regulators</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Agents -->
+    <section class="page-section section-accent-dots">
+        <div class="container">
+            <h2 class="page-section-label">The Agents</h2>
+            <h3 class="page-section-title">Agents running every operation of a farm</h3>
+            <p class="page-section-desc">Each agent sits on top of a partner service — a bank, an insurer, a logistics provider, an accounting firm. The partner brings the specialized capability. The agent makes it AI-native: agentic, farmer-accessible, and A2A-connected to every other service on the platform. When one agent acts, the others respond automatically through a shared protocol.</p>
+            <div class="agent-grid">
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Payments Agent</span>
+                            <p class="agent-card-oneliner">Instant mobile money settlement across 15+ currencies</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">M-Pesa, MTN, Airtel, Orange, and bank transfers across 15+ currencies. Instant settlement to farmer's mobile money.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Trade confirmations</span>
+                                    <span class="agent-tag">Delivery receipts</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Instant settlement to mobile money</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Seconds, not weeks</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Insurance Agent</span>
+                            <p class="agent-card-oneliner">Parametric coverage with automatic payouts</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Parametric coverage triggered by biological data and satellite imagery — soil biology shifts, canopy stress, pest pressure, drought, flood, temperature. Automatic payouts before loss materializes.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Biological field data</span>
+                                    <span class="agent-tag">Satellite imagery</span>
+                                    <span class="agent-tag">Weather data</span>
+                                    <span class="agent-tag">Brain sensors</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Automatic payouts to mobile money — no claims process</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Zero paperwork, payout in hours</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Credit Scoring Agent</span>
+                            <p class="agent-card-oneliner">Farm performance-based credit, not collateral</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Builds creditworthiness from biological health indicators — soil condition, canopy vigor, yield trajectory — not collateral. Progressive credit limits and input financing via WhatsApp.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Brain farm data</span>
+                                    <span class="agent-tag">Trade history</span>
+                                    <span class="agent-tag">Payment history</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Progressive credit limits, input financing</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">400M unbanked farmers get access to credit</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Logistics Agent</span>
+                            <p class="agent-card-oneliner">GPS-tracked transport with condition monitoring</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">GPS-tracked transport with temperature and humidity monitoring — preserving biological integrity from field to port. Cold chain for bioactive material, not just perishables. Optimized routes and automated carrier matching.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Trade details</span>
+                                    <span class="agent-tag">Carrier data</span>
+                                    <span class="agent-tag">Route data</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Optimized routes, carrier matching, cold chain tracking</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Reduce 40% post-harvest loss</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Compliance Agent</span>
+                            <p class="agent-card-oneliner">Auto-generated export and regulatory documentation</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Auto-generates export permits, phytosanitary certificates, and KYC/AML documentation for 12+ markets.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Trade data</span>
+                                    <span class="agent-tag">Regulatory databases</span>
+                                    <span class="agent-tag">Data Passports</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Multi-jurisdiction regulatory documentation</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Compliance as a feature, not a burden</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 118 2.83"/><path d="M22 12A10 10 0 0012 2v10z"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Cooperative Finance Agent</span>
+                            <p class="agent-card-oneliner">Member accounts, dividends, and group savings</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Manages member accounts, dividend distribution, and group savings (Chama/SACCO). Transparent financial reporting.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Member registration</span>
+                                    <span class="agent-tag">Trade revenue</span>
+                                    <span class="agent-tag">Savings deposits</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Financial reports, automated dividend splits</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Digital cooperative governance</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Warehouse Agent</span>
+                            <p class="agent-card-oneliner">Electronic warehouse receipts as tradeable collateral</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Tracks inventory, monitors storage conditions, and generates electronic warehouse receipts that serve as tradeable collateral.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">IoT sensors</span>
+                                    <span class="agent-tag">Inventory logs</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Electronic warehouse receipts (tradeable + loan collateral)</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Stored commodities become financial instruments</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Smart Contract Agent</span>
+                            <p class="agent-card-oneliner">Auto-enforced contracts with dispute resolution</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Generates and executes contracts with auto-enforcement. Built-in dispute resolution for both parties.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Trade terms</span>
+                                    <span class="agent-tag">Quality grades</span>
+                                    <span class="agent-tag">Delivery conditions</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Binding agreements with built-in dispute resolution</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Trust without intermediaries</div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Subsidy & Grant Agent</span>
+                            <p class="agent-card-oneliner">Discover and auto-apply for grants and subsidies</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Discovers and auto-applies for government subsidies, NGO grants, and carbon credits. Matches farm profile, crop type, location, and compliance data against grant databases. Pre-fills applications and tracks status. Farmer confirms before submission.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Farm profile</span>
+                                    <span class="agent-tag">Crop type</span>
+                                    <span class="agent-tag">Compliance data</span>
+                                    <span class="agent-tag">Grant databases</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Matched opportunities, pre-filled applications, status tracking</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Routes funding farmers don't know exists</div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Legal Agent</span>
+                            <p class="agent-card-oneliner">Land tenure, contract review, dispute arbitration</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-approval">Approval</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Verifies land tenure status, reviews contracts, handles dispute arbitration, and ensures regulatory compliance across jurisdictions. Connects to national land registries and legal databases.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <span class="agent-card-row-value">Land registries, Contract documents, Regulatory databases</span>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Legal compliance reports</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Disputes resolved in days, not years</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Accounting Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Accounting Agent</span>
+                            <p class="agent-card-oneliner">Books, ledgers, and tax filings — run through accredited accounting firms</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Every transaction a cooperative makes — sale, purchase, payroll, loan, grant — flows directly into a proper double-entry ledger. Monthly reports, tax filings, audit trails, and statutory compliance generated automatically. Backed by accredited accounting firms on the Watoko network who take on edge cases and sign off on audited statements. A real finance function for a cooperative that never could have afforded one.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Transaction flows</span>
+                                    <span class="agent-tag">Invoices &amp; receipts</span>
+                                    <span class="agent-tag">Tax regulations</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Audited books, tax filings, statutory reports, partner-verified statements</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">A CFO-grade finance function for every cooperative</div>
+                    </div>
+                </div>
+
+                <!-- NEW: HR & Payroll Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">HR &amp; Payroll Agent</span>
+                            <p class="agent-card-oneliner">Worker onboarding, payroll, benefits, and labor compliance</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Onboards permanent staff and seasonal workers. Runs payroll in local currency to mobile money on payday. Tracks hours worked, crops picked, and performance. Handles labor-law compliance, statutory deductions, and benefits enrollment in partnership with accredited HR firms. Gives farm workers — often invisible in the formal economy — a verifiable employment record for credit, insurance, and pension.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Worker registry</span>
+                                    <span class="agent-tag">Hours &amp; output</span>
+                                    <span class="agent-tag">Labor regulations</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Payroll runs, compliance filings, verified employment history per worker</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Brings informal farm labor into the formal economy</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Partner Quality Agent -->
+                <div class="agent-card">
+                    <div class="agent-card-header-zone">
+                        <div class="agent-card-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-trigger">
+                        <div class="agent-card-trigger-left">
+                            <span class="agent-card-name">Partner Quality Agent</span>
+                            <p class="agent-card-oneliner">Continuous quality control across every partner in the network</p>
+                        </div>
+                        <div class="agent-card-trigger-right">
+                            <span class="agent-badge agent-badge-autonomous">Autonomous</span>
+                            <svg class="agent-card-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="agent-card-body">
+                        <p class="agent-card-desc">Every partner — bank, insurer, logistics provider, accounting firm, HR firm, legal firm — is qualified on entry and monitored continuously. Tracks SLA performance, farmer satisfaction, dispute frequency, payout speed, and regulatory standing. Flags partners that drift out of standard. Rewards partners that compound the network. The reason a smallholder farmer can trust every service that reaches her through Watoko — because we've already stress-tested the firms behind them.</p>
+                        <div class="agent-card-meta">
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Inputs</span>
+                                <div class="agent-tags">
+                                    <span class="agent-tag">Partner telemetry</span>
+                                    <span class="agent-tag">Farmer feedback</span>
+                                    <span class="agent-tag">Regulatory signals</span>
+                                </div>
+                            </div>
+                            <div class="agent-card-row">
+                                <span class="agent-card-row-label">Output</span>
+                                <span class="agent-card-row-value">Partner quality scores, continuous monitoring, tier adjustments</span>
+                            </div>
+                        </div>
+                        <div class="agent-card-impact">Trust-by-default for every service on the platform</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote I -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"When the drought hit, the money was in my M-Pesa before I even filed a claim. The insurance partner behind it was one I'd never heard of — but Watoko had already stood behind them, and they paid the way they said they would."</blockquote>
+            <cite>— Peter O., Maize farmer · Nakuru, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How It Works</h2>
+            <h3 class="page-section-title">Qualify, integrate, activate, compound</h3>
+            <p class="page-section-desc">Specialist partners bring the capability. Watoko brings the intelligence layer, the farmer relationships, and the distribution. Together we build the operating system neither side could build alone.</p>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="workflow-step-number">1</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Qualify</div>
+                        <div class="workflow-step-desc">Banks, insurers, logistics providers, accounting firms, legal firms, HR firms apply. We assess regulatory standing, financial health, SLA capability, and cultural fit before any partner touches a farmer.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">2</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Integrate</div>
+                        <div class="workflow-step-desc">Partners connect through our APIs and A2A protocol. Their service becomes an agent — AI-wrapped, farmer-facing, and interoperable with every other agent on the platform.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">3</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Activate</div>
+                        <div class="workflow-step-desc">Farmers and cooperatives activate services on demand — payments, credit, insurance, accounting, legal, HR — without ever touching a new app or remembering a new login.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">4</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Compound</div>
+                        <div class="workflow-step-desc">Every service makes the others better. Biological data sharpens credit. Payment history builds trust. Logistics data feeds insurance. Accounting ledgers earn working capital. Partners share in the upside they help create.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-number">5</div>
+                    <div class="workflow-step-content">
+                        <div class="workflow-step-title">Monitor</div>
+                        <div class="workflow-step-desc">The Partner Quality Agent tracks every partner continuously. Quality goes up, fees come down, underperformers get flagged. The whole network gets better with every season.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Partner-AI Infrastructure -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Partner-AI Infrastructure</h2>
+            <h3 class="page-section-title">How partners become native to the system</h3>
+            <p class="page-section-desc">Most software companies sell partners AI. Watoko becomes their distribution. Any qualified partner — a bank, an insurer, a logistics provider, an accounting firm, a legal firm — plugs into a five-layer infrastructure that turns a legacy service into an autonomous agent, farmer-facing, language-native, A2A-connected, and compounding with every other service on the platform.</p>
+            <div class="offline-grid">
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><line x1="10" y1="6.5" x2="14" y2="6.5"/><line x1="10" y1="17.5" x2="14" y2="17.5"/><line x1="6.5" y1="10" x2="6.5" y2="14"/><line x1="17.5" y1="10" x2="17.5" y2="14"/></svg></div>
+                    <div class="offline-card-title">1 · Agent Wrapper</div>
+                    <p class="offline-card-desc">Every partner service is wrapped as an autonomous agent with its own tools, memory, and policies. The partner keeps their core system. We turn it into something a farmer can talk to in Swahili over WhatsApp — or something another agent can call programmatically.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="7" y1="6" x2="10" y2="10"/><line x1="17" y1="6" x2="14" y2="10"/><line x1="7" y1="18" x2="10" y2="14"/><line x1="17" y1="18" x2="14" y2="14"/></svg></div>
+                    <div class="offline-card-title">2 · Shared Context Graph</div>
+                    <p class="offline-card-desc">Every agent reads from and writes to the same living dataset — farmer identity, farm telemetry, transaction history, biological observations. The insurance agent sees what the credit agent saw. The accounting agent sees what the logistics agent saw. Context stops being a per-vendor privilege.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+                    <div class="offline-card-title">3 · A2A Protocol</div>
+                    <p class="offline-card-desc">Agent-to-agent messaging is the default, not the exception. When a trade settles on Market, the Payments Agent calls the Accounting Agent calls the Credit Agent calls the Insurance Agent — autonomously, in milliseconds, without a human orchestrator. Partners arrive as islands. They leave as a mesh.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                    <div class="offline-card-title">4 · Distribution Layer</div>
+                    <p class="offline-card-desc">Watoko brings the relationship. A farmer who already trusts Brain for planting advice meets their new insurer through the same interface, in the same language, on the same phone. Partners reach smallholders and cooperatives they would never have reached alone, through a channel they wouldn't have known how to build.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+                    <div class="offline-card-title">5 · Revenue Share + Observability</div>
+                    <p class="offline-card-desc">Every partner shares in the upside they help create — not as a license fee, but as a percentage of activity they caused. The Partner Quality Agent monitors SLA, fee drift, default rates, and farmer outcomes continuously. Partners who raise the quality of the network keep more of the upside. Partners who don't get flagged, re-scoped, or replaced.</p>
+                </div>
+                <div class="offline-card">
+                    <div class="offline-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                    <div class="offline-card-title">The compounding result</div>
+                    <p class="offline-card-desc">A bank that integrates with Ecosystem doesn't just get access to new customers — it inherits the entire intelligence stack. Its credit decisions are sharper because Brain's biological telemetry feeds them. Its default rates drop because Labs' climate models de-risk them. Its growth is priced in farmer outcomes, not origination volume. The partner and the platform get better together, on every cycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- How You Interact -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How You Interact</h2>
+            <h3 class="page-section-title">The right interface for every role</h3>
+            <p class="page-section-desc">Farmers use WhatsApp. Managers use a progressive web app. Partners connect via API. Everyone gets exactly what they need.</p>
+            <div class="interface-grid">
+                <div class="interface-card">
+                    <div class="interface-card-user">Farmer</div>
+                    <div class="interface-card-channel">WhatsApp / SMS</div>
+                    <p class="interface-card-desc">Payment confirmations, insurance alerts, credit offers, pickup confirmations. All in your language with simple reply actions.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Cooperative Manager</div>
+                    <div class="interface-card-channel">Progressive Web App</div>
+                    <p class="interface-card-desc">Member accounts, collective revenue, savings group dashboard, warehouse inventory, compliance status, dividend tools.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Buyer / Exporter</div>
+                    <div class="interface-card-channel">Web Dashboard + API</div>
+                    <p class="interface-card-desc">Payment tracking, logistics monitoring, settlement history, compliance documentation.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Insurance Partner</div>
+                    <div class="interface-card-channel">API + Analytics Dashboard</div>
+                    <p class="interface-card-desc">Portfolio-level risk data, payout triggers, claim-free monitoring, biological and satellite verification feeds.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Financial Institution</div>
+                    <div class="interface-card-channel">API + Risk Dashboard</div>
+                    <p class="interface-card-desc">Biological credit scoring data, repayment tracking, portfolio analytics, default prediction models.</p>
+                </div>
+                <div class="interface-card">
+                    <div class="interface-card-user">Logistics Provider</div>
+                    <div class="interface-card-channel">Mobile App</div>
+                    <p class="interface-card-desc">Available shipments, route assignments, delivery confirmations, cold chain and condition monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inline Quote II -->
+    <section class="inline-quote-block">
+        <div class="container">
+            <blockquote>"The grant agent found me a government subsidy I had no idea existed. It covered half my sensor costs. The accounting agent then filed the paperwork so I could actually claim it — something I never would have figured out on my own."</blockquote>
+            <cite>— Anne W., Cooperative treasurer · Trans Nzoia, Kenya</cite>
+        </div>
+    </section>
+
+    <!-- Data Sources -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Data Sources</h2>
+            <h3 class="page-section-title">Data from every transaction and interaction</h3>
+            <p class="page-section-desc">Ecosystem generates and consumes data across four major streams, all compounding into better services.</p>
+            <div class="datasource-grid">
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Transaction History</div>
+                    <p class="datasource-card-desc">Payment flows, settlement times, volumes across all services.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Real-time</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Satellite Monitoring</div>
+                    <p class="datasource-card-desc">Satellite imagery cross-referenced with biological ground-truth — rainfall, flood, drought, temperature, and canopy stress triggers for parametric insurance.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Daily</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Farm Performance</div>
+                    <p class="datasource-card-desc">Biological health data — yield, soil biology, canopy condition, quality scores, input usage — flowing in from Brain.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Continuous</span>
+                    </div>
+                </div>
+                <div class="datasource-card">
+                    <div class="datasource-card-name">Logistics Telemetry</div>
+                    <p class="datasource-card-desc">GPS position, temperature, humidity, and condition metrics during transport via IoT on vehicles.</p>
+                    <div class="datasource-card-meta">
+                        <span class="datasource-card-tag">Real-time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Cross-Product Connections -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Cross-Product Connections</h2>
+            <h3 class="page-section-title">The operational backbone of Watoko</h3>
+            <p class="page-section-desc">Ecosystem enables every trade, every payment, every insurance claim across the entire platform.</p>
+            <div class="connections-grid">
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Ecosystem</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Brain</span>
+                    </div>
+                    <p class="connection-card-desc">Credit enables farmers to invest in better inputs. Insurance data improves risk models. Brain's biological data powers credit scoring and insurance triggers.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Ecosystem</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Market</span>
+                    </div>
+                    <p class="connection-card-desc">Payment infrastructure enables instant trade settlement. Warehouse receipts create tradeable inventory. Every Market transaction flows through Ecosystem.</p>
+                </div>
+                <div class="connection-card">
+                    <div class="connection-card-header">
+                        <span class="connection-card-product">Ecosystem</span>
+                        <span class="connection-card-arrow">&harr;</span>
+                        <span class="connection-card-product">Labs</span>
+                    </div>
+                    <p class="connection-card-desc">Financial, logistics, and insurance data reveals economic patterns for research — on Earth and beyond. Labs returns climate-adjusted risk models, breeding priorities, and protocols refined across the Earth-and-space science stack.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Getting Started -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">Getting Started</h2>
+            <h3 class="page-section-title">Live in days, compounding in weeks</h3>
+            <p class="page-section-desc">We handle the integrations, the partner onboarding, and the compliance setup. You get a live operations engine on day one — payments, credit, insurance, accounting, legal, HR — accessed the way your farmers already operate, without learning a single new tool.</p>
+            <div class="onboarding">
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">1</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Identity Verification</div>
+                        <div class="onboarding-step-desc">KYC via mobile, link your M-Pesa or mobile money account.</div>
+                        <div class="onboarding-step-time">Day 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">2</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Service Activation</div>
+                        <div class="onboarding-step-desc">Choose which services to enable — start with payments, add others over time.</div>
+                        <div class="onboarding-step-time">Day 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">3</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">First Transaction</div>
+                        <div class="onboarding-step-desc">Complete a payment, access input financing, or enroll in insurance.</div>
+                        <div class="onboarding-step-time">Week 1</div>
+                    </div>
+                </div>
+                <div class="onboarding-step">
+                    <div class="onboarding-step-number">4</div>
+                    <div class="onboarding-step-content">
+                        <div class="onboarding-step-title">Full Integration</div>
+                        <div class="onboarding-step-desc">All services running and compounding data across your operations.</div>
+                        <div class="onboarding-step-time">Week 2-4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+    <section class="page-section security-section">
+        <div class="container">
+            <h2 class="page-section-label">Security & Trust</h2>
+            <h3 class="page-section-title">Your data, your rules</h3>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <div class="security-card-title">Data Encryption</div>
+                    <p class="security-card-desc">End-to-end encryption for all data. AES-256 at rest, TLS 1.3 in transit. Your farm data is never exposed.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 20 2 20 2s-1.7 5.5-6 9.8"/><path d="M11 20v-8a4 4 0 014-4"/></svg></div>
+                    <div class="security-card-title">Farmer Data Sovereignty</div>
+                    <p class="security-card-desc">Farmers own their data. Export or delete anytime. No lock-in, no hidden data monetization.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <div class="security-card-title">Privacy by Design</div>
+                    <p class="security-card-desc">Anonymization before any research use. GDPR-compliant processing. Consent-first approach to all data sharing.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <div class="security-card-title">SOC 2 Compliance</div>
+                    <p class="security-card-desc">Annual audits, strict access controls, documented incident response. Enterprise-grade security for every farmer.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                    <div class="security-card-title">Local Data Residency</div>
+                    <p class="security-card-desc">Data stored in-region on AWS Africa (Cape Town) and Nairobi. Your data stays close to home.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="security-card-title">Open Audit Trail</div>
+                    <p class="security-card-desc">Every AI decision is logged, traceable, and explainable. Full transparency on what the agents do and why.</p>
+                </div>
+            </div>
+            <div class="security-badges">
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> SOC 2 Type II</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> GDPR</span>
+                <span class="security-badge"><svg class="security-badge-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg> ISO 27001</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section integrations-section">
+        <div class="container">
+            <h2 class="page-section-label">Integrations</h2>
+            <h3 class="page-section-title">Connected to the tools you already use</h3>
+            <div class="integration-categories">
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                    </div>
+                    <h4>Payments</h4>
+                    <p class="integration-category-desc">Mobile money and banking rails across Africa.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">M-Pesa</span>
+                        <span class="integration-tag">MTN MoMo</span>
+                        <span class="integration-tag">Airtel Money</span>
+                        <span class="integration-tag">Orange Money</span>
+                        <span class="integration-tag">Bank APIs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4"/><path d="m16 8-4-4"/><path d="M9 21a9 9 0 0 0-9-9"/></svg>
+                    </div>
+                    <h4>Satellite</h4>
+                    <p class="integration-category-desc">Earth observation imagery providers.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Sentinel-2</span>
+                        <span class="integration-tag">SatLogic</span>
+                        <span class="integration-tag">Planet Labs</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h4>Communication</h4>
+                    <p class="integration-category-desc">Reach farmers wherever they are.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">WhatsApp Business API</span>
+                        <span class="integration-tag">Twilio (SMS/Voice)</span>
+                        <span class="integration-tag">USSD</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <h4>IoT</h4>
+                    <p class="integration-category-desc">Long-range sensor connectivity.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">LoRaWAN</span>
+                        <span class="integration-tag">Sigfox</span>
+                        <span class="integration-tag">Cellular IoT</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                    </div>
+                    <h4>Government</h4>
+                    <p class="integration-category-desc">Authoritative data and compliance.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">National Ag Databases</span>
+                        <span class="integration-tag">Export Authorities</span>
+                        <span class="integration-tag">Tax Systems</span>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <div class="integration-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Partners</h4>
+                    <p class="integration-category-desc">Insurance, finance, and field operations.</p>
+                    <div class="integration-tags">
+                        <span class="integration-tag">Pula (Insurance)</span>
+                        <span class="integration-tag">OKO Finance</span>
+                        <span class="integration-tag">Local Agro-dealers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+    <section class="pricing-faqs pricing-faqs-compact">
+        <div class="container">
+            <div class="pricing-faqs-grid">
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Frequently asked questions about Ecosystem</h2>
+                    <div class="pricing-faq-list">
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>What if I don't have M-Pesa?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Ecosystem supports 15+ payment methods including MTN MoMo, Airtel Money, Orange Money, and traditional bank transfers. We work with the payment infrastructure available in your region. If you have any mobile money account, you can receive payments.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>How does parametric insurance differ from traditional insurance?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Traditional insurance requires you to file a claim, provide evidence, and wait for assessment. Parametric insurance uses biological data, satellite imagery, and sensor readings to detect events (drought, flood, extreme temperature, canopy stress) automatically. When conditions trigger the policy parameters, payouts are sent to your mobile money — often before you even notice the damage. No paperwork, no adjusters, no delays.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>What credit limits can I expect as a new user?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Credit limits start conservatively and grow with your track record. Initial limits cover basic input financing (seeds, fertilizer). As Brain captures more biological health data — soil condition, canopy vigor, yield trajectory — and you build trade history on Market, limits increase progressively. Most farmers see significant limit increases within 2-3 seasons.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>Is my financial data shared with anyone?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Your financial data is encrypted and never shared without your explicit consent. Credit scoring uses anonymized farm performance data, not personal financial details. You control exactly what data is visible to lenders, insurers, and other parties. See our Security section for details.</p></div>
+                        </div>
+                        <div class="pricing-faq-item">
+                            <button class="pricing-faq-question"><span>Can my cooperative use Ecosystem without individual members signing up?</span><span class="pricing-faq-icon">+</span></button>
+                            <div class="pricing-faq-answer"><p>Yes. Cooperative Finance Agent manages group accounts at the cooperative level. Individual members benefit from aggregated trades and group insurance without needing individual accounts. However, individual sign-up adds personal credit scoring and direct mobile money payments.</p></div>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing-faqs-view-link">View all FAQs &rarr;</a>
+                </div>
+                <div class="pricing-faqs-col">
+                    <h2 class="pricing-faqs-title">Latest from the blog</h2>
+                    <div class="pricing-blog-list">
+                        <a href="blog/founder-letter.html" class="pricing-blog-item">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Founder's Letter</span>
+                                <span class="pricing-blog-item-title">For All of Humanity</span>
+                            </div>
+                            <span class="pricing-blog-item-arrow">&#8599;</span>
+                        </a>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Finance</span>
+                                <span class="pricing-blog-item-title">Mobile Money Meets Satellite Data: A New Credit Stack for African Farmers</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Insurance</span>
+                                <span class="pricing-blog-item-title">Parametric Insurance: Why Payouts Should Beat Paperwork</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                        <div class="pricing-blog-item pricing-blog-item-upcoming">
+                            <div class="pricing-blog-item-content">
+                                <span class="pricing-blog-item-type">Cooperatives</span>
+                                <span class="pricing-blog-item-title">Cooperative Finance: Aggregated Strength, Individual Sovereignty</span>
+                            </div>
+                            <span class="pricing-blog-item-upcoming-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <a href="blog/" class="pricing-faqs-view-link">View blog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start in days, not months -->
+    <section class="pricing-start">
+        <div class="container">
+            <div class="pricing-start-header">
+                <div class="pricing-start-header-content">
+                    <h2 class="pricing-start-title">Start in days, not months.</h2>
+                    <p class="pricing-start-desc">Get started with minimal setup and hands-on support. See what Watoko Ecosystem can do for cooperatives, NGOs, and government partners.</p>
+                </div>
+            </div>
+            <div class="pricing-start-grid">
+                <!-- Left: Ecosystem pricing card -->
+                <div class="pricing-start-card">
+                    <h3 class="pricing-start-card-label">Revenue share with partners</h3>
+                    <div class="pricing-start-card-stat">
+                        <span class="pricing-start-card-stat-value">10&ndash;30%</span>
+                        <span class="pricing-start-card-stat-unit">of partner revenue</span>
+                    </div>
+                    <p class="pricing-start-card-desc">No platform fee for end users. Revenue share with banks (15&ndash;25% of interest income), insurers (20&ndash;30% of premium), logistics (10&ndash;15% of bookings), and payments ($0.05&ndash;0.15/transaction).</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Talk to partnerships <span class="btn-arrow">&rarr;</span></a>
+                        <a href="pricing.html#ecosystem-detail" class="pricing-start-text-link">See Ecosystem terms &rarr;</a>
+                    </div>
+                </div>
+                <!-- Right: Grant program card -->
+                <div class="pricing-start-card pricing-start-card-grant">
+                    <h3 class="pricing-start-card-label">Watoko Grant Program for cooperatives & smallholders</h3>
+                    <div class="pricing-start-card-stats">
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">2,400+</span>
+                            <span class="pricing-start-card-stat-unit">Farmers funded</span>
+                        </div>
+                        <div class="pricing-start-card-stat">
+                            <span class="pricing-start-card-stat-value">12 Months</span>
+                            <span class="pricing-start-card-stat-unit">Free access</span>
+                        </div>
+                    </div>
+                    <p class="pricing-start-card-desc">Hardware, onboarding, and your first season &mdash; covered. Because access to intelligence shouldn't depend on what you can afford today.</p>
+                    <div class="pricing-start-card-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">Apply for a grant <span class="btn-arrow">&rarr;</span></a>
+                        <a href="grants.html" class="pricing-start-text-link">Learn more about grants &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <h2 class="page-cta-title">One platform. Every service you need.</h2>
+            <p class="page-cta-desc">Payments, insurance, credit, logistics, warehousing, compliance — all connected through one intelligent agent mesh. Stop managing 6 vendors. Start running 1 system.</p>
+            <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

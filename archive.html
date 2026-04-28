@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Watoko Archive Project — Reading the Biology of a Continent | Watoko</title>
+    <meta name="description" content="The first operational biological archive of Africa. 65,000+ plant species. Soil microbiomes. Fungi. Insects. Algae. Lichens. Read at scale, season after season, from the farms we already run. The biology has to be alive to be read.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-product="labs">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">
+                <span class="page-hero-tag"><span class="page-hero-dot dot-labs"></span>The Archive</span>
+            </div>
+            <p class="page-hero-engine-label">The Watoko Archive Project</p>
+            <h1 class="page-hero-title">Reading the biology<br>of an entire continent.</h1>
+            <p class="page-hero-desc">The most biologically complex landmass on Earth has never been read. Not at depth. Not at scale. Not computationally. Not as a living, growing, season-over-season record. Expeditions sampled it. Grant cycles studied fragments. Colonial herbaria pressed leaves into drawers and shipped them to Europe. But no one has built the infrastructure to read African biology as it lives, where it lives, while it is alive. We are building that infrastructure. The Archive is the result.</p>
+            <div class="system-stats">
+                <div class="system-stats-pill"><span class="count-up">65,000+</span> <span>Species in scope</span></div>
+                <div class="system-stats-pill"><span class="count-up">12,400+</span> <span>Microbiome samples</span></div>
+                <div class="system-stats-pill"><span class="count-up">142</span> <span>Compounds identified</span></div>
+                <div class="system-stats-pill"><span class="count-up">3,800+</span> <span>Soil readings</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Archive Dashboard Mock -->
+    <section class="page-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="feature-dash">
+                <div class="feature-dash-topbar">
+                    <span class="feature-dash-breadcrumb">Archive / Continental Overview</span>
+                    <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> Live</span>
+                </div>
+                <div class="feature-dash-tabs">
+                    <span class="feature-dash-tab active">Species</span>
+                    <span class="feature-dash-tab">Microbiome</span>
+                    <span class="feature-dash-tab">Compounds</span>
+                    <span class="feature-dash-tab">Soil</span>
+                    <span class="feature-dash-tab">Zones</span>
+                </div>
+                <div class="feature-dash-metrics">
+                    <div class="feature-dash-metric">
+                        <span class="feature-dash-metric-label">Species cataloged</span>
+                        <span class="feature-dash-metric-value count-up">8,247</span>
+                        <span class="feature-dash-metric-delta">+34 this week</span>
+                    </div>
+                    <div class="feature-dash-metric">
+                        <span class="feature-dash-metric-label">Microbiome samples</span>
+                        <span class="feature-dash-metric-value count-up">12,491</span>
+                        <span class="feature-dash-metric-delta">+187 this month</span>
+                    </div>
+                    <div class="feature-dash-metric">
+                        <span class="feature-dash-metric-label">Bioactive compounds</span>
+                        <span class="feature-dash-metric-value count-up">142</span>
+                        <span class="feature-dash-metric-delta">+3 this quarter</span>
+                    </div>
+                    <div class="feature-dash-metric">
+                        <span class="feature-dash-metric-label">Active zones</span>
+                        <span class="feature-dash-metric-value count-up">47</span>
+                        <span class="feature-dash-metric-delta">across 6 countries</span>
+                    </div>
+                </div>
+                <div class="feature-dash-content">
+                    <div class="feature-dash-chart">
+                        <svg viewBox="0 0 600 80" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="archiveGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#8BC34A" stop-opacity="0.15"/>
+                                    <stop offset="100%" stop-color="#8BC34A" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,60 C50,55 100,50 150,42 C200,34 250,38 300,30 C350,22 400,18 450,14 C500,10 550,8 600,5" fill="none" stroke="#8BC34A" stroke-width="1.5"/>
+                            <path d="M0,60 C50,55 100,50 150,42 C200,34 250,38 300,30 C350,22 400,18 450,14 C500,10 550,8 600,5 L600,80 L0,80 Z" fill="url(#archiveGrad)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-dash-bottom">
+                    <div class="feature-dash-bottom-card">
+                        <span class="feature-dash-metric-label">Latest reading</span>
+                        <span class="feature-dash-metric-value" style="font-size: 13px;">Soil microbiome, Plot KE-047-B</span>
+                        <span class="feature-dash-metric-delta">1.2s ago</span>
+                    </div>
+                    <div class="feature-dash-bottom-card">
+                        <span class="feature-dash-metric-label">Season depth</span>
+                        <span class="feature-dash-metric-value" style="font-size: 13px;">Season 9, Layer 47</span>
+                        <span class="feature-dash-metric-delta">Compounding</span>
+                    </div>
+                </div>
+                <div class="feature-notif">
+                    <span class="feature-notif-dot"></span>
+                    New species characterization: <em>Vigna subterranea</em> var. KE-2024-R7
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Movement 1: The Gap -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">The Gap</h2>
+            <h3 class="page-section-title">An entire continent of biology, unread.</h3>
+            <p class="page-section-desc">Africa holds more biological complexity per square kilometer than any other landmass. More plant species. More microbial diversity. More adaptive chemistry shaped under more stress, across more climate gradients, for longer evolutionary timelines. And almost none of it has been computationally read.</p>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="30" y="40" width="120" height="100" rx="8"/>
+                            <line x1="50" y1="70" x2="130" y2="70"/>
+                            <line x1="50" y1="90" x2="100" y2="90"/>
+                            <line x1="50" y1="110" x2="80" y2="110"/>
+                            <circle cx="140" cy="50" r="2" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">The expedition model failed</div>
+                        <p class="vision-card-desc">For 200 years, the way to study African biology was to send an expedition. A team arrives. Collects samples for 6 weeks. Ships specimens to a herbarium in London, Paris, or Berlin. Publishes a paper 3 years later. The specimens sit in a drawer. The local knowledge stays in the field, unrecorded. The living biology changes with the next season, unobserved. The expedition model produced fragments. Never a system. Never a record that updates.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="90" r="60"/>
+                            <path d="M50 90 Q70 60, 90 90 Q110 120, 130 90" stroke-dasharray="4 4"/>
+                            <circle cx="60" cy="85" r="3" fill="currentColor" opacity="0.3"/>
+                            <circle cx="120" cy="95" r="3" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Grant cycles cannot build infrastructure</div>
+                        <p class="vision-card-desc">Research grants run 2 to 4 years. The biology runs on geological time. No grant-funded program can build the continuous, season-over-season infrastructure required to read biology at continental scale. Grants produce studies. What is needed is a system that reads and records and compounds, permanently, without pausing when the funding cycle ends. Infrastructure, not research programs.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M40 140 L90 40 L140 140"/>
+                            <line x1="60" y1="100" x2="120" y2="100"/>
+                            <circle cx="90" cy="70" r="3" fill="currentColor"/>
+                            <path d="M90 90 L90 140" stroke-dasharray="3 3"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Extraction, not reading</div>
+                        <p class="vision-card-desc">Most of what the world knows about African biology was extracted. Specimens removed from their ecosystems. Data taken without consent, without context, without continuity. The knowledge left the continent. The biology stayed, unread. The Archive reverses the direction. The reading happens here. The record stays here. The intelligence compounds here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Movement 2: What We Read -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">What We Read</h2>
+            <h3 class="page-section-title">Every layer of biology. Not just what grows above the soil.</h3>
+            <p class="page-section-desc">The Archive reads biology at every layer of the living system. Cultivated crops are the starting point. They are not the boundary. Below the plants, beneath the soil, across the water, inside the organisms themselves: layers of biology that no agricultural platform has ever recorded, and no biological database has ever read at this operational depth.</p>
+            <div class="vision-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M90 30 C70 50, 60 80, 70 110 C75 130, 85 140, 90 150"/>
+                            <path d="M90 30 C110 50, 120 80, 110 110 C105 130, 95 140, 90 150"/>
+                            <path d="M70 70 Q60 60, 50 65"/>
+                            <path d="M110 70 Q120 60, 130 65"/>
+                            <path d="M75 100 Q65 95, 55 100"/>
+                            <path d="M105 100 Q115 95, 125 100"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Cultivated plants</div>
+                        <p class="vision-card-desc">The crops farmers grow. Maize, coffee, cassava, sorghum, millet, teff, enset, yam, cowpea, groundnut. Genomic profiles. Phenotypic performance under stress. Compound production under drought, heat, salinity. Every season of field data is a season of biological record.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M60 150 C60 100, 50 80, 50 60 C50 40, 60 30, 70 30"/>
+                            <path d="M120 150 C120 100, 130 80, 130 60 C130 40, 120 30, 110 30"/>
+                            <path d="M70 30 Q90 20, 110 30"/>
+                            <path d="M55 70 Q40 65, 35 70"/>
+                            <path d="M125 80 Q140 75, 145 80"/>
+                            <circle cx="90" cy="50" r="15" stroke-dasharray="3 3"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Wild and semi-wild plants</div>
+                        <p class="vision-card-desc">The species at the margins of cultivated land. Wild relatives of domesticated crops. Plants used in traditional medicine for centuries, never pharmacologically characterized. Semi-domesticated species that exist in the space between forest and field, carrying adaptive traits that breeding programs have never accessed.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M90 150 L90 60"/>
+                            <path d="M70 150 L70 80"/>
+                            <path d="M110 150 L110 70"/>
+                            <path d="M60 60 Q90 30, 120 60"/>
+                            <path d="M50 80 Q70 55, 90 75"/>
+                            <path d="M90 65 Q110 45, 130 70"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Trees</div>
+                        <p class="vision-card-desc">Agroforestry species. Shade canopy. Carbon sinks. Fruit and nut trees integrated into farming systems. Timber species. Medicinal bark. Africa has more tree species than any continent except South America. Most have never been genomically characterized. The Archive reads them where they grow, season after season.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="90" cy="90" rx="30" ry="15"/>
+                            <path d="M60 85 Q50 70, 55 55"/>
+                            <path d="M120 85 Q130 70, 125 55"/>
+                            <path d="M75 77 Q70 60, 80 50"/>
+                            <path d="M105 77 Q110 60, 100 50"/>
+                            <circle cx="90" cy="90" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Insects and pollinators</div>
+                        <p class="vision-card-desc">The species that make agriculture possible. Pollinators, pest predators, soil engineers. The biological relationships between insects and crops determine yield, resilience, and ecosystem health. The Archive records pollinator populations, species diversity, and behavioral patterns across every farm the platform operates.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M30 120 Q60 100, 90 110 Q120 120, 150 100"/>
+                            <path d="M40 130 Q70 115, 100 125 Q130 135, 155 115"/>
+                            <circle cx="60" cy="105" r="8" stroke-dasharray="2 2"/>
+                            <circle cx="120" cy="108" r="6" stroke-dasharray="2 2"/>
+                            <path d="M70 80 Q80 60, 95 70"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Algae and aquatic organisms</div>
+                        <p class="vision-card-desc">Freshwater and coastal biology. Spirulina and other microalgae grown in integrated aquaculture systems. Aquatic plants used in traditional nutrition. Water-body ecosystems adjacent to farmland. The biology of African water systems is among the least documented on Earth. The Archive is changing that.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="70" cy="100" r="25" stroke-dasharray="3 2"/>
+                            <circle cx="110" cy="80" r="20" stroke-dasharray="3 2"/>
+                            <circle cx="90" cy="120" r="18" stroke-dasharray="3 2"/>
+                            <circle cx="70" cy="100" r="3" fill="currentColor" opacity="0.4"/>
+                            <circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Lichens and mosses</div>
+                        <p class="vision-card-desc">Biological indicators of air quality, soil health, and microclimate. Extremophiles that survive where nothing else can. Lichens produce secondary metabolites with antifungal, antibacterial, and UV-protective properties. Mosses anchor soil and regulate moisture. Both are early colonizers of degraded land. Both are understudied across Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Pivot: The Microbiome -->
+    <section class="page-section" style="background: var(--bg-page);">
+        <div class="container">
+            <h3 class="page-section-title" style="max-width: 800px;">Then the pivot. Below the visible biology: the microbiome.</h3>
+            <p class="page-section-desc" style="max-width: 720px;">Everything above the soil depends on everything below it. The soil microbiome determines what grows, how it grows, what compounds it produces, and what those compounds do inside the human body. The plant microbiome determines disease resistance, nutrient uptake, and stress response. The fungal networks connect root systems across entire landscapes. This is the layer most biological databases have never recorded. This is the layer the Archive reads deepest.</p>
+            <div class="vision-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="30" y1="90" x2="150" y2="90" stroke-dasharray="2 4"/>
+                            <circle cx="60" cy="110" r="8"/>
+                            <circle cx="90" cy="120" r="6"/>
+                            <circle cx="120" cy="105" r="10"/>
+                            <circle cx="75" cy="130" r="5"/>
+                            <circle cx="105" cy="135" r="4"/>
+                            <path d="M60 118 Q75 125, 90 126"/>
+                            <path d="M90 126 Q105 128, 120 115"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Soil microbiome</div>
+                        <p class="vision-card-desc">Bacterial communities. Archaeal populations. Microbial diversity indices across thousands of plots, correlated with soil chemistry, crop performance, and climate data. The invisible ecosystem that determines everything above it. Read at depth, every season, at every farm the platform operates.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M90 40 L90 140"/>
+                            <path d="M75 60 Q60 55, 55 60"/>
+                            <path d="M105 80 Q120 75, 125 80"/>
+                            <circle cx="70" cy="70" r="4" stroke-dasharray="2 2"/>
+                            <circle cx="110" cy="90" r="4" stroke-dasharray="2 2"/>
+                            <circle cx="80" cy="100" r="3" stroke-dasharray="2 2"/>
+                            <circle cx="100" cy="110" r="3" stroke-dasharray="2 2"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Plant microbiome</div>
+                        <p class="vision-card-desc">Endophytic bacteria. Epiphytic communities. The microbial populations living on and inside plant tissue, shaping disease resistance, nutrient transport, and the biochemical compounds the plant produces under stress. The plant is not a single organism. It is an ecosystem. The Archive reads the whole system.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="90" cy="80" r="30"/>
+                            <path d="M60 80 Q75 60, 90 80 Q105 100, 120 80"/>
+                            <path d="M90 110 L90 150"/>
+                            <path d="M90 150 Q70 145, 60 155"/>
+                            <path d="M90 150 Q110 145, 120 155"/>
+                            <path d="M90 130 Q75 128, 65 135"/>
+                            <path d="M90 130 Q105 128, 115 135"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <div class="vision-card-title">Fungi and mushrooms</div>
+                        <p class="vision-card-desc">Mycorrhizal networks. Saprophytic fungi. Edible and medicinal mushroom species. The underground networks that connect plant root systems and transfer nutrients across entire landscapes. Fungi decompose, remediate, nourish, and signal. Africa's fungal diversity is almost entirely uncharacterized. The Archive is building the first operational record.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="founder-quote" style="padding: 80px 0 0;">
+                <p class="founder-quote-text" style="font-family: 'Lora', serif; font-style: italic;">The biology has to be alive to be read.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Movement 3: How It Grows -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">How It Grows</h2>
+            <h3 class="page-section-title">Every farm a node. Every season a layer. The Archive grows because the platform grows.</h3>
+            <p class="page-section-desc">The Archive is not a research project with a start date and an end date. It is an operational byproduct of the largest agricultural intelligence platform on the continent. Every farm Watoko operates on is a biological observation node. Every season of field data is a new layer of biological record. The Archive compounds because the platform compounds.</p>
+            <div class="page-section-grid">
+                <div>
+                    <div class="vision-grid" style="grid-template-columns: 1fr;">
+                        <div class="vision-card">
+                            <div class="vision-card-text">
+                                <div class="vision-card-title">Operational, not academic</div>
+                                <p class="vision-card-desc">The Archive does not depend on research grants, expedition budgets, or institutional partnerships to grow. It grows because the platform grows. Every new cooperative onboarded is a new set of biological observation points. Every new country entered is a new climate zone read. Every new season is a new temporal layer added to every species, every soil sample, every microbiome reading already in the record. The Archive is infrastructure, not a project.</p>
+                            </div>
+                        </div>
+                        <div class="vision-card">
+                            <div class="vision-card-text">
+                                <div class="vision-card-title">Longitudinal depth</div>
+                                <p class="vision-card-desc">A single soil sample tells you what is there. 9 seasons of soil samples from the same plot tell you what is changing, what is responding, what is adapting, what is dying. The Archive does not take snapshots. It builds longitudinal biological records at plot resolution, compounding with every season. No other biological database on the continent has this temporal depth at this operational scale.</p>
+                            </div>
+                        </div>
+                        <div class="vision-card">
+                            <div class="vision-card-text">
+                                <div class="vision-card-title">Computationally readable</div>
+                                <p class="vision-card-desc">A pressed leaf in a herbarium drawer is not readable by a machine learning model. A DNA sequence in a PDF is not queryable at scale. The Archive is built as a computational substrate. Every species record, every microbiome profile, every compound characterization, every soil reading is structured, indexed, and accessible through APIs. The biology is readable because the data architecture was designed for machines from the start.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="feature-dash">
+                        <div class="feature-dash-topbar">
+                            <span class="feature-dash-breadcrumb">Archive / Growth Tracker</span>
+                            <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> Live</span>
+                        </div>
+                        <div class="feature-dash-metrics">
+                            <div class="feature-dash-metric">
+                                <span class="feature-dash-metric-label">Farms as nodes</span>
+                                <span class="feature-dash-metric-value count-up">4,200+</span>
+                            </div>
+                            <div class="feature-dash-metric">
+                                <span class="feature-dash-metric-label">Season depth</span>
+                                <span class="feature-dash-metric-value count-up">9</span>
+                            </div>
+                        </div>
+                        <div class="feature-dash-content">
+                            <div class="feature-dash-chart">
+                                <svg viewBox="0 0 400 80" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="growthGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#66BB6A" stop-opacity="0.15"/>
+                                            <stop offset="100%" stop-color="#66BB6A" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,70 C40,68 80,62 120,52 C160,42 200,38 240,28 C280,20 320,14 360,10 C380,8 400,6 400,5" fill="none" stroke="#66BB6A" stroke-width="1.5"/>
+                                    <path d="M0,70 C40,68 80,62 120,52 C160,42 200,38 240,28 C280,20 320,14 360,10 C380,8 400,6 400,5 L400,80 L0,80 Z" fill="url(#growthGrad)"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-dash-bottom">
+                            <div class="feature-dash-bottom-card">
+                                <span class="feature-dash-metric-label">Countries active</span>
+                                <span class="feature-dash-metric-value" style="font-size: 13px;">Uganda, Kenya, Rwanda, Tanzania, DRC, Ethiopia</span>
+                            </div>
+                            <div class="feature-dash-bottom-card">
+                                <span class="feature-dash-metric-label">New readings today</span>
+                                <span class="feature-dash-metric-value" style="font-size: 13px;">1,247</span>
+                                <span class="feature-dash-metric-delta">Across 312 plots</span>
+                            </div>
+                        </div>
+                        <div class="feature-notif">
+                            <span class="feature-notif-dot"></span>
+                            New microbiome layer added: Season 9, Rwenzori highlands
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Movement 4: What It Becomes -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-label">What It Becomes</h2>
+            <h3 class="page-section-title">From a biological record to the applications it makes possible.</h3>
+            <p class="page-section-desc">The Archive is not an end. It is a substrate. A computationally readable biological record of a continent becomes the foundation for applications that span medicine, nutrition, materials science, cosmetics, breeding, and the design of life-support systems for worlds beyond this one. One continuous arc from the soil to the stars.</p>
+        </div>
+    </section>
+
+    <section class="page-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="page-section-grid">
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Medicine</h3>
+                    <p class="page-section-desc">142 bioactive compounds identified and growing. Polyphenols, flavonoids, senolytics, mitochondrial support molecules, microbiome modulators. Compounds the industrialized food system eliminated generations ago. Compounds the pharmaceutical industry spends billions synthesizing in sterile labs. We find them in the field, where 4 billion years of evolution already did the work. The Archive is the compound library. Ngoma is the first commercial product. It is not the last.</p>
+                </div>
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Longevity</h3>
+                    <p class="page-section-desc">The soil-gut axis connects what grows in the ground to what happens in the human body across a lifetime. Soil composition determines plant biochemistry. Plant biochemistry determines the compounds that enter the gut microbiome. The gut microbiome determines immune function, metabolic health, cognitive performance, and lifespan. Ngoma is the proof point: a longevity product derived from African soil biology, validated for healthspan mechanisms, brought to market from the Archive's compound library.</p>
+                </div>
+            </div>
+            <div class="page-section-grid" style="margin-top: 48px;">
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Nutrition</h3>
+                    <p class="page-section-desc">The relationship between how food is grown, what it contains, and what it does inside the human body. The Archive maps nutrient density, phytochemical profiles, and bioactive compound concentrations across thousands of varieties, soil types, and growing conditions. Functional food design based on operational biological data, not laboratory approximations.</p>
+                </div>
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Cosmetics and bioactive materials</h3>
+                    <p class="page-section-desc">Plant-derived compounds with UV-protective, anti-inflammatory, antimicrobial, and regenerative properties. Lichen metabolites. Algal extracts. Fungal pigments. The Archive holds the biological feedstock for a generation of cosmetic and material science applications derived from African biodiversity, with full provenance and benefit-sharing built into the data layer.</p>
+                </div>
+            </div>
+            <div class="page-section-grid" style="margin-top: 48px;">
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Climate-resilient breeding</h3>
+                    <p class="page-section-desc">The crops that survive the hardest ground on Earth are the crops that will survive everywhere climate change is about to reach. The Archive maps genotype to phenotype across thousands of varieties under real-world stress. Drought tolerance markers. Salinity resistance genes. Heat-adapted metabolic pathways. Breeding targets identified from operational field data, not controlled-environment trials. The next century's food supply is being decided in the fields the Archive already reads.</p>
+                </div>
+                <div>
+                    <h3 class="page-section-title" style="font-size: clamp(24px, 2.5vw, 32px);">Off-Earth food systems</h3>
+                    <p class="page-section-desc">Every desert margin, salt flat, and post-volcanic soil the platform operates on is an analogue site for the Moon and Mars. Closed-loop water cycling. Controlled atmosphere. Food production in degraded substrate with zero external inputs. The Archive records the biology that survives these conditions. The same biological record that helps a cooperative in the Sahel plan next season is the biological record a space agency uses to design the food system for the first permanent crew off this planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Movement 5: Who It Belongs To -->
+    <section class="page-section">
+        <div class="container">
+            <div class="founder-quote">
+                <span class="founder-quote-eyebrow">Who it belongs to</span>
+                <p class="founder-quote-text" style="font-family: 'Lora', serif;">The Archive is not ours. It is not a corporate asset to be licensed and locked away. It is the biological record of a continent, and it belongs to the continent.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="page-section-grid">
+                <div>
+                    <p class="page-section-desc">For centuries, the pattern was extraction. Specimens shipped to foreign institutions. Genetic material patented by foreign companies. Traditional knowledge absorbed without attribution, without consent, without return. The value left. The biology stayed, and the people who lived with it received nothing.</p>
+                    <p class="page-section-desc" style="margin-top: 24px;">We built the Archive to reverse that pattern. Benefit-sharing is not a policy. It is infrastructure. It is encoded in the data layer, in the access controls, in the consent architecture, in the commercial terms. Every compound discovered, every dataset accessed, every product developed from Archive biology carries a provenance trail that connects the value back to the source.</p>
+                </div>
+                <div>
+                    <p class="page-section-desc">African biology, read by Africans. Recorded on African soil. Stored on African servers. Governed by African institutions. Commercialized with African communities as participants, not subjects.</p>
+                    <p class="page-section-desc" style="margin-top: 24px;">The Nagoya Protocol established the principle that genetic resources belong to their countries of origin. The Archive operationalizes that principle at continental scale. Not as compliance. As architecture.</p>
+                    <p class="page-section-desc" style="margin-top: 24px;">This is what biological intelligence looks like when it is built from the ground, not imposed from above. The biology has to be alive to be read. And the people who live with it have to be the ones who benefit from the reading.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">watoko</a>
+                    <p class="footer-tagline">Intelligence infrastructure for what the planet grows.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Products</div>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Solutions</div>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers & Exporters</a>
+                        <a href="solutions.html#institutions">Governments</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Company</div>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Resources</div>
+                        <a href="developers.html">Developers</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="security.html">Security</a>
+                        <a href="grants.html">Grants</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Watoko. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay" id="demoOverlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" id="demoClose">&times;</button>
+            <div class="demo-modal-header">
+                <h3>See Watoko in action</h3>
+                <p>30-minute walkthrough of the platform tailored to your operation.</p>
+            </div>
+            <form class="demo-modal-form" id="demoForm">
+                <div class="demo-form-row">
+                    <div class="demo-form-group">
+                        <label for="demoFirstName">First name</label>
+                        <input type="text" id="demoFirstName" placeholder="First name" required>
+                    </div>
+                    <div class="demo-form-group">
+                        <label for="demoLastName">Last name</label>
+                        <input type="text" id="demoLastName" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="demo-form-group">
+                    <label for="demoEmail">Work email</label>
+                    <input type="email" id="demoEmail" placeholder="you@company.com" required>
+                </div>
+                <div class="demo-form-group">
+                    <label for="demoCompany">Company / Organization</label>
+                    <input type="text" id="demoCompany" placeholder="Your organization" required>
+                </div>
+                <div class="demo-form-group">
+                    <label for="demoRole">Your role</label>
+                    <select id="demoRole" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option>Farmer / Cooperative Leader</option>
+                        <option>Agribusiness Manager</option>
+                        <option>Buyer / Exporter</option>
+                        <option>Government / Policy</option>
+                        <option>NGO / Development</option>
+                        <option>Investor</option>
+                        <option>Researcher</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request a demo</button>
+                <p class="demo-form-note">We respond within 24 hours. No sales spam.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

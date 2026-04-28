@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watoko — Turn Earth's deepest biology into the food, the science, and the intelligence for better human life</title>
+    <meta name="description" content="The autonomous intelligence platform for biology. 63+ AI agents across 4 engines turning Earth's deepest biology into the food, the science, and the intelligence for better human life. Starting where Earth's biology is deepest. Built for Earth and space.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watoko.ai/">
+    <meta property="og:title" content="Watoko — Turn Earth's deepest biology into the food, the science, and the intelligence for better human life">
+    <meta property="og:description" content="The autonomous intelligence platform for biology. 63+ AI agents across 4 engines turning Earth's deepest biology into the food, the science, and the intelligence for better human life. Starting where Earth's biology is deepest. Built for Earth and space.">
+    <meta property="og:image" content="https://watoko.ai/favicon.svg">
+    <meta property="og:site_name" content="Watoko">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Watoko — Turn Earth's deepest biology into the food, the science, and the intelligence for better human life">
+    <meta name="twitter:description" content="The autonomous intelligence platform for biology. 63+ AI agents across 4 engines turning Earth's deepest biology into the food, the science, and the intelligence for better human life. Starting where Earth's biology is deepest. Built for Earth and space.">
+    <meta name="twitter:image" content="https://watoko.ai/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <a href="blog/founder-letter.html">
+            <span class="announcement-bar-badge">New</span>
+            Read the founder's letter: "For All of Humanity"
+            <span class="announcement-bar-arrow">&rarr;</span>
+        </a>
+        <button class="announcement-bar-close" id="announcementClose" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">watoko</a>
+            <div class="nav-links" id="navLinks">
+                <div class="nav-dropdown" id="navDropdown">
+                    <button class="nav-dropdown-trigger" id="dropdownTrigger">Products <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Products</span>
+                                <a href="brain.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Brain</span>
+                                    <span class="mega-menu-desc">The field intelligence engine</span>
+                                </a>
+                                <a href="market.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Market</span>
+                                    <span class="mega-menu-desc">The trade orchestration engine</span>
+                                </a>
+                                <a href="ecosystem.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Ecosystem</span>
+                                    <span class="mega-menu-desc">The operations engine</span>
+                                </a>
+                                <a href="labs.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Labs</span>
+                                    <span class="mega-menu-desc">The Earth-and-space science engine</span>
+                                </a>
+                                <a href="archive.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">The Archive</span>
+                                    <span class="mega-menu-desc">The biological record of a continent</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" id="navDropdownSolutions">
+                    <button class="nav-dropdown-trigger" id="dropdownTriggerSolutions">Solutions <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu" id="megaMenuSolutions">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Solutions</span>
+                                <a href="solutions.html#cooperatives" class="mega-menu-item">
+                                    <span class="mega-menu-title">Cooperatives & Farmers</span>
+                                    <span class="mega-menu-desc">Field intelligence at scale</span>
+                                </a>
+                                <a href="solutions.html#agribusinesses" class="mega-menu-item">
+                                    <span class="mega-menu-title">Agribusinesses</span>
+                                    <span class="mega-menu-desc">End-to-end operations platform</span>
+                                </a>
+                                <a href="solutions.html#buyers" class="mega-menu-item">
+                                    <span class="mega-menu-title">Buyers & Exporters</span>
+                                    <span class="mega-menu-desc">Traceability and compliance</span>
+                                </a>
+                                <a href="solutions.html#institutions" class="mega-menu-item">
+                                    <span class="mega-menu-title">Governments & Institutions</span>
+                                    <span class="mega-menu-desc">Policy and development intelligence</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="developers.html">Developers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Company <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-section">
+                                <span class="mega-menu-label">Company</span>
+                                <a href="company.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">About</span>
+                                    <span class="mega-menu-desc">Our mission and team</span>
+                                </a>
+                                <a href="careers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Careers</span>
+                                    <span class="mega-menu-desc">Join the team building this</span>
+                                </a>
+                                <a href="customers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Customers</span>
+                                    <span class="mega-menu-desc">Stories from the field</span>
+                                </a>
+                                <a href="partnerships.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Partnerships</span>
+                                    <span class="mega-menu-desc">The organizations building with us</span>
+                                </a>
+                                <a href="pioneers.html" class="mega-menu-item">
+                                    <span class="mega-menu-title">Fellowship</span>
+                                    <span class="mega-menu-desc">The Watoko Fellowship Program</span>
+                                </a>
+                                <a href="blog/" class="mega-menu-item">
+                                    <span class="mega-menu-title">Blog</span>
+                                    <span class="mega-menu-desc">Founder's letter and updates</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-mobile-cta demo-trigger">See a demo</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-cta demo-trigger">See a demo</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Opening Screen -->
+    <section class="opening-screen">
+        <canvas id="gradientCanvas" class="opening-canvas"></canvas>
+        <div class="opening-content">
+            <p class="opening-phrase">Turn Earth's deepest biology into the food, the science,<br>and the <em>intelligence</em> for better <em>human life</em>.<br>On Earth and beyond.</p>
+        </div>
+        <div class="opening-scroll-hint">
+            <svg width="20" height="32" viewBox="0 0 20 32" fill="none">
+                <rect x="1" y="1" width="18" height="30" rx="9" stroke="currentColor" stroke-width="1.5"/>
+                <circle class="opening-scroll-dot" cx="10" cy="10" r="2.5" fill="currentColor"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">The autonomous intelligence<br>platform for biology</h1>
+                    <p class="hero-subtitle">63+ AI agents across 4 engines — reading the biology of every field, running the full commercial lifecycle of every crop and plant, delivering every service a farm needs, and turning the biological record into science. Offline-first. 2,000+ languages. Starting where Earth's biology is deepest. Built for Earth and space.</p>
+                    <div class="hero-cta-group">
+                        <form class="email-capture" id="emailCapture">
+                            <input type="email" placeholder="What's your work email?" required>
+                            <button type="submit">See a demo</button>
+                        </form>
+                        <a href="#platform" class="hero-explore">Explore platform <span>&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Dashboard card — ElevenLabs style, no device frame -->
+                    <div class="hero-dash">
+                        <div class="hero-dash-body">
+                            <div class="hero-dash-sidebar">
+                                <div class="hero-dash-sidebar-brand">
+                                    <div class="hero-dash-sidebar-logo">W</div>
+                                    <span class="hero-dash-sidebar-name">Watoko</span>
+                                </div>
+                                <div class="hero-dash-sidebar-section">
+                                    <div class="hero-dash-nav-item active">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                        Home
+                                    </div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/></svg>
+                                        Agents
+                                        <span class="hero-dash-nav-badge">3</span>
+                                    </div>
+                                </div>
+                                <div class="hero-dash-sidebar-section">
+                                    <div class="hero-dash-sidebar-label">Configure</div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
+                                        Market
+                                    </div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/></svg>
+                                        Ecosystem
+                                    </div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v6.5L5 19a1 1 0 0 0 .9 1.4h12.2A1 1 0 0 0 19 19l-5-9.5V3"/></svg>
+                                        Labs
+                                    </div>
+                                </div>
+                                <div class="hero-dash-sidebar-section">
+                                    <div class="hero-dash-sidebar-label">Deploy</div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                        WhatsApp
+                                    </div>
+                                    <div class="hero-dash-nav-item">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33"/></svg>
+                                        Settings
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-dash-main">
+                                <!-- Topbar: live telemetry status -->
+                                <div class="hero-dash-topbar">
+                                    <div class="hero-dash-topbar-left">
+                                        <span class="hero-dash-topbar-dot"></span>
+                                        <span class="hero-dash-topbar-title">Live telemetry · All engines online</span>
+                                    </div>
+                                    <div class="hero-dash-topbar-right">
+                                        <span class="hero-dash-topbar-btn active">Live</span>
+                                        <span class="hero-dash-topbar-btn">1h</span>
+                                        <span class="hero-dash-topbar-btn">24h</span>
+                                        <span class="hero-dash-topbar-btn">7d</span>
+                                    </div>
+                                </div>
+
+                                <!-- Instrument header -->
+                                <div class="hero-dash-instrument-header">
+                                    <div class="hero-dash-instrument-eyebrow">Watoko workspace · Continental</div>
+                                    <div class="hero-dash-instrument-title">One nervous system. 4 engines.</div>
+                                </div>
+
+                                <!-- Living instrument — 4-engine grid -->
+                                <div class="hero-dash-instrument">
+                                    <!-- Nervous-system connecting lines + pulse core -->
+                                    <svg class="hero-dash-instrument-lines" viewBox="0 0 400 260" preserveAspectRatio="none">
+                                        <!-- Diagonal cross-links between panels -->
+                                        <line x1="90" y1="70" x2="310" y2="190" stroke="#eaeaea" stroke-width="0.8" stroke-dasharray="2 3"/>
+                                        <line x1="310" y1="70" x2="90" y2="190" stroke="#eaeaea" stroke-width="0.8" stroke-dasharray="2 3"/>
+                                        <!-- Cardinal links -->
+                                        <line x1="200" y1="70" x2="200" y2="190" stroke="#eaeaea" stroke-width="0.8" stroke-dasharray="2 3"/>
+                                        <line x1="90" y1="130" x2="310" y2="130" stroke="#eaeaea" stroke-width="0.8" stroke-dasharray="2 3"/>
+                                        <!-- Pulse core -->
+                                        <circle cx="200" cy="130" r="4" fill="#F16001" class="hero-dash-pulse-core"/>
+                                        <circle cx="200" cy="130" r="10" fill="none" stroke="#F16001" stroke-width="0.6" class="hero-dash-pulse-ring"/>
+                                    </svg>
+
+                                    <!-- Panel 1: Brain (top-left) -->
+                                    <div class="hero-dash-panel hero-dash-panel-brain">
+                                        <div class="hero-dash-panel-header">
+                                            <span class="hero-dash-panel-dot"></span>
+                                            <span class="hero-dash-panel-label">Brain</span>
+                                            <span class="hero-dash-panel-status">Field · Live</span>
+                                        </div>
+                                        <div class="hero-dash-panel-value">32<span class="hero-dash-panel-unit">%</span></div>
+                                        <div class="hero-dash-panel-sub">Plot 7-N · Soil moisture</div>
+                                        <svg class="hero-dash-panel-chart" viewBox="0 0 100 24" preserveAspectRatio="none">
+                                            <path d="M0,16 L12,14 L24,18 L36,13 L48,9 L60,11 L72,6 L84,4 L100,3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                            <circle cx="100" cy="3" r="1.8" fill="currentColor"/>
+                                        </svg>
+                                        <div class="hero-dash-panel-footer">16+ agents · Offline-first</div>
+                                    </div>
+
+                                    <!-- Panel 2: Market (top-right) -->
+                                    <div class="hero-dash-panel hero-dash-panel-market">
+                                        <div class="hero-dash-panel-header">
+                                            <span class="hero-dash-panel-dot"></span>
+                                            <span class="hero-dash-panel-label">Market</span>
+                                            <span class="hero-dash-panel-status">+4.1%</span>
+                                        </div>
+                                        <div class="hero-dash-panel-value">285K<span class="hero-dash-panel-unit">XOF/t</span></div>
+                                        <div class="hero-dash-panel-sub">Sesame · Bamako</div>
+                                        <svg class="hero-dash-panel-chart" viewBox="0 0 100 24" preserveAspectRatio="none">
+                                            <path d="M0,18 L12,15 L24,17 L36,12 L48,14 L60,8 L72,10 L84,5 L100,2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                            <circle cx="100" cy="2" r="1.8" fill="currentColor"/>
+                                        </svg>
+                                        <div class="hero-dash-panel-footer">13+ agents · 15+ currencies</div>
+                                    </div>
+
+                                    <!-- Panel 3: Ecosystem (bottom-left) -->
+                                    <div class="hero-dash-panel hero-dash-panel-ecosystem">
+                                        <div class="hero-dash-panel-header">
+                                            <span class="hero-dash-panel-dot"></span>
+                                            <span class="hero-dash-panel-label">Ecosystem</span>
+                                            <span class="hero-dash-panel-status">Settled</span>
+                                        </div>
+                                        <div class="hero-dash-panel-value">$2.4<span class="hero-dash-panel-unit">M</span></div>
+                                        <div class="hero-dash-panel-sub">Payroll · 483 workers</div>
+                                        <svg class="hero-dash-panel-chart" viewBox="0 0 100 24" preserveAspectRatio="none">
+                                            <path d="M0,22 L12,20 L24,15 L36,18 L48,12 L60,14 L72,8 L84,6 L100,4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                            <circle cx="100" cy="4" r="1.8" fill="currentColor"/>
+                                        </svg>
+                                        <div class="hero-dash-panel-footer">13+ agents · Revenue share</div>
+                                    </div>
+
+                                    <!-- Panel 4: Labs (bottom-right) -->
+                                    <div class="hero-dash-panel hero-dash-panel-labs">
+                                        <div class="hero-dash-panel-header">
+                                            <span class="hero-dash-panel-dot"></span>
+                                            <span class="hero-dash-panel-label">Labs</span>
+                                            <span class="hero-dash-panel-status">Earth → Orbit</span>
+                                        </div>
+                                        <div class="hero-dash-panel-value">65K<span class="hero-dash-panel-unit">species</span></div>
+                                        <div class="hero-dash-panel-sub">Genomic library · Day 284</div>
+                                        <svg class="hero-dash-panel-chart" viewBox="0 0 100 24" preserveAspectRatio="none">
+                                            <path d="M0,20 L12,18 L24,14 L36,16 L48,10 L60,12 L72,7 L84,5 L100,2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                            <circle cx="100" cy="2" r="1.8" fill="currentColor"/>
+                                        </svg>
+                                        <div class="hero-dash-panel-footer">21+ agents · 36mo data</div>
+                                    </div>
+                                </div>
+
+                                <!-- Footer bar -->
+                                <div class="hero-dash-instrument-footer">
+                                    <span class="hero-dash-instrument-footer-item hero-dash-instrument-footer-item-live"><span class="hero-dash-instrument-footer-dot"></span> 63+ agents</span>
+                                    <span class="hero-dash-instrument-footer-item">2,847 farms</span>
+                                    <span class="hero-dash-instrument-footer-item">4 engines</span>
+                                    <span class="hero-dash-instrument-footer-item">1.2s avg.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- iPhone — clean modern chat -->
+                    <div class="hero-phone">
+                        <div class="hero-phone-island"></div>
+                        <div class="hero-phone-screen">
+                            <div class="hero-chat">
+                                <div class="hero-chat-header">
+                                    <svg class="hero-chat-back" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                                    <div class="hero-chat-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                    </div>
+                                    <div class="hero-chat-info">
+                                        <div class="hero-chat-name">Watoko Brain</div>
+                                        <div class="hero-chat-status">
+                                            <span class="hero-chat-status-dot"></span>
+                                            Active now
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-chat-body">
+                                    <div class="hero-chat-msg incoming hero-chat-animate">
+                                        Good morning James! Soil moisture at Plot 7-N dropped to 32%. I've started irrigation.
+                                        <div class="hero-chat-msg-time">10:24 AM</div>
+                                    </div>
+                                    <div class="hero-chat-msg outgoing hero-chat-animate">
+                                        Thanks, good call
+                                        <div class="hero-chat-msg-time">10:25 AM</div>
+                                    </div>
+                                    <div class="hero-chat-msg incoming hero-chat-animate">
+                                        Sesame up 4.1% across 3 markets. Best price: XOF 285,000/ton in Bamako. Hold or sell?
+                                        <div class="hero-chat-msg-time">10:26 AM</div>
+                                    </div>
+                                    <div class="hero-chat-msg outgoing hero-chat-animate">
+                                        Sell at Bamako price
+                                        <div class="hero-chat-msg-time">10:26 AM</div>
+                                    </div>
+                                    <div class="hero-chat-typing hero-chat-animate">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="hero-chat-msg incoming hero-chat-animate">
+                                        Done. Sell order placed. Payment to your mobile wallet when settled.
+                                        <div class="hero-chat-msg-time">10:27 AM</div>
+                                    </div>
+                                    <div class="hero-chat-msg incoming hero-chat-action hero-chat-animate">
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                                        2,847 farms managed
+                                    </div>
+                                </div>
+                                <div class="hero-chat-input">
+                                    <div class="hero-chat-input-field">Message Watoko Brain...</div>
+                                    <div class="hero-chat-input-send">
+                                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Conviction — signs the vision before the product -->
+    <section class="founder-quote">
+        <div class="container">
+            <div class="founder-quote-inner">
+                <span class="founder-quote-eyebrow">From the founder</span>
+                <blockquote class="founder-quote-text section-headline-enter">"Food is the doorway, not the room. Beneath every harvest is a biological intelligence — refined across millions of years of evolution, encoded in soil, seed, microbiome, and cell. We are building the infrastructure to read that intelligence, learn from it, and use it to make life more durable here on Earth — healthier, longer, more resilient — and possible in places life has never reached."</blockquote>
+                <div class="founder-quote-attribution">
+                    <span class="founder-quote-name">Esteban David Maidana</span>
+                    <span class="founder-quote-role">Founder and CEO</span>
+                </div>
+                <a href="blog/founder-letter.html" class="feature-link">Read the full letter: For All of Humanity <span>&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now — urgency before the product -->
+    <section class="why-now">
+        <div class="container">
+            <div class="why-now-header">
+                <span class="why-now-eyebrow">The moment</span>
+                <h2 class="why-now-title section-headline-enter">Why now.</h2>
+            </div>
+            <div class="why-now-grid">
+                <div class="why-now-card">
+                    <span class="why-now-card-step">01</span>
+                    <div class="why-now-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Concentric signal rings radiating from edge device -->
+                            <circle cx="100" cy="110" r="6" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="0.8"/>
+                            <circle cx="100" cy="110" r="22" stroke="currentColor" stroke-width="0.8"/>
+                            <circle cx="100" cy="110" r="40" stroke="currentColor" stroke-width="0.6"/>
+                            <circle cx="100" cy="110" r="60" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3"/>
+                            <circle cx="100" cy="110" r="82" stroke="currentColor" stroke-width="0.4" stroke-dasharray="5 5"/>
+                            <!-- Endpoint dots at cardinal positions -->
+                            <circle cx="100" cy="28" r="2.5" fill="currentColor" opacity="0.2"/>
+                            <circle cx="182" cy="110" r="2" fill="currentColor" opacity="0.12"/>
+                            <circle cx="18" cy="110" r="2" fill="currentColor" opacity="0.12"/>
+                            <circle cx="148" cy="60" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="52" cy="60" r="2" fill="currentColor" opacity="0.15"/>
+                            <!-- Radial reach lines -->
+                            <line x1="100" y1="88" x2="100" y2="32" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <line x1="118" y1="98" x2="158" y2="68" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <line x1="82" y1="98" x2="42" y2="68" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                        </svg>
+                    </div>
+                    <div class="why-now-card-text">
+                        <h3 class="why-now-card-title">Intelligence at the edge</h3>
+                        <p class="why-now-card-body">AI agents now run offline on edge devices. LoRaWAN reaches 15 km. Voice works over basic phone calls. What was impossible five years ago is deployable at smallholder scale today.</p>
+                    </div>
+                </div>
+                <div class="why-now-card">
+                    <span class="why-now-card-step">02</span>
+                    <div class="why-now-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Nested squares — borders within borders, trade zones -->
+                            <rect x="16" y="16" width="168" height="168" rx="6" stroke="currentColor" stroke-width="0.4" stroke-dasharray="5 4"/>
+                            <rect x="38" y="38" width="124" height="124" rx="4" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3"/>
+                            <rect x="60" y="60" width="80" height="80" rx="3" stroke="currentColor" stroke-width="0.7"/>
+                            <rect x="82" y="82" width="36" height="36" rx="2" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <!-- Corner connection dots -->
+                            <circle cx="16" cy="16" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="184" cy="16" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="16" cy="184" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="184" cy="184" r="2" fill="currentColor" opacity="0.15"/>
+                            <!-- Diagonal connection lines -->
+                            <line x1="18" y1="18" x2="80" y2="80" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 4"/>
+                            <line x1="182" y1="18" x2="120" y2="80" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 4"/>
+                            <line x1="18" y1="182" x2="80" y2="120" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 4"/>
+                            <line x1="182" y1="182" x2="120" y2="120" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 4"/>
+                        </svg>
+                    </div>
+                    <div class="why-now-card-text">
+                        <h3 class="why-now-card-title">Biology is now the market</h3>
+                        <p class="why-now-card-body">Climate volatility, broken supply chains, and the collapse of biological discovery costs have converged. The next generation of food, medicine, longevity, cosmetics, materials, and life-support systems will be built from biological intelligence — not just agricultural output. Africa, where 54 markets are integrating across 1.3 billion people and the richest unstudied biodiversity on Earth lives, is the ignition point. It is not the ceiling.</p>
+                    </div>
+                </div>
+                <div class="why-now-card">
+                    <span class="why-now-card-step">03</span>
+                    <div class="why-now-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Hexagonal lattice — molecular/genomic structure -->
+                            <polygon points="100,24 142,48 142,96 100,120 58,96 58,48" stroke="currentColor" stroke-width="0.7"/>
+                            <polygon points="100,50 122,64 122,92 100,106 78,92 78,64" stroke="currentColor" stroke-width="0.8"/>
+                            <circle cx="100" cy="78" r="5" fill="currentColor" opacity="0.06" stroke="currentColor" stroke-width="0.7"/>
+                            <!-- Downward cost arrows -->
+                            <line x1="60" y1="130" x2="60" y2="170" stroke="currentColor" stroke-width="0.6"/>
+                            <polyline points="54,164 60,170 66,164" stroke="currentColor" stroke-width="0.6" fill="none"/>
+                            <line x1="100" y1="130" x2="100" y2="175" stroke="currentColor" stroke-width="0.7"/>
+                            <polyline points="94,169 100,175 106,169" stroke="currentColor" stroke-width="0.7" fill="none"/>
+                            <line x1="140" y1="130" x2="140" y2="170" stroke="currentColor" stroke-width="0.6"/>
+                            <polyline points="134,164 140,170 146,164" stroke="currentColor" stroke-width="0.6" fill="none"/>
+                            <!-- Horizontal cost line dropping -->
+                            <path d="M40,132 C60,132 70,140 80,140 C90,140 100,135 120,145 C130,150 140,148 160,155" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="why-now-card-text">
+                        <h3 class="why-now-card-title">The cost of discovery just collapsed</h3>
+                        <p class="why-now-card-body">Plant genomics, biomolecular discovery, microbiome sequencing, and computational biology costs have dropped 99% in a decade. For the first time, the tools to read Africa's biological library at scale — 65,000 plant species, most never characterized — are affordable. The science of agroecology, longevity, and astrobiology can finally be done where the biology lives, not where the labs were built.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Declaration -->
+    <!-- Platform / Product Suite -->
+    <section class="platform" id="platform">
+        <div class="container">
+            <div class="platform-header">
+                <span class="platform-eyebrow">What we are building</span>
+                <h2 class="platform-title section-headline-enter">4 engines. From field to market<br>to lab to discovery.</h2>
+                <p class="platform-desc section-headline-enter" data-stagger="150">63+ AI agents reading the biology of every field, running the full commercial lifecycle of every crop and plant, delivering every service a farm needs to operate, and turning the biological record into science. One platform. Offline-first. 2,000+ languages. Starting where Earth's biology is deepest. Built for Earth and space.</p>
+                <div class="system-stats">
+                    <div class="system-stats-pill"><span class="count-up">63+</span> <span>Agents</span></div>
+                    <div class="system-stats-pill"><span>Earth → Orbit</span></div>
+                    <div class="system-stats-pill"><span class="count-up">2,000+</span> <span>Languages</span></div>
+                    <div class="system-stats-pill"><span class="count-up">15+</span> <span>Currencies</span></div>
+                </div>
+            </div>
+            <div class="product-cards">
+                <a href="brain.html" class="product-card gradient-cool">
+                    <div class="product-card-top">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title">Brain</h3>
+                            <div class="product-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/><path d="M10 17v4"/><path d="M14 17v4"/></svg>
+                            </div>
+                        </div>
+                        <span class="product-card-agents">16+ agents</span>
+                        <p class="product-card-subtitle">The field intelligence engine</p>
+                        <p class="product-card-desc">16+ autonomous agents running the full field-intelligence stack — soil, irrigation, pests, disease, canopy, harvest, inputs, labor, weather, planning, simulation, space. Every agronomic decision a farm makes, made autonomously. Delivered offline-first, in 2,000+ languages, in any environment a signal can reach.</p>
+                        <span class="product-card-arrow" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="market.html" class="product-card gradient-warm">
+                    <div class="product-card-top">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title">Market</h3>
+                            <div class="product-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
+                            </div>
+                        </div>
+                        <span class="product-card-agents">13+ agents</span>
+                        <p class="product-card-subtitle">The trade orchestration engine</p>
+                        <p class="product-card-desc">13+ autonomous agents running the full trade-orchestration stack — price, quality, origin, compliance, sustainability, environmental certification, contracts, matching, auctions, FX, futures, disputes, admin. Every commercial decision that moves a crop from farmer to buyer, traded without waste, with its environmental integrity intact.</p>
+                        <span class="product-card-arrow" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="ecosystem.html" class="product-card gradient-purple">
+                    <div class="product-card-top">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title">Ecosystem</h3>
+                            <div class="product-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M6.7 7.5L10 10"/><path d="M17.3 7.5L14 10"/><path d="M6.7 16.5L10 14"/><path d="M17.3 16.5L14 14"/></svg>
+                            </div>
+                        </div>
+                        <span class="product-card-agents">13+ agents</span>
+                        <p class="product-card-subtitle">The operations engine</p>
+                        <p class="product-card-desc">13+ autonomous agents running the full operations stack — payments, insurance, credit, logistics, warehousing, accounting, legal, HR, grants, compliance. Every essential service a farm, cooperative, or agribusiness needs. Partners bring the licenses and balance sheets. Watoko runs them as one system.</p>
+                        <span class="product-card-arrow" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="labs.html" class="product-card gradient-earth">
+                    <div class="product-card-top">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title">Labs</h3>
+                            <div class="product-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6.5L5 19a1 1 0 0 0 .9 1.4h12.2A1 1 0 0 0 19 19l-5-9.5V3"/><path d="M8.5 14h7"/></svg>
+                            </div>
+                        </div>
+                        <span class="product-card-agents">21+ agents</span>
+                        <p class="product-card-subtitle">The Earth-and-space science engine</p>
+                        <p class="product-card-desc">21+ autonomous agents building the largest living dataset of complex-environment biology on Earth — and turning it into science, commercial products, and protocols for space. Plant genomics, bioactive compound discovery, soil microbiome mapping, climate adaptation modeling, crop resilience screening, microbiome engineering, longevity research, digital-twin simulation, closed-loop life-support design. From a compound discovered in Ugandan soil to a biotech product on a shelf. From a crop protocol tested on a salt flat to a food system running in orbit. The knowledge base for sustaining life anywhere.</p>
+                        <span class="product-card-arrow" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Four Engines -->
+    <section class="four-products">
+        <div class="container">
+            <div class="four-products-header">
+                <span class="four-products-eyebrow">The platform</span>
+                <h2 class="four-products-title section-headline-enter">4 engines. One intelligence.</h2>
+            </div>
+            <div class="four-products-grid">
+                <!-- Brain -->
+                <div class="four-product-block">
+                    <div class="four-product-content">
+                        <span class="four-product-name"><span class="nav-product-dot dot-brain"></span>Brain</span>
+                        <h3 class="four-product-headline">Decisions, not dashboards.</h3>
+                        <div class="four-product-stats">
+                            <span>16+ agents</span>
+                            <span>Offline-first</span>
+                            <span>2,000+ languages</span>
+                        </div>
+                        <p class="four-product-desc">Brain deploys autonomous agents across your farms, your sealed greenhouses, your research stations — offline-first, connected to IoT sensors, cameras, drones, satellite imagery, and lab instrumentation. When soil moisture drops, Brain adjusts irrigation with intact microbiomes in mind. When the harvest window opens, Brain coordinates labor. When a pathogen appears, Brain flags it before it spreads. Every decision optimizes for the lowest-input path, preserving the biological systems that sustain the field — producing healthier food, not just more food. Every decision delivered in the language your team speaks. The same engine that runs a smallholder cooperative will run a vertical farm — and a closed-loop habitat off Earth.</p>
+                        <a href="brain.html" class="feature-link">Learn more about Brain <span>&rarr;</span></a>
+                    </div>
+                    <div class="four-product-visual">
+                        <div class="feature-dash feature-dash-compact panel-enter">
+                            <div class="feature-dash-topbar">
+                                <div class="feature-dash-topbar-left">
+                                    <div class="feature-dash-logo">W</div>
+                                    <span class="feature-dash-breadcrumb"><span>Brain /</span> Plot W-0091</span>
+                                </div>
+                                <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> Live</span>
+                            </div>
+                            <div class="feature-dash-tabs">
+                                <span class="feature-dash-tab active">Monitoring</span>
+                                <span class="feature-dash-tab">Decisions</span>
+                                <span class="feature-dash-tab">History</span>
+                            </div>
+                            <div class="feature-dash-metrics">
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Soil moisture</div>
+                                    <div class="feature-dash-metric-value">28<span class="feature-dash-metric-unit">%</span></div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Temperature</div>
+                                    <div class="feature-dash-metric-value">24<span class="feature-dash-metric-unit">°C</span></div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Canopy score</div>
+                                    <div class="feature-dash-metric-value">9.2<span class="feature-dash-metric-unit">/10</span></div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Rain (7d)</div>
+                                    <div class="feature-dash-metric-value">12<span class="feature-dash-metric-unit">mm</span></div>
+                                </div>
+                            </div>
+                            <div class="feature-dash-content">
+                                <svg class="feature-dash-chart" viewBox="0 0 400 80" preserveAspectRatio="none">
+                                    <defs><linearGradient id="brainGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f16001" stop-opacity="0.12"/><stop offset="100%" stop-color="#f16001" stop-opacity="0.01"/></linearGradient></defs>
+                                    <path d="M0,60 C40,55 80,45 120,50 C160,55 200,35 240,30 C280,25 320,15 360,10 C380,7 400,5 400,5 L400,80 L0,80 Z" fill="url(#brainGrad)"/>
+                                    <path d="M0,60 C40,55 80,45 120,50 C160,55 200,35 240,30 C280,25 320,15 360,10 C380,7 400,5" fill="none" stroke="#f16001" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="400" cy="5" r="3" fill="#f16001"/>
+                                </svg>
+                                <div class="feature-dash-chart-labels">
+                                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Today</span>
+                                </div>
+                            </div>
+                            <div class="feature-dash-bottom">
+                                <div class="feature-dash-card">
+                                    <div class="feature-dash-card-label">Agent confidence</div>
+                                    <div class="feature-dash-card-value">96<span class="feature-dash-metric-unit">%</span></div>
+                                    <div class="feature-dash-card-sub">Decision accuracy this season</div>
+                                </div>
+                                <div class="feature-dash-card">
+                                    <div class="feature-dash-card-label">Actions today</div>
+                                    <div class="feature-dash-card-value">7</div>
+                                </div>
+                            </div>
+                            <div class="feature-notif feature-notif-enter">
+                                <div class="feature-notif-icon green">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+                                </div>
+                                <div class="feature-notif-body">
+                                    <span class="feature-notif-title">Irrigation Started</span>
+                                    <span class="feature-notif-desc">Plot W-0091 · Soil at 28%</span>
+                                </div>
+                                <span class="feature-notif-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market -->
+                <div class="four-product-block four-product-reverse">
+                    <div class="four-product-content">
+                        <span class="four-product-name"><span class="nav-product-dot dot-market"></span>Market</span>
+                        <h3 class="four-product-headline">Every decision that moves a crop from farmer to buyer — autonomous.</h3>
+                        <div class="four-product-stats">
+                            <span>13+ agents</span>
+                            <span>Global price intelligence</span>
+                            <span>Full traceability</span>
+                        </div>
+                        <p class="four-product-desc">Everything between "a crop exists" and "a buyer has received, paid for, and documented it" — end-to-end on one platform. Built first for African smallholders. Architected for every market that moves. Every lot carries a data passport — a biological record of what was grown, where, under which conditions, with which inputs, and what it costs the environment. AI-verified quality. GPS-traced origin. Biological provenance. Sustainability scoring. Automated compliance across every standard from EUDR to Rainforest Alliance to biodiversity credits. A prediction engine monitors supply, demand, FX, futures, weather, and trade disruptions across markets worldwide. Traded without waste, delivered with its biological and environmental integrity intact. Forward contracts lock prices weeks before harvest. The asymmetry of information — finally, on the side of the producer.</p>
+                        <a href="market.html" class="feature-link">Learn more about Market <span>&rarr;</span></a>
+                    </div>
+                    <div class="four-product-visual">
+                        <div class="feature-dash feature-dash-compact panel-enter">
+                            <div class="feature-dash-topbar">
+                                <div class="feature-dash-topbar-left">
+                                    <div class="feature-dash-logo">W</div>
+                                    <span class="feature-dash-breadcrumb"><span>Market /</span> Price Intelligence</span>
+                                </div>
+                                <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> Streaming</span>
+                            </div>
+                            <div class="feature-dash-tabs">
+                                <span class="feature-dash-tab active">Spot prices</span>
+                                <span class="feature-dash-tab">Forward</span>
+                                <span class="feature-dash-tab">Compliance</span>
+                            </div>
+                            <div class="feature-dash-metrics">
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Arabica (Kenya)</div>
+                                    <div class="feature-dash-metric-value">KES 48,500<span class="feature-dash-metric-unit">/bag</span></div>
+                                    <div class="feature-dash-metric-delta">+2.4%</div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Cocoa (Ghana)</div>
+                                    <div class="feature-dash-metric-value">GHS 1,840<span class="feature-dash-metric-unit">/bag</span></div>
+                                    <div class="feature-dash-metric-delta">+3.2%</div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Sesame (Ethiopia)</div>
+                                    <div class="feature-dash-metric-value">$1,850<span class="feature-dash-metric-unit">/ton</span></div>
+                                    <div class="feature-dash-metric-delta">+1.8%</div>
+                                </div>
+                            </div>
+                            <div class="feature-dash-content">
+                                <svg class="feature-dash-chart" viewBox="0 0 400 80" preserveAspectRatio="none">
+                                    <defs><linearGradient id="mktGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.12"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0.01"/></linearGradient></defs>
+                                    <path d="M0,65 C30,58 60,62 100,48 C140,34 180,40 220,28 C260,16 300,20 340,10 C370,4 400,2 400,2 L400,80 L0,80 Z" fill="url(#mktGrad)"/>
+                                    <path d="M0,65 C30,58 60,62 100,48 C140,34 180,40 220,28 C260,16 300,20 340,10 C370,4 400,2" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="400" cy="2" r="3" fill="#3b82f6"/>
+                                </svg>
+                                <div class="feature-dash-chart-labels">
+                                    <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span>
+                                </div>
+                            </div>
+                            <div class="feature-dash-bottom">
+                                <div class="feature-dash-card">
+                                    <div class="feature-dash-card-label">Data passport</div>
+                                    <div class="feature-dash-card-value feature-dash-card-value-sm">Verified origin</div>
+                                </div>
+                                <div class="feature-dash-card">
+                                    <div class="feature-dash-card-label">Active lots</div>
+                                    <div class="feature-dash-card-value">1,247</div>
+                                    <div class="feature-dash-card-sub">Tracked across 3 commodities</div>
+                                </div>
+                            </div>
+                            <div class="feature-notif feature-notif-enter">
+                                <div class="feature-notif-icon orange">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                </div>
+                                <div class="feature-notif-body">
+                                    <span class="feature-notif-title">Price Alert</span>
+                                    <span class="feature-notif-desc">Sesame +4.1% · Sell signal</span>
+                                </div>
+                                <span class="feature-notif-time">2m ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ecosystem -->
+                <div class="four-product-block">
+                    <div class="four-product-content">
+                        <span class="four-product-name"><span class="nav-product-dot dot-ecosystem"></span>Ecosystem</span>
+                        <h3 class="four-product-headline">Every operation that keeps a farm running. Through one engine.</h3>
+                        <div class="four-product-stats">
+                            <span>13+ agents</span>
+                            <span>Every essential service</span>
+                            <span>Revenue share</span>
+                        </div>
+                        <p class="four-product-desc">Every essential service a farm, cooperative, or agribusiness needs — payments, insurance, credit, logistics, legal, accounting, warehousing, compliance, inputs, energy — through one engine. Insurance grounded in field data, not satellite estimates. Credit scored on farm health indicators, not collateral. Logistics preserving crop integrity — cold chain for bioactive material, not just perishables. From a smallholder in the Rwenzori highlands accessing same-day mobile payment, drought insurance, working capital, EUDR certification, and a verified export contract through one WhatsApp conversation, to the closed-loop greenhouse that will one day feed the first permanent crew off Earth — the same engine runs every operation that keeps life growing.</p>
+                        <a href="ecosystem.html" class="feature-link">Learn more about Ecosystem <span>&rarr;</span></a>
+                    </div>
+                    <div class="four-product-visual">
+                        <div class="feature-dash feature-dash-compact panel-enter">
+                            <div class="feature-dash-topbar">
+                                <div class="feature-dash-topbar-left">
+                                    <div class="feature-dash-logo">W</div>
+                                    <span class="feature-dash-breadcrumb"><span>Ecosystem /</span> Agent Mesh</span>
+                                </div>
+                                <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> 4 active</span>
+                            </div>
+                            <div class="feature-dash-tabs">
+                                <span class="feature-dash-tab active">Services</span>
+                                <span class="feature-dash-tab">Partners</span>
+                                <span class="feature-dash-tab">Activity</span>
+                            </div>
+                            <div class="feature-dash-metrics">
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Payments today</div>
+                                    <div class="feature-dash-metric-value">$84<span class="feature-dash-metric-unit">K</span></div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Insurance coverage</div>
+                                    <div class="feature-dash-metric-value">$840<span class="feature-dash-metric-unit">K</span></div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Credit score avg</div>
+                                    <div class="feature-dash-metric-value">720</div>
+                                </div>
+                            </div>
+                            <div class="feature-dash-list">
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+                                    <span class="feature-dash-list-text">Payment — Mobile money</span>
+                                    <span class="feature-dash-list-detail">$420</span>
+                                    <span class="feature-dash-list-badge green">Completed</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon amber"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                                    <span class="feature-dash-list-text">Insurance — Parametric</span>
+                                    <span class="feature-dash-list-detail">Coverage $5,000</span>
+                                    <span class="feature-dash-list-badge amber">Active</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon blue"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="6" width="15" height="10" rx="2"/><path d="M16 10h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4"/><circle cx="5.5" cy="19" r="2.5"/><circle cx="18.5" cy="19" r="2.5"/></svg></span>
+                                    <span class="feature-dash-list-text">Logistics — Cold chain</span>
+                                    <span class="feature-dash-list-detail">GPS tracked</span>
+                                    <span class="feature-dash-list-badge blue">In Transit</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+                                    <span class="feature-dash-list-text">Credit Score — Agent-scored</span>
+                                    <span class="feature-dash-list-badge green">Approved</span>
+                                </div>
+                            </div>
+                            <div class="feature-notif feature-notif-enter">
+                                <div class="feature-notif-icon green">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <div class="feature-notif-body">
+                                    <span class="feature-notif-title">Payment Sent</span>
+                                    <span class="feature-notif-desc">$420 · Mobile money instant</span>
+                                </div>
+                                <span class="feature-notif-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Labs -->
+                <div class="four-product-block four-product-reverse">
+                    <div class="four-product-content">
+                        <span class="four-product-name"><span class="nav-product-dot dot-labs"></span>Labs</span>
+                        <h3 class="four-product-headline">The biology the world has not read. The intelligence it becomes.</h3>
+                        <div class="four-product-stats">
+                            <span>21+ agents</span>
+                            <span>65,000+ species</span>
+                            <span>Earth → Orbit</span>
+                        </div>
+                        <p class="four-product-desc">The biological intelligence engine. Every observation Brain makes, every transaction Market processes, every service Ecosystem delivers feeds the <a href="archive.html">Watoko Archive</a> — the largest operational biological dataset of complex-environment biology on Earth. Labs reads that archive and turns it into medicine, longevity science, climate-resilient breeding, microbiome engineering, climate adaptation science, cosmetics, novel biomaterials, and the knowledge base for sustaining life beyond Earth. 65,000+ plant species — cultivated crops, wild and semi-wild plants, trees, fungi, soil microbiomes, plant microbiomes, insects, algae, lichens — most never computationally read. 142 bioactive compounds identified. Ngoma is the first commercial product. Models where growing zones are moving under climate change and screens the planet's richest germplasm for the resilience traits that survive what's coming. Engineers the microbial systems that keep crops and plants alive under stress. Closed-loop life support is biology under stress — and the extreme environments we already operate in are the proving ground for every habitat humanity will build. Labs is not a research department. It is the biological intelligence layer the other 3 engines feed.</p>
+                        <a href="labs.html" class="feature-link">Learn more about Labs <span>&rarr;</span></a>
+                    </div>
+                    <div class="four-product-visual">
+                        <div class="feature-dash feature-dash-compact panel-enter">
+                            <div class="feature-dash-topbar">
+                                <div class="feature-dash-topbar-left">
+                                    <div class="feature-dash-logo">W</div>
+                                    <span class="feature-dash-breadcrumb"><span>Labs /</span> Science Engine</span>
+                                </div>
+                                <span class="feature-dash-status"><span class="feature-dash-status-dot"></span> Processing</span>
+                            </div>
+                            <div class="feature-dash-tabs">
+                                <span class="feature-dash-tab active">Discovery</span>
+                                <span class="feature-dash-tab">Genomics</span>
+                                <span class="feature-dash-tab">Habitats</span>
+                            </div>
+                            <div class="feature-dash-metrics">
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Species mapped</div>
+                                    <div class="feature-dash-metric-value">65K+</div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Compounds cataloged</div>
+                                    <div class="feature-dash-metric-value">142</div>
+                                </div>
+                                <div class="feature-dash-metric">
+                                    <div class="feature-dash-metric-label">Active programs</div>
+                                    <div class="feature-dash-metric-value">23</div>
+                                </div>
+                            </div>
+                            <div class="feature-dash-list">
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 3h6"/><path d="M10 3v6.5L5 19a1 1 0 0 0 .9 1.4h12.2A1 1 0 0 0 19 19l-5-9.5V3"/></svg></span>
+                                    <span class="feature-dash-list-text">Bioactive Discovery</span>
+                                    <span class="feature-dash-list-detail">142 compounds</span>
+                                    <span class="feature-dash-list-badge green">Active</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon blue"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg></span>
+                                    <span class="feature-dash-list-text">Plant Genomics</span>
+                                    <span class="feature-dash-list-detail">4,200 varieties</span>
+                                    <span class="feature-dash-list-badge blue">Sequencing</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon amber"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                                    <span class="feature-dash-list-text">Habitat Simulation</span>
+                                    <span class="feature-dash-list-detail">Closed-loop v3</span>
+                                    <span class="feature-dash-list-badge amber">Testing</span>
+                                </div>
+                                <div class="feature-dash-list-item">
+                                    <span class="feature-dash-list-icon green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></span>
+                                    <span class="feature-dash-list-text">Longevity · NGA-7</span>
+                                    <span class="feature-dash-list-detail">Candidate validated</span>
+                                    <span class="feature-dash-list-badge green">Product</span>
+                                </div>
+                            </div>
+                            <div class="feature-notif feature-notif-enter">
+                                <div class="feature-notif-icon blue">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 3h6"/><path d="M10 3v6.5L5 19a1 1 0 0 0 .9 1.4h12.2A1 1 0 0 0 19 19l-5-9.5V3"/></svg>
+                                </div>
+                                <div class="feature-notif-body">
+                                    <span class="feature-notif-title">Compound NGA-7 → Product Pipeline</span>
+                                    <span class="feature-notif-desc">Longevity candidate · Commercial validation passed</span>
+                                </div>
+                                <span class="feature-notif-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Effect / Compound -->
+    <section class="compound">
+        <div class="container">
+            <div class="compound-header">
+                <span class="compound-eyebrow">Compound intelligence</span>
+                <h2 class="compound-title section-headline-enter">Every farm that joins teaches every farm that follows. Every season deepens the biology.</h2>
+                <p class="compound-desc section-headline-enter" data-stagger="150">A living biological dataset — soil chemistry, microbiomes, genomic profiles, compound libraries, weather, plant response, market behavior — built as a natural byproduct of platform operations. The <a href="archive.html">Watoko Archive</a> grows with every farm, every reading, every season. Sharper every cycle. The model does not just learn one field. It learns the biology of growing life in any environment, at any latitude, on any planet.</p>
+            </div>
+            <div class="compound-grid">
+                <div class="compound-card">
+                    <div class="compound-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Concentric ripple circles with data point dots -->
+                            <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.08" stroke="currentColor" stroke-width="0.8"/>
+                            <circle cx="100" cy="100" r="24" stroke="currentColor" stroke-width="0.7"/>
+                            <circle cx="100" cy="100" r="42" stroke="currentColor" stroke-width="0.6" stroke-dasharray="3 3"/>
+                            <circle cx="100" cy="100" r="62" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 4"/>
+                            <circle cx="100" cy="100" r="82" stroke="currentColor" stroke-width="0.4" stroke-dasharray="5 5"/>
+                            <!-- Data point dots on ripples -->
+                            <circle cx="100" cy="76" r="2.5" fill="currentColor" opacity="0.25"/>
+                            <circle cx="124" cy="100" r="2.5" fill="currentColor" opacity="0.25"/>
+                            <circle cx="58" cy="100" r="2" fill="currentColor" opacity="0.18"/>
+                            <circle cx="100" cy="142" r="2" fill="currentColor" opacity="0.18"/>
+                            <circle cx="140" cy="72" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="60" cy="130" r="1.5" fill="currentColor" opacity="0.12"/>
+                            <circle cx="155" cy="115" r="1.5" fill="currentColor" opacity="0.12"/>
+                            <circle cx="45" cy="78" r="1.5" fill="currentColor" opacity="0.10"/>
+                            <!-- Radial connection lines -->
+                            <line x1="108" y1="100" x2="124" y2="100" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <line x1="100" y1="92" x2="100" y2="76" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <line x1="92" y1="100" x2="58" y2="100" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <line x1="100" y1="108" x2="100" y2="142" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                        </svg>
+                    </div>
+                    <div class="compound-card-text">
+                        <h3 class="compound-card-title">Every soil reading from every farm</h3>
+                        <p class="compound-card-desc">Sharpens agronomic models and deepens the biological record — soil microbiome, compound profiles, genomic markers. Local signal compounds into continental biological intelligence. Every reading teaches the next field and feeds the Archive.</p>
+                    </div>
+                </div>
+                <div class="compound-card">
+                    <div class="compound-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Connected rectangular blocks (ledger/chain) with orbital ring -->
+                            <rect x="60" y="55" width="32" height="20" rx="3" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <rect x="108" y="55" width="32" height="20" rx="3" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <rect x="84" y="90" width="32" height="20" rx="3" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <rect x="60" y="125" width="32" height="20" rx="3" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <rect x="108" y="125" width="32" height="20" rx="3" stroke="currentColor" stroke-width="0.8" fill="currentColor" fill-opacity="0.04"/>
+                            <!-- Connections between blocks -->
+                            <line x1="92" y1="65" x2="108" y2="65" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="86" y1="75" x2="95" y2="90" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="114" y1="75" x2="105" y2="90" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="95" y1="110" x2="86" y2="125" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="105" y1="110" x2="114" y2="125" stroke="currentColor" stroke-width="0.5"/>
+                            <!-- Orbital ring around the structure -->
+                            <ellipse cx="100" cy="100" rx="80" ry="35" stroke="currentColor" stroke-width="0.4" stroke-dasharray="4 4" transform="rotate(-15 100 100)"/>
+                            <!-- Verification dots -->
+                            <circle cx="76" cy="65" r="2" fill="currentColor" opacity="0.2"/>
+                            <circle cx="124" cy="65" r="2" fill="currentColor" opacity="0.2"/>
+                            <circle cx="100" cy="100" r="2" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <div class="compound-card-text">
+                        <h3 class="compound-card-title">Every verified transaction</h3>
+                        <p class="compound-card-desc">Builds the proof layer that lets capital, insurance, and trade finally flow into the hardest environments on Earth. Trust becomes infrastructure. Infrastructure becomes economic gravity.</p>
+                    </div>
+                </div>
+                <div class="compound-card">
+                    <div class="compound-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Stacked elliptical layers with upward arrow -->
+                            <ellipse cx="100" cy="150" rx="60" ry="16" stroke="currentColor" stroke-width="0.5" fill="currentColor" fill-opacity="0.02"/>
+                            <ellipse cx="100" cy="130" rx="55" ry="14" stroke="currentColor" stroke-width="0.5" fill="currentColor" fill-opacity="0.03"/>
+                            <ellipse cx="100" cy="110" rx="48" ry="12" stroke="currentColor" stroke-width="0.6" fill="currentColor" fill-opacity="0.04"/>
+                            <ellipse cx="100" cy="90" rx="40" ry="10" stroke="currentColor" stroke-width="0.7" fill="currentColor" fill-opacity="0.05"/>
+                            <ellipse cx="100" cy="72" rx="30" ry="8" stroke="currentColor" stroke-width="0.7" fill="currentColor" fill-opacity="0.06"/>
+                            <!-- Upward arrow from stack -->
+                            <line x1="100" y1="60" x2="100" y2="28" stroke="currentColor" stroke-width="0.8"/>
+                            <polyline points="92,36 100,28 108,36" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                            <!-- Side lines showing accumulation -->
+                            <line x1="40" y1="150" x2="40" y2="72" stroke="currentColor" stroke-width="0.3" stroke-dasharray="3 4"/>
+                            <line x1="160" y1="150" x2="160" y2="72" stroke="currentColor" stroke-width="0.3" stroke-dasharray="3 4"/>
+                            <!-- Small dots on layers -->
+                            <circle cx="100" cy="150" r="2" fill="currentColor" opacity="0.15"/>
+                            <circle cx="100" cy="110" r="2" fill="currentColor" opacity="0.2"/>
+                            <circle cx="100" cy="72" r="2.5" fill="currentColor" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <div class="compound-card-text">
+                        <h3 class="compound-card-title">Every season of biological data</h3>
+                        <p class="compound-card-desc">Refines the science of life — agronomic, biochemical, genomic, ecological. From a single seed to a longevity compound to a vertical farm to crop protocols for worlds we have not yet reached. The biological intelligence compounds because the biology compounds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Network -->
+    <section class="network">
+        <div class="container">
+            <div class="network-header">
+                <h2 class="network-title">No one sustains life alone.</h2>
+                <p class="network-desc">Every participant strengthens the network. Every connection is load-bearing.</p>
+            </div>
+            <div class="network-grid">
+                <!-- Card 1: Farmers — featured with chat -->
+                <div class="network-card network-card-featured">
+                    <div class="scale-chat">
+                        <div class="scale-chat-msg incoming scale-chat-animate">Good morning James! Soil moisture at Plot K-7 dropped to 28%. Starting irrigation now.</div>
+                        <div class="scale-chat-msg outgoing scale-chat-animate">What about the northern farms?</div>
+                        <div class="scale-chat-msg incoming scale-chat-animate">Northern irrigation complete. Yield tracking +34% vs last season.</div>
+                        <div class="scale-chat-typing scale-chat-animate"><span></span><span></span><span></span></div>
+                        <div class="scale-chat-msg incoming scale-chat-animate">Done. 12 workers confirmed for Thursday 6am.</div>
+                        <div class="scale-chat-action scale-chat-animate">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            2,847 farms managed
+                        </div>
+                    </div>
+                    <div class="network-card-text">
+                        <h3 class="network-card-title">Farmers & Cooperatives</h3>
+                        <p class="network-card-desc">Intelligence on the ground. Farmers bring the knowledge, the land, and the data that no satellite or algorithm can replace.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Buyers -->
+                <div class="network-card">
+                    <div class="network-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <div class="network-card-text">
+                        <h3 class="network-card-title">Buyers & Exporters</h3>
+                        <p class="network-card-desc">Verified supply, full traceability, and automated compliance — EUDR, GlobalG.A.P., and more. Demand signals shape next season's production.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Financial -->
+                <div class="network-card">
+                    <div class="network-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                    </div>
+                    <div class="network-card-text">
+                        <h3 class="network-card-title">Financial Institutions</h3>
+                        <p class="network-card-desc">Credit, insurance, and payments for 400 million unbanked farmers. Risk scored on real farm performance, not collateral.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Governments -->
+                <div class="network-card">
+                    <div class="network-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
+                    </div>
+                    <div class="network-card-text">
+                        <h3 class="network-card-title">Governments & Multilaterals</h3>
+                        <p class="network-card-desc">Food security intelligence, subsidy allocation, and policy planning at continental scale. Real-time data where census takes years.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Researchers -->
+                <div class="network-card">
+                    <div class="network-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6.5L5 19a1 1 0 0 0 .9 1.4h12.2A1 1 0 0 0 19 19l-5-9.5V3"/><path d="M8.5 14h7"/></svg>
+                    </div>
+                    <div class="network-card-text">
+                        <h3 class="network-card-title">Researchers & Scientists</h3>
+                        <p class="network-card-desc">Access the dataset. Bioactive libraries, phytochemical profiles, microbiome maps, and longitudinal crop performance data across climatic zones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From Ground to Orbit -->
+    <section class="frontier">
+        <div class="container">
+            <div class="frontier-header">
+                <span class="frontier-eyebrow">The frontier</span>
+                <h2 class="frontier-title section-headline-enter">From the ground to orbit.</h2>
+            </div>
+            <div class="frontier-body">
+                <p>Africa's extreme-environment biology — desert margins, highland terraces, flood plains, salt flats, post-volcanic soils — has produced life under conditions that would defeat any system not designed for them. These are evolutionary laboratories. The biology refined under African selection pressure is directly continuous with medicine, longevity science, controlled-environment agriculture, climate-resilient breeding, cosmetics, novel materials, and the emerging discipline of astrobiology — the science of sustaining life on the Moon, on Mars, and inside every closed-loop habitat humanity will build.</p>
+                <p>Biology is the substrate of human health — and it has been degraded by extractive, chemical-driven systems for generations. Watoko reads the biology instead of mining it. The result: healthier food, grown with biological integrity intact, nutritionally richer because the biology beneath it is functioning. New science, from compounds and organisms the world has never studied at depth. Better human life — not just longer, better. And the knowledge base for sustaining life anywhere.</p>
+                <p>The biological intelligence infrastructure Watoko is building on the ground is the same infrastructure that answers a single question: <em>how do you sustain life, anywhere?</em></p>
+            </div>
+            <div class="frontier-grid">
+                <!-- Biology -->
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M72,10 C72,30 128,50 128,70 C128,90 72,110 72,130 C72,150 128,170 128,190" stroke="currentColor" stroke-width="0.9" fill="none"/>
+                            <path d="M128,10 C128,30 72,50 72,70 C72,90 128,110 128,130 C128,150 72,170 72,190" stroke="currentColor" stroke-width="0.9" fill="none"/>
+                            <line x1="80" y1="20" x2="120" y2="20" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="90" y1="40" x2="110" y2="40" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="110" y1="60" x2="90" y2="60" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="120" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="110" y1="100" x2="90" y2="100" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="90" y1="120" x2="110" y2="120" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="80" y1="140" x2="120" y2="140" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="90" y1="160" x2="110" y2="160" stroke="currentColor" stroke-width="0.5"/>
+                            <line x1="110" y1="180" x2="90" y2="180" stroke="currentColor" stroke-width="0.5"/>
+                            <circle cx="100" cy="20" r="2" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="0.5"/>
+                            <circle cx="100" cy="100" r="2" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="0.5"/>
+                            <circle cx="100" cy="180" r="2" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <h3 class="vision-card-title">Biological Intelligence</h3>
+                        <p class="vision-card-desc">65,000+ plant species. Soil microbiomes. Bioactive compounds. The soil-to-gut axis that connects what grows in the ground to human healthspan. Evolutionary strategies refined across millennia — and, for the first time, readable at scale through the <a href="archive.html">Watoko Archive</a>. Medicine, longevity, nutrition, cosmetics, materials. The biology has to be alive to be read.</p>
+                    </div>
+                </div>
+
+                <!-- Intelligence -->
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="100,20 169,45 169,115 100,140 31,115 31,45" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                            <polygon points="100,50 138,65 138,105 100,120 62,105 62,65" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                            <line x1="100" y1="20" x2="100" y2="50" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="169" y1="45" x2="138" y2="65" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="169" y1="115" x2="138" y2="105" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="100" y1="140" x2="100" y2="120" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="31" y1="115" x2="62" y2="105" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="31" y1="45" x2="62" y2="65" stroke="currentColor" stroke-width="0.6"/>
+                            <circle cx="100" cy="80" r="3" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="0.6"/>
+                            <line x1="100" y1="50" x2="100" y2="77" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <line x1="138" y1="65" x2="103" y2="79" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <line x1="62" y1="65" x2="97" y2="79" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 3"/>
+                            <circle cx="100" cy="20" r="2.5" fill="currentColor" opacity="0.2"/>
+                            <circle cx="169" cy="45" r="2.5" fill="currentColor" opacity="0.2"/>
+                            <circle cx="31" cy="45" r="2.5" fill="currentColor" opacity="0.2"/>
+                            <circle cx="100" cy="140" r="2.5" fill="currentColor" opacity="0.2"/>
+                            <circle cx="100" cy="80" r="85" stroke="currentColor" stroke-width="0.4" stroke-dasharray="4 5"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <h3 class="vision-card-title">Complex Environments</h3>
+                        <p class="vision-card-desc">63+ agents sharpening every season. The biological intelligence infrastructure for any environment that defeats conventional systems — drought zones, post-conflict landscapes, vertical farms, sealed habitats. Climate adaptation, biological resilience, and crisis response built as one continuous discipline.</p>
+                    </div>
+                </div>
+
+                <!-- Space -->
+                <div class="vision-card">
+                    <div class="vision-card-art">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Ground — solid center -->
+                            <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.08" stroke="currentColor" stroke-width="0.8"/>
+                            <!-- Atmosphere rings -->
+                            <circle cx="100" cy="100" r="28" stroke="currentColor" stroke-width="0.7"/>
+                            <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="0.6" stroke-dasharray="3 3"/>
+                            <!-- Orbit ring -->
+                            <circle cx="100" cy="100" r="75" stroke="currentColor" stroke-width="0.5" stroke-dasharray="5 5"/>
+                            <!-- Outermost -->
+                            <circle cx="100" cy="100" r="92" stroke="currentColor" stroke-width="0.3" stroke-dasharray="8 6"/>
+                            <!-- Radial lines — ground to orbit -->
+                            <line x1="100" y1="72" x2="100" y2="8" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <line x1="128" y1="100" x2="192" y2="100" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <line x1="100" y1="128" x2="100" y2="192" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <line x1="72" y1="100" x2="8" y2="100" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                            <!-- Points on orbit -->
+                            <circle cx="100" cy="25" r="2.5" fill="currentColor" opacity="0.15"/>
+                            <circle cx="175" cy="100" r="2.5" fill="currentColor" opacity="0.15"/>
+                            <circle cx="100" cy="175" r="2.5" fill="currentColor" opacity="0.15"/>
+                            <circle cx="25" cy="100" r="2.5" fill="currentColor" opacity="0.15"/>
+                            <!-- Points on atmosphere -->
+                            <circle cx="100" cy="50" r="2" fill="currentColor" opacity="0.2"/>
+                            <circle cx="150" cy="100" r="2" fill="currentColor" opacity="0.2"/>
+                            <circle cx="50" cy="100" r="2" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <div class="vision-card-text">
+                        <h3 class="vision-card-title">Space & Astrobiology</h3>
+                        <p class="vision-card-desc">Closed-loop life support is biology under stress. The biological protocols built for the hardest environments on Earth become the foundation for vertical farms, desert greenhouses, lunar regolith trials, Mars surface operations, and every sealed habitat humanity will build. Astrobiology starts on Earth — and the biology that survives Africa's selection pressure is the biology we take with us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <div class="final-cta-grid">
+                <div class="final-cta-left">
+                    <h2 class="final-cta-title section-headline-enter">Turn Earth's deepest biology into the food, the science,<br>and the intelligence for better human life. On Earth and beyond.</h2>
+                    <p class="final-cta-desc section-headline-enter" data-stagger="150">One platform. Every decision from field to market to lab to discovery. Starting where Earth's biology is deepest. Built for Earth and space.</p>
+                    <div class="final-cta-actions">
+                        <a href="#" class="btn btn-primary demo-trigger">See a demo <span class="btn-arrow">&rarr;</span></a>
+                        <a href="company.html" class="btn btn-secondary-light">Our mission <span class="btn-arrow">&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="final-cta-right">
+                    <a href="pricing.html" class="final-cta-card">
+                        <div class="final-cta-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5h20M6 16h3M13 16h3"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+                        </div>
+                        <div class="final-cta-card-text">
+                            <h4 class="final-cta-card-title">See pricing</h4>
+                            <p class="final-cta-card-desc">Transparent, modular pricing for every product in the platform.</p>
+                        </div>
+                    </a>
+                    <a href="customers.html" class="final-cta-card">
+                        <div class="final-cta-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="final-cta-card-text">
+                            <h4 class="final-cta-card-title">Customer stories</h4>
+                            <p class="final-cta-card-desc">How cooperatives and agribusinesses use Watoko across Africa.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">watoko</a>
+                    <p class="footer-tagline">From the ground. Toward everything.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <a href="brain.html">Brain</a>
+                        <a href="market.html">Market</a>
+                        <a href="ecosystem.html">Ecosystem</a>
+                        <a href="labs.html">Labs</a>
+                        <a href="archive.html">The Archive</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Solutions</h4>
+                        <a href="solutions.html#cooperatives">Cooperatives</a>
+                        <a href="solutions.html#agribusinesses">Agribusinesses</a>
+                        <a href="solutions.html#buyers">Buyers &amp; Exporters</a>
+                        <a href="solutions.html#institutions">Governments &amp; Institutions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <a href="company.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog/">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Programs</h4>
+                        <a href="pioneers.html">Fellowship</a>
+                        <a href="grants.html">Grants</a>
+                        <a href="developers.html">Developers</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <a href="mailto:hello@watoko.ai">hello@watoko.ai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Watoko</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-modal-overlay"></div>
+        <div class="demo-modal-container">
+            <button class="demo-modal-close" aria-label="Close">&times;</button>
+            <div class="demo-modal-grid">
+                <div class="demo-modal-left">
+                    <h2 class="demo-modal-title">See Watoko in action.</h2>
+                    <p class="demo-modal-subtitle">Book a demo. See Watoko running on your farm, cooperative, or supply chain.</p>
+                    <div class="demo-modal-quote">
+                        <blockquote>"Watoko replaced five different tools we were using. Now everything — field data, trading, payments — lives in one place."</blockquote>
+                        <cite>— Agricultural Operations Manager</cite>
+                    </div>
+                </div>
+                <div class="demo-modal-right">
+                    <form class="demo-modal-form" id="demoForm">
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoFirstName">First name</label>
+                                <input type="text" id="demoFirstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoLastName">Last name</label>
+                                <input type="text" id="demoLastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="demo-form-row">
+                            <div class="demo-form-group">
+                                <label for="demoEmail">Work email</label>
+                                <input type="email" id="demoEmail" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="demo-form-group">
+                                <label for="demoPhone">Phone</label>
+                                <input type="tel" id="demoPhone" name="phone" placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoCompany">Company / Organization</label>
+                            <input type="text" id="demoCompany" name="company" required placeholder="Your organization">
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoRole">Role</label>
+                            <select id="demoRole" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="cooperative">Cooperative / Farmer organization</option>
+                                <option value="agribusiness">Agri-business / Commercial farm</option>
+                                <option value="buyer">Buyer / Exporter</option>
+                                <option value="provider">Service provider</option>
+                                <option value="government">Government / DFI</option>
+                                <option value="investor">Investor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="demo-form-group">
+                            <label for="demoMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="demoMessage" name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+                        </div>
+                        <button type="submit" class="demo-form-submit">Request a demo <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-modal-success">
+                <div class="demo-modal-success-icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours to schedule your demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mesh-gradient.js"></script>
+</body>
+</html>
