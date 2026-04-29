@@ -4006,6 +4006,7 @@ textarea:focus-visible {
 }
 
 .vision-card {
+    position: relative;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 20px;
@@ -9403,6 +9404,67 @@ body.modal-open {
     color: var(--text-tertiary);
     letter-spacing: 0.02em;
     white-space: nowrap;
+}
+
+/* Biological Inventory tags — homepage */
+.bio-inventory-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.bio-inventory-tags span {
+    display: inline-flex;
+    padding: 8px 18px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    transition: border-color var(--transition);
+}
+
+.bio-inventory-tags span:hover {
+    border-color: var(--border-hover);
+}
+
+/* Vision card step numbers */
+.vision-card-step {
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-tertiary);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Chevron connectors between vision cards */
+.frontier-grid .vision-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid var(--text-muted);
+    border-bottom: 1.5px solid var(--text-muted);
+    transform: translateY(-50%) rotate(-45deg);
+    opacity: 0.25;
+    z-index: 2;
+}
+
+/* Hide chevrons on tablet and below */
+@media (max-width: 1024px) {
+    .frontier-grid .vision-card:not(:last-child)::after {
+        display: none;
+    }
 }
 
 .fellowship-footnote {
