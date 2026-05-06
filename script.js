@@ -130,7 +130,7 @@
             orb.className = 'carousel-orb';
             orb.dataset.idx = i;
             var gradClass = e.gradients[i % e.gradients.length];
-            orb.innerHTML = '<div class="carousel-orb-inner ' + gradClass + '"></div>';
+            orb.innerHTML = '<div class="carousel-orb-inner"><div class="carousel-orb-gradient ' + gradClass + '"></div></div>';
             orb.addEventListener('click', function() {
                 var idx = parseInt(orb.dataset.idx, 10);
                 if (idx === cCenterIndex) {

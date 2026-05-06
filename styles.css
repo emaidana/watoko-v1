@@ -12831,44 +12831,41 @@ body.modal-open {
     border-radius: 50%;
     overflow: hidden;
     isolation: isolate;
-    animation: orbDrift 16s ease-in-out infinite;
 }
 
-.carousel-orb:nth-child(3n+2) .carousel-orb-inner { animation-delay: -5s; }
-.carousel-orb:nth-child(3n+3) .carousel-orb-inner { animation-delay: -11s; }
+/* Gradient layer — oversized so rotation doesn't reveal edges */
+.carousel-orb-gradient {
+    position: absolute;
+    inset: -15%;
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    animation: orbGradientDrift 18s ease-in-out infinite;
+}
+
+.carousel-orb:nth-child(3n+2) .carousel-orb-gradient { animation-delay: -6s; }
+.carousel-orb:nth-child(3n+3) .carousel-orb-gradient { animation-delay: -12s; }
 
 .carousel-orb[data-pos="0"] { filter: none; }
 .carousel-orb[data-pos="0"]  { transform: translate(-50%, -50%) scale(1);    opacity: 1;    z-index: 5; }
-.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 270px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 270px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 505px), -50%) scale(0.48); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
-.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 505px), -50%) scale(0.48); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
+.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 315px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 315px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 525px), -50%) scale(0.52); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
+.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 525px), -50%) scale(0.52); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
 .carousel-orb[data-pos="-3"],
 .carousel-orb[data-pos="3"] {
-    transform: translate(calc(-50% - 580px), -50%) scale(0.2);
+    transform: translate(calc(-50% - 600px), -50%) scale(0.3);
     opacity: 0;
     z-index: 1;
     pointer-events: none;
 }
-.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 580px), -50%) scale(0.15); }
+.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 600px), -50%) scale(0.3); }
 
-/* Gradient drift — subtle rotation for organic feel */
-@keyframes orbDrift {
-    0%, 100% { transform: rotate(0deg) scale(1); }
-    33%      { transform: rotate(5deg) scale(1.03); }
-    66%      { transform: rotate(-3deg) scale(1.01); }
-}
-
-/* Center orb — richer alive animation */
-.carousel-orb[data-pos="0"] .carousel-orb-inner {
-    animation: orbAlive 8s ease-in-out infinite;
-}
-
-@keyframes orbAlive {
-    0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
-    25%      { transform: translateY(-4px) rotate(4deg) scale(1.02); }
-    50%      { transform: translateY(-6px) rotate(-2deg) scale(1.03); }
-    75%      { transform: translateY(-2px) rotate(3deg) scale(1.01); }
+/* Gradient drift — only the colors move, sphere stays still */
+@keyframes orbGradientDrift {
+    0%, 100% { transform: rotate(0deg); }
+    33%      { transform: rotate(8deg); }
+    66%      { transform: rotate(-5deg); }
 }
 
 /* Grain overlay */
@@ -12931,8 +12928,8 @@ body.modal-open {
 }
 
 .carousel-cap[data-pos="0"]  { transform: translateX(-50%); opacity: 1; }
-.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 270px), 0); opacity: 0.55; }
-.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 270px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 315px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 315px), 0); opacity: 0.55; }
 .carousel-cap[data-pos="-2"],
 .carousel-cap[data-pos="2"],
 .carousel-cap[data-pos="-3"],
@@ -13002,12 +12999,12 @@ body.modal-open {
 }
 
 .carousel-arrow-left {
-    left: calc(50% - 135px);
+    left: calc(50% - 158px);
     transform: translateX(-50%);
 }
 
 .carousel-arrow-right {
-    left: calc(50% + 135px);
+    left: calc(50% + 158px);
     transform: translateX(-50%);
 }
 
@@ -13096,17 +13093,17 @@ body.modal-open {
 /* Responsive */
 @media (max-width: 880px) {
     .carousel-orb { width: 240px; height: 240px; }
-    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 210px), -50%) scale(0.56); opacity: 0.9; }
-    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 210px), -50%) scale(0.56); opacity: 0.9; }
-    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 385px), -50%) scale(0.42); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
-    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 385px), -50%) scale(0.42); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
-    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 210px), 0); }
-    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 210px), 0); }
+    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 240px), -50%) scale(0.56); opacity: 0.9; }
+    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 240px), -50%) scale(0.56); opacity: 0.9; }
+    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 400px), -50%) scale(0.46); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
+    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 400px), -50%) scale(0.46); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
+    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 240px), 0); }
+    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 240px), 0); }
     .carousel-stage { height: 280px; }
     .carousel-top-bar { flex-direction: column; }
     .carousel-engine-meta { text-align: left; }
-    .carousel-arrow-left { left: calc(50% - 105px); }
-    .carousel-arrow-right { left: calc(50% + 105px); }
+    .carousel-arrow-left { left: calc(50% - 120px); }
+    .carousel-arrow-right { left: calc(50% + 120px); }
 }
 
 @media (max-width: 768px) {
