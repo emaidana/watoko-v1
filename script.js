@@ -112,8 +112,6 @@
     var cCaptions = document.getElementById('carouselCaptions');
     var cEngineMeta = document.getElementById('carouselEngineMeta');
     var cTabs = document.querySelectorAll('.carousel-tab');
-    var cDotsEl = document.getElementById('carouselDots');
-    var cCounterEl = document.getElementById('carouselCounter');
 
     function cBuildEngine(engineKey) {
         cCurrentEngine = engineKey;
@@ -146,8 +144,8 @@
             cTrack.appendChild(orb);
         });
 
-        // Captions
-        cCaptions.innerHTML = '';
+        // Captions — remove only caption divs, keep arrow buttons
+        cCaptions.querySelectorAll('.carousel-cap').forEach(function(el) { el.remove(); });
         e.agents.forEach(function(agent, i) {
             var cap = document.createElement('div');
             cap.className = 'carousel-cap';
@@ -156,18 +154,6 @@
                 '<div class="carousel-cap-name">' + agent.name + '</div>' +
                 '<div class="carousel-cap-desc">' + agent.desc + '</div>';
             cCaptions.appendChild(cap);
-        });
-
-        // Dots
-        cDotsEl.innerHTML = '';
-        e.agents.forEach(function(agent, i) {
-            var dot = document.createElement('button');
-            dot.className = 'carousel-dot-page';
-            dot.addEventListener('click', function() {
-                cCenterIndex = i;
-                cUpdatePositions();
-            });
-            cDotsEl.appendChild(dot);
         });
 
         cUpdatePositions();
@@ -192,14 +178,6 @@
             cap.dataset.pos = diff;
         });
 
-        cDotsEl.querySelectorAll('.carousel-dot-page').forEach(function(d, i) {
-            d.classList.toggle('active', i === cCenterIndex);
-        });
-
-        // Counter
-        var padded = (cCenterIndex + 1 < 10 ? '0' : '') + (cCenterIndex + 1);
-        var total = (e.agents.length < 10 ? '0' : '') + e.agents.length;
-        cCounterEl.innerHTML = '<strong>' + padded + '</strong> / ' + total;
     }
 
     // Tabs
