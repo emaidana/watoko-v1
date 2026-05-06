@@ -12835,10 +12835,10 @@ body.modal-open {
 
 .carousel-orb[data-pos="0"] { filter: none; }
 .carousel-orb[data-pos="0"]  { transform: translate(-50%, -50%) scale(1);    opacity: 1;    z-index: 5; }
-.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 280px), -50%) scale(0.58); opacity: 1;   z-index: 4; filter: blur(0.4px) saturate(0.85); }
-.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 280px), -50%) scale(0.58); opacity: 1;   z-index: 4; filter: blur(0.4px) saturate(0.85); }
-.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 440px), -50%) scale(0.34); opacity: 0.4; z-index: 3; filter: blur(1.6px) saturate(0.5); }
-.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 440px), -50%) scale(0.34); opacity: 0.4; z-index: 3; filter: blur(1.6px) saturate(0.5); }
+.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 280px), -50%) scale(0.55); opacity: 0.85; z-index: 4; filter: blur(0.5px) saturate(0.82); }
+.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 280px), -50%) scale(0.55); opacity: 0.85; z-index: 4; filter: blur(0.5px) saturate(0.82); }
+.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 460px), -50%) scale(0.22); opacity: 0.18; z-index: 3; filter: blur(3px) saturate(0.35); pointer-events: none; }
+.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 460px), -50%) scale(0.22); opacity: 0.18; z-index: 3; filter: blur(3px) saturate(0.35); pointer-events: none; }
 .carousel-orb[data-pos="-3"],
 .carousel-orb[data-pos="3"] {
     transform: translate(calc(-50% - 500px), -50%) scale(0.2);
@@ -13054,10 +13054,10 @@ body.modal-open {
 /* Responsive */
 @media (max-width: 880px) {
     .carousel-orb { width: 220px; height: 220px; }
-    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 220px), -50%) scale(0.5); }
-    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 220px), -50%) scale(0.5); }
-    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 340px), -50%) scale(0.28); }
-    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 340px), -50%) scale(0.28); }
+    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 220px), -50%) scale(0.5); opacity: 0.85; }
+    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 220px), -50%) scale(0.5); opacity: 0.85; }
+    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 360px), -50%) scale(0.18); opacity: 0.15; filter: blur(3px) saturate(0.3); }
+    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 360px), -50%) scale(0.18); opacity: 0.15; filter: blur(3px) saturate(0.3); }
     .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 220px), 0); }
     .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 220px), 0); }
     .carousel-stage { height: 280px; }
