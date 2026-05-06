@@ -12796,11 +12796,11 @@ body.modal-open {
 /* Stage */
 .carousel-stage {
     position: relative;
-    height: 420px;
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .carousel-track {
