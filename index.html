@@ -726,6 +726,63 @@
         </div>
     </section>
 
+    <!-- Agent Carousel -->
+    <section class="carousel-section">
+        <div class="carousel-shell" tabindex="0" id="agentCarousel">
+
+            <!-- Top: tabs + engine meta -->
+            <div class="carousel-top-bar">
+                <div class="carousel-tabs" id="carouselTabs">
+                    <button class="carousel-tab active" data-engine="brain"><span class="carousel-dot carousel-dot-brain"></span>Watoko Brain</button>
+                    <button class="carousel-tab" data-engine="market"><span class="carousel-dot carousel-dot-market"></span>Watoko Market</button>
+                    <button class="carousel-tab" data-engine="ecosystem"><span class="carousel-dot carousel-dot-ecosystem"></span>Watoko Ecosystem</button>
+                    <button class="carousel-tab" data-engine="labs"><span class="carousel-dot carousel-dot-labs"></span>Watoko Labs</button>
+                </div>
+                <div class="carousel-engine-meta" id="carouselEngineMeta">
+                    <div class="em-title">Field intelligence engine</div>
+                    <div class="em-sub">16+ autonomous agents running the full field-intelligence stack — soil, irrigation, canopy, harvest.</div>
+                </div>
+            </div>
+
+            <!-- Stage -->
+            <div class="carousel-stage">
+                <div class="carousel-track" id="carouselTrack"></div>
+            </div>
+
+            <!-- Captions -->
+            <div class="carousel-captions" id="carouselCaptions"></div>
+
+            <!-- Controls: counter · dot pagination · arrows -->
+            <div class="carousel-controls-bar">
+                <div class="carousel-counter" id="carouselCounter"><strong>03</strong> / 08</div>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <div class="carousel-arrow-pair">
+                    <button class="carousel-arrow-btn" id="carouselPrev" aria-label="Previous">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11 5 7l4-4"/></svg>
+                    </button>
+                    <button class="carousel-arrow-btn" id="carouselNext" aria-label="Next">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 3 4 4-4 4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Agent Detail Panel -->
+    <div class="carousel-panel-overlay" id="carouselPanelOverlay">
+        <div class="carousel-panel">
+            <button class="carousel-panel-close" id="carouselPanelClose">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 3l8 8M11 3l-8 8"/></svg>
+            </button>
+            <div class="carousel-panel-orb" id="carouselPanelOrb"></div>
+            <div class="carousel-panel-engine-tag" id="carouselPanelTag"><span class="carousel-dot"></span><span>BRAIN</span></div>
+            <h2 id="carouselPanelName">Soil Agent</h2>
+            <p class="carousel-panel-desc" id="carouselPanelDesc">—</p>
+            <div class="carousel-panel-tags" id="carouselPanelTags"></div>
+        </div>
+    </div>
+
     <!-- The Biological Inventory -->
     <section class="compound" style="padding: 64px 0;">
         <div class="container">

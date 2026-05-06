@@ -1,5 +1,234 @@
 // --- Opening Screen removed — statement is now inline above hero ---
 
+/* ============================================
+   Agent Carousel
+   ============================================ */
+(function() {
+    var carouselEl = document.getElementById('agentCarousel');
+    if (!carouselEl) return;
+
+    var CAROUSEL_ENGINES = {
+        brain: {
+            title: 'Field intelligence engine',
+            sub: 'Autonomous agents across your fields, greenhouses, and research stations \u2014 offline-first.',
+            gradients: ['g-brain-1', 'g-brain-2', 'g-brain-3'],
+            agents: [
+                { name: 'Soil',       desc: 'Continuous moisture, nutrients & structure modeling per plot.', tags: ['Sensors', 'Satellite'] },
+                { name: 'Irrigation', desc: 'Autonomous water decisions \u2014 when, where, how much.',           tags: ['Real-time', 'Offline'] },
+                { name: 'Pests',      desc: 'Detects, identifies, and intervenes before damage spreads.',     tags: ['Vision', 'Predictive'] },
+                { name: 'Disease',    desc: 'Early-stage pathogen detection across canopy.',                  tags: ['Vision'] },
+                { name: 'Canopy',     desc: 'Vegetation indices & biomass tracking from space to leaf.',      tags: ['Satellite'] },
+                { name: 'Harvest',    desc: 'Optimal timing windows by yield, weather and price.',            tags: ['Predictive'] },
+                { name: 'Inputs',     desc: 'Fertilizer & input prescriptions per square meter.',             tags: ['Prescriptive'] },
+                { name: 'Labor',      desc: 'Workforce orchestration tied to live field state.',              tags: ['Operations'] },
+            ],
+        },
+        market: {
+            title: 'Trade orchestration engine',
+            sub: 'Every commercial decision that moves a crop from farmer to buyer \u2014 autonomous, verified.',
+            gradients: ['g-market-1', 'g-market-2', 'g-market-3'],
+            agents: [
+                { name: 'Price',         desc: 'Live commodity pricing and sell-signal generation.',     tags: ['Real-time'] },
+                { name: 'Quality',       desc: 'Lot-by-lot grading from farm to shipment.',              tags: ['Vision', 'Lab'] },
+                { name: 'Origin',        desc: 'Verified provenance \u2014 every kilo, every step.',          tags: ['Traceability'] },
+                { name: 'Compliance',    desc: 'EUDR, organic, fair-trade \u2014 auto-evidence packs.',       tags: ['Regulatory'] },
+                { name: 'Sustainability',desc: 'Scope 3, water, biodiversity scoring per harvest.',      tags: ['ESG'] },
+                { name: 'Contracts',     desc: 'Smart-contract orchestration from offer to settlement.', tags: ['Smart'] },
+                { name: 'Matching',      desc: 'Pairs supply lots with global buyers in real time.',     tags: ['Marketplace'] },
+                { name: 'FX',            desc: 'Multi-currency settlement and hedging.',                 tags: ['Treasury'] },
+            ],
+        },
+        ecosystem: {
+            title: 'Operations engine',
+            sub: 'Every operation that keeps a farm running \u2014 payments, insurance, credit, logistics.',
+            gradients: ['g-ecosystem-1', 'g-ecosystem-2', 'g-ecosystem-3'],
+            agents: [
+                { name: 'Payments',   desc: 'Instant disbursement to growers in any local rail.',  tags: ['Mobile money'] },
+                { name: 'Insurance',  desc: 'Parametric coverage based on live field signals.',     tags: ['Parametric'] },
+                { name: 'Credit',     desc: 'Working-capital underwritten by real production data.', tags: ['Lending'] },
+                { name: 'Logistics',  desc: 'From plot to port \u2014 loads, lanes, and live tracking.',  tags: ['Transport'] },
+                { name: 'Warehousing',desc: 'Storage state, throughput, and inventory financing.',   tags: ['Storage'] },
+                { name: 'Accounting', desc: 'Books, taxes, and reporting \u2014 agent-maintained.',       tags: ['Finance'] },
+                { name: 'Legal',      desc: 'Contract review and compliance-as-a-service.',          tags: ['Legal'] },
+                { name: 'Grants',     desc: 'Discovers, applies and reports on grant capital.',      tags: ['Capital'] },
+            ],
+        },
+        labs: {
+            title: 'Earth & space science engine',
+            sub: 'Where biology meets planetary systems \u2014 discovery agents for what comes next.',
+            gradients: ['g-labs-1', 'g-labs-2', 'g-labs-3'],
+            agents: [
+                { name: 'Genomics',          desc: 'Trait discovery across cultivars and conditions.',   tags: ['Sequencing'] },
+                { name: 'Bioactives',        desc: 'Mining biology for novel compounds at scale.',       tags: ['Discovery'] },
+                { name: 'Microbiome',        desc: 'Engineering soil-microbe communities for yield.',    tags: ['Microbial'] },
+                { name: 'Climate Adaptation',desc: 'Variety-by-variety resilience modeling.',            tags: ['Resilience'] },
+                { name: 'Digital Twin',      desc: 'High-fidelity simulations of plots and biomes.',     tags: ['Simulation'] },
+                { name: 'Life Support',      desc: 'Sealed-environment crop systems for orbit and Mars.',tags: ['Space'] },
+                { name: 'Longevity',         desc: 'Plant longevity and stress-response programs.',      tags: ['Bio'] },
+                { name: 'Resilience',        desc: 'Stress-test screens across 10k+ stress vectors.',    tags: ['Screening'] },
+            ],
+        },
+    };
+
+    var cCurrentEngine = 'brain';
+    var cCenterIndex = 2;
+
+    var cTrack = document.getElementById('carouselTrack');
+    var cCaptions = document.getElementById('carouselCaptions');
+    var cEngineMeta = document.getElementById('carouselEngineMeta');
+    var cTabs = document.querySelectorAll('.carousel-tab');
+    var cDotsEl = document.getElementById('carouselDots');
+    var cCounterEl = document.getElementById('carouselCounter');
+
+    function cBuildEngine(engineKey) {
+        cCurrentEngine = engineKey;
+        var e = CAROUSEL_ENGINES[engineKey];
+        cCenterIndex = Math.min(cCenterIndex, e.agents.length - 1);
+
+        // Engine meta
+        cEngineMeta.innerHTML =
+            '<div class="em-title">' + e.title + '</div>' +
+            '<div class="em-sub">' + e.sub + '</div>';
+
+        // Orbs
+        cTrack.innerHTML = '';
+        e.agents.forEach(function(agent, i) {
+            var orb = document.createElement('div');
+            orb.className = 'carousel-orb';
+            orb.dataset.idx = i;
+            var gradClass = e.gradients[i % e.gradients.length];
+            orb.innerHTML =
+                '<div class="carousel-orb-inner ' + gradClass + '"></div>' +
+                '<div class="carousel-orb-cta">' +
+                    '<svg width="16" height="16" viewBox="0 0 18 18" fill="currentColor"><path d="M5 3.5v11l10-5.5z"/></svg>' +
+                '</div>';
+            orb.addEventListener('click', function() {
+                var idx = parseInt(orb.dataset.idx, 10);
+                if (idx === cCenterIndex) {
+                    cOpenPanel(idx);
+                } else {
+                    cCenterIndex = idx;
+                    cUpdatePositions();
+                }
+            });
+            cTrack.appendChild(orb);
+        });
+
+        // Captions
+        cCaptions.innerHTML = '';
+        e.agents.forEach(function(agent, i) {
+            var cap = document.createElement('div');
+            cap.className = 'carousel-cap';
+            cap.dataset.idx = i;
+            cap.innerHTML =
+                '<div class="carousel-cap-name">' + agent.name + '<span class="arrow-up">\u2197</span></div>' +
+                '<div class="carousel-cap-desc">' + agent.desc + '</div>';
+            cCaptions.appendChild(cap);
+        });
+
+        // Dots
+        cDotsEl.innerHTML = '';
+        e.agents.forEach(function(agent, i) {
+            var dot = document.createElement('button');
+            dot.className = 'carousel-dot-page';
+            dot.addEventListener('click', function() {
+                cCenterIndex = i;
+                cUpdatePositions();
+            });
+            cDotsEl.appendChild(dot);
+        });
+
+        cUpdatePositions();
+    }
+
+    function cUpdatePositions() {
+        var e = CAROUSEL_ENGINES[cCurrentEngine];
+
+        cTrack.querySelectorAll('.carousel-orb').forEach(function(orb) {
+            var i = parseInt(orb.dataset.idx, 10);
+            var diff = i - cCenterIndex;
+            if (diff > 3) diff = 3;
+            if (diff < -3) diff = -3;
+            orb.dataset.pos = diff;
+        });
+
+        cCaptions.querySelectorAll('.carousel-cap').forEach(function(cap) {
+            var i = parseInt(cap.dataset.idx, 10);
+            var diff = i - cCenterIndex;
+            if (diff > 2) diff = 2;
+            if (diff < -2) diff = -2;
+            cap.dataset.pos = diff;
+        });
+
+        cDotsEl.querySelectorAll('.carousel-dot-page').forEach(function(d, i) {
+            d.classList.toggle('active', i === cCenterIndex);
+        });
+
+        // Counter
+        var padded = (cCenterIndex + 1 < 10 ? '0' : '') + (cCenterIndex + 1);
+        var total = (e.agents.length < 10 ? '0' : '') + e.agents.length;
+        cCounterEl.innerHTML = '<strong>' + padded + '</strong> / ' + total;
+    }
+
+    // Tabs
+    cTabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            cTabs.forEach(function(t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+            cCenterIndex = 2;
+            cBuildEngine(tab.dataset.engine);
+        });
+    });
+
+    // Arrows
+    document.getElementById('carouselPrev').addEventListener('click', function() {
+        cCenterIndex = Math.max(0, cCenterIndex - 1);
+        cUpdatePositions();
+    });
+    document.getElementById('carouselNext').addEventListener('click', function() {
+        var max = CAROUSEL_ENGINES[cCurrentEngine].agents.length - 1;
+        cCenterIndex = Math.min(max, cCenterIndex + 1);
+        cUpdatePositions();
+    });
+
+    // Keyboard — scoped to carousel container
+    carouselEl.addEventListener('keydown', function(ev) {
+        if (ev.key === 'ArrowLeft') { document.getElementById('carouselPrev').click(); ev.preventDefault(); }
+        if (ev.key === 'ArrowRight') { document.getElementById('carouselNext').click(); ev.preventDefault(); }
+        if (ev.key === 'Escape') cClosePanel();
+    });
+
+    // Panel
+    var cOverlay = document.getElementById('carouselPanelOverlay');
+    var cPanelOrb = document.getElementById('carouselPanelOrb');
+    var cPanelTag = document.getElementById('carouselPanelTag');
+    var cPanelName = document.getElementById('carouselPanelName');
+    var cPanelDesc = document.getElementById('carouselPanelDesc');
+    var cPanelTags = document.getElementById('carouselPanelTags');
+
+    function cOpenPanel(idx) {
+        var e = CAROUSEL_ENGINES[cCurrentEngine];
+        var agent = e.agents[idx];
+        var grad = e.gradients[idx % e.gradients.length];
+        cPanelOrb.className = 'carousel-panel-orb ' + grad;
+        cPanelTag.querySelector('.carousel-dot').className = 'carousel-dot carousel-dot-' + cCurrentEngine;
+        cPanelTag.querySelector('span:last-child').textContent = 'Watoko ' + cCurrentEngine.charAt(0).toUpperCase() + cCurrentEngine.slice(1);
+        cPanelName.textContent = agent.name + ' Agent';
+        cPanelDesc.textContent = agent.desc;
+        cPanelTags.innerHTML = agent.tags.map(function(t) {
+            return '<span class="carousel-pill-ghost">' + t + '</span>';
+        }).join('');
+        cOverlay.classList.add('open');
+    }
+
+    function cClosePanel() { cOverlay.classList.remove('open'); }
+    document.getElementById('carouselPanelClose').addEventListener('click', cClosePanel);
+    cOverlay.addEventListener('click', function(ev) { if (ev.target === cOverlay) cClosePanel(); });
+
+    // Init
+    cBuildEngine('brain');
+})();
+
 // Nav scroll effect
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
