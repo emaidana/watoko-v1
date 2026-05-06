@@ -10,62 +10,97 @@
     var CAROUSEL_ENGINES = {
         brain: {
             title: 'Field intelligence engine',
-            sub: 'Autonomous agents across your fields, greenhouses, and research stations \u2014 offline-first.',
+            sub: '16 autonomous agents running the full field-intelligence stack \u2014 soil, irrigation, canopy, harvest.',
+            link: 'brain.html',
             gradients: ['g-brain-1', 'g-brain-2', 'g-brain-3'],
             agents: [
-                { name: 'Soil',       desc: 'Continuous moisture, nutrients & structure modeling per plot.', tags: ['Sensors', 'Satellite'] },
-                { name: 'Irrigation', desc: 'Autonomous water decisions \u2014 when, where, how much.',           tags: ['Real-time', 'Offline'] },
-                { name: 'Pests',      desc: 'Detects, identifies, and intervenes before damage spreads.',     tags: ['Vision', 'Predictive'] },
-                { name: 'Disease',    desc: 'Early-stage pathogen detection across canopy.',                  tags: ['Vision'] },
-                { name: 'Canopy',     desc: 'Vegetation indices & biomass tracking from space to leaf.',      tags: ['Satellite'] },
-                { name: 'Harvest',    desc: 'Optimal timing windows by yield, weather and price.',            tags: ['Predictive'] },
-                { name: 'Inputs',     desc: 'Fertilizer & input prescriptions per square meter.',             tags: ['Prescriptive'] },
-                { name: 'Labor',      desc: 'Workforce orchestration tied to live field state.',              tags: ['Operations'] },
+                { name: 'Soil Health',          desc: 'Monitors soil moisture, pH, NPK, and temperature continuously.' },
+                { name: 'Irrigation',           desc: 'Combines soil moisture, weather, and crop water needs to trigger irrigation automatically.' },
+                { name: 'Pest & Disease',       desc: 'Computer vision analyzes camera and drone imagery for threats.' },
+                { name: 'Harvest Timing',       desc: 'Cross-references maturity, weather, and market prices for optimal harvest date.' },
+                { name: 'Crop Planning',        desc: 'Recommends what to plant next season based on soil history and market demand.' },
+                { name: 'Canopy Analysis',      desc: 'Satellite and drone data for continuous crop health scoring.' },
+                { name: 'Weather Intelligence', desc: 'Hyperlocal forecasting fused with on-farm sensor data.' },
+                { name: 'Input Procurement',    desc: 'Auto-calculates input needs, finds best prices, and places orders.' },
+                { name: 'Voice',                desc: 'Farmers speak in their language via WhatsApp. AI responds in 2,000+ languages.' },
+                { name: 'Labor Coordination',   desc: 'Matches seasonal labor demand with available workers.' },
+                { name: 'Space Agriculture',    desc: 'Adapts field-tested crop protocols for controlled environment agriculture.' },
+                { name: 'Water Management',     desc: 'Maps aquifer levels, optimizes irrigation, and designs rainwater harvesting.' },
+                { name: 'Simulation',           desc: 'Runs thousands of simulated seasons to stress-test every recommendation.' },
+                { name: 'Agronomist Expert',    desc: 'Trained on decades of agronomy research and Watoko field data.' },
+                { name: 'Customer Success',     desc: 'Walks every new user through setup, training, and first-season operations.' },
+                { name: 'Legal',                desc: 'Drafts cooperative bylaws, buyer contracts, and land-tenure documentation.' },
             ],
         },
         market: {
             title: 'Trade orchestration engine',
-            sub: 'Every commercial decision that moves a crop from farmer to buyer \u2014 autonomous, verified.',
+            sub: '13 autonomous agents orchestrating the full commercial lifecycle from farmer to buyer.',
+            link: 'market.html',
             gradients: ['g-market-1', 'g-market-2', 'g-market-3'],
             agents: [
-                { name: 'Price',         desc: 'Live commodity pricing and sell-signal generation.',     tags: ['Real-time'] },
-                { name: 'Quality',       desc: 'Lot-by-lot grading from farm to shipment.',              tags: ['Vision', 'Lab'] },
-                { name: 'Origin',        desc: 'Verified provenance \u2014 every kilo, every step.',          tags: ['Traceability'] },
-                { name: 'Compliance',    desc: 'EUDR, organic, fair-trade \u2014 auto-evidence packs.',       tags: ['Regulatory'] },
-                { name: 'Sustainability',desc: 'Scope 3, water, biodiversity scoring per harvest.',      tags: ['ESG'] },
-                { name: 'Contracts',     desc: 'Smart-contract orchestration from offer to settlement.', tags: ['Smart'] },
-                { name: 'Matching',      desc: 'Pairs supply lots with global buyers in real time.',     tags: ['Marketplace'] },
-                { name: 'FX',            desc: 'Multi-currency settlement and hedging.',                 tags: ['Treasury'] },
+                { name: 'Price Intelligence',    desc: 'Ingests thousands of price feeds across regional and international markets.' },
+                { name: 'Quality Verification',  desc: 'Grades lots using sensor and camera data at point of harvest.' },
+                { name: 'Forward Contract',      desc: 'Structures future sales using satellite-verified yield predictions.' },
+                { name: 'Order Book & Execution',desc: 'Runs the transparent order book. Matches lots to buyers on quality and volume.' },
+                { name: 'EUDR Compliance',       desc: 'Automated geolocation mapping and forest monitoring for EU-ready compliance.' },
+                { name: 'Data Passport',         desc: 'Compiles complete traceability: provenance, quality, and chain-of-custody.' },
+                { name: 'Auction',               desc: 'Runs timed competitive bidding for specialty and premium lots.' },
+                { name: 'Dispute Resolution',    desc: 'Automated mediation for quality, delivery, and payment disputes.' },
+                { name: 'FX & Currency',         desc: 'Handles the currency layer of every cross-border trade.' },
+                { name: 'Futures & Derivatives', desc: 'Connects cooperatives to commodity futures and options markets.' },
+                { name: 'Trade Admin',           desc: 'Handles invoices, export permits, shipping documents, and tax filings.' },
+                { name: 'Sustainability & Carbon',desc: 'Scope 3, water, biodiversity scoring per harvest.' },
+                { name: 'Environmental Compliance',desc: 'Monitors environmental regulations across jurisdictions.' },
             ],
         },
         ecosystem: {
             title: 'Operations engine',
-            sub: 'Every operation that keeps a farm running \u2014 payments, insurance, credit, logistics.',
+            sub: '13 autonomous agents delivering every operation a farm needs \u2014 payments, insurance, credit, logistics.',
+            link: 'ecosystem.html',
             gradients: ['g-ecosystem-1', 'g-ecosystem-2', 'g-ecosystem-3'],
             agents: [
-                { name: 'Payments',   desc: 'Instant disbursement to growers in any local rail.',  tags: ['Mobile money'] },
-                { name: 'Insurance',  desc: 'Parametric coverage based on live field signals.',     tags: ['Parametric'] },
-                { name: 'Credit',     desc: 'Working-capital underwritten by real production data.', tags: ['Lending'] },
-                { name: 'Logistics',  desc: 'From plot to port \u2014 loads, lanes, and live tracking.',  tags: ['Transport'] },
-                { name: 'Warehousing',desc: 'Storage state, throughput, and inventory financing.',   tags: ['Storage'] },
-                { name: 'Accounting', desc: 'Books, taxes, and reporting \u2014 agent-maintained.',       tags: ['Finance'] },
-                { name: 'Legal',      desc: 'Contract review and compliance-as-a-service.',          tags: ['Legal'] },
-                { name: 'Grants',     desc: 'Discovers, applies and reports on grant capital.',      tags: ['Capital'] },
+                { name: 'Payments',          desc: 'M-Pesa, MTN, Airtel, Orange, and bank transfers across 15+ currencies.' },
+                { name: 'Insurance',         desc: 'Parametric coverage triggered by biological data and satellite imagery.' },
+                { name: 'Credit Scoring',    desc: 'Builds creditworthiness from biological health indicators, not collateral.' },
+                { name: 'Logistics',         desc: 'GPS-tracked transport with temperature and humidity monitoring.' },
+                { name: 'Compliance',        desc: 'Auto-generates export permits, phytosanitary certificates, and KYC/AML docs.' },
+                { name: 'Cooperative Finance',desc: 'Manages member accounts, dividend distribution, and group savings.' },
+                { name: 'Warehouse',         desc: 'Tracks inventory, monitors storage conditions, and generates warehouse receipts.' },
+                { name: 'Smart Contract',    desc: 'Generates and executes contracts with auto-enforcement.' },
+                { name: 'Subsidy & Grant',   desc: 'Discovers and auto-applies for government subsidies and NGO grants.' },
+                { name: 'Legal',             desc: 'Verifies land tenure, reviews contracts, and handles dispute arbitration.' },
+                { name: 'Accounting',        desc: 'Every transaction flows into a proper double-entry ledger automatically.' },
+                { name: 'HR & Payroll',      desc: 'Onboards staff, runs payroll to mobile money, and tracks hours worked.' },
+                { name: 'Partner Quality',   desc: 'Monitors and scores partner service quality across the network.' },
             ],
         },
         labs: {
-            title: 'Earth & space science engine',
-            sub: 'Where biology meets planetary systems \u2014 discovery agents for what comes next.',
+            title: 'Biological intelligence engine',
+            sub: '21 discovery agents turning Earth\u2019s deepest biology into food, science, and intelligence.',
+            link: 'labs.html',
             gradients: ['g-labs-1', 'g-labs-2', 'g-labs-3'],
             agents: [
-                { name: 'Genomics',          desc: 'Trait discovery across cultivars and conditions.',   tags: ['Sequencing'] },
-                { name: 'Bioactives',        desc: 'Mining biology for novel compounds at scale.',       tags: ['Discovery'] },
-                { name: 'Microbiome',        desc: 'Engineering soil-microbe communities for yield.',    tags: ['Microbial'] },
-                { name: 'Climate Adaptation',desc: 'Variety-by-variety resilience modeling.',            tags: ['Resilience'] },
-                { name: 'Digital Twin',      desc: 'High-fidelity simulations of plots and biomes.',     tags: ['Simulation'] },
-                { name: 'Life Support',      desc: 'Sealed-environment crop systems for orbit and Mars.',tags: ['Space'] },
-                { name: 'Longevity',         desc: 'Plant longevity and stress-response programs.',      tags: ['Bio'] },
-                { name: 'Resilience',        desc: 'Stress-test screens across 10k+ stress vectors.',    tags: ['Screening'] },
+                { name: 'Crop Optimization',       desc: 'Optimizes crop varieties and growing conditions across regions.' },
+                { name: 'Bioactive Discovery',     desc: 'Mining biology for novel compounds at scale.' },
+                { name: 'Climate Resilience',      desc: 'Models variety-by-variety resilience to climate change.' },
+                { name: 'Risk Modeling',           desc: 'Quantifies agricultural and biological risks across scenarios.' },
+                { name: 'Carbon MRV',              desc: 'Measurement, reporting, and verification for carbon credits.' },
+                { name: 'Food-Health',             desc: 'Maps nutritional and bioactive profiles of crops to health outcomes.' },
+                { name: 'Soil Microbiome',         desc: 'Maps soil biology across thousands of farms for regenerative agriculture.' },
+                { name: 'Product Innovation',      desc: 'Translates biological discoveries into commercial products.' },
+                { name: 'Plant Genomics',          desc: 'Trait discovery across cultivars and conditions.' },
+                { name: 'Longevity & Healthspan',  desc: 'Plant longevity and stress-response programs.' },
+                { name: 'Simulation & Prediction', desc: 'High-fidelity simulations of plots and biomes.' },
+                { name: 'Astrobiology',            desc: 'Adapts terrestrial biology for extraterrestrial environments.' },
+                { name: 'Planetary Habitat',       desc: 'Sealed-environment crop systems for orbit and Mars.' },
+                { name: 'Synthetic Biology',       desc: 'Engineers biological systems for new capabilities.' },
+                { name: 'Biodiversity Intelligence',desc: 'Maps and monitors biodiversity across ecosystems.' },
+                { name: 'Environmental Remediation',desc: 'Uses biological systems to restore degraded environments.' },
+                { name: 'Human Microbiome',        desc: 'Studies the intersection of food, gut biology, and health.' },
+                { name: 'Water Systems',           desc: 'Models water cycles and their interaction with biological systems.' },
+                { name: 'Climate Adaptation',      desc: 'Develops climate adaptation strategies for agriculture.' },
+                { name: 'Crop Resilience',         desc: 'Stress-test screens across 10k+ stress vectors.' },
+                { name: 'Microbiome Resilience',   desc: 'Studies microbial community stability under stress.' },
             ],
         },
     };
@@ -97,15 +132,12 @@
             orb.className = 'carousel-orb';
             orb.dataset.idx = i;
             var gradClass = e.gradients[i % e.gradients.length];
-            orb.innerHTML =
-                '<div class="carousel-orb-inner ' + gradClass + '"></div>' +
-                '<div class="carousel-orb-cta">' +
-                    '<svg width="16" height="16" viewBox="0 0 18 18" fill="currentColor"><path d="M5 3.5v11l10-5.5z"/></svg>' +
-                '</div>';
+            orb.innerHTML = '<div class="carousel-orb-inner ' + gradClass + '"></div>';
             orb.addEventListener('click', function() {
                 var idx = parseInt(orb.dataset.idx, 10);
                 if (idx === cCenterIndex) {
-                    cOpenPanel(idx);
+                    // Navigate to the engine page
+                    window.location.href = CAROUSEL_ENGINES[cCurrentEngine].link;
                 } else {
                     cCenterIndex = idx;
                     cUpdatePositions();
@@ -121,7 +153,7 @@
             cap.className = 'carousel-cap';
             cap.dataset.idx = i;
             cap.innerHTML =
-                '<div class="carousel-cap-name">' + agent.name + '<span class="arrow-up">\u2197</span></div>' +
+                '<div class="carousel-cap-name">' + agent.name + '</div>' +
                 '<div class="carousel-cap-desc">' + agent.desc + '</div>';
             cCaptions.appendChild(cap);
         });
@@ -195,35 +227,7 @@
     carouselEl.addEventListener('keydown', function(ev) {
         if (ev.key === 'ArrowLeft') { document.getElementById('carouselPrev').click(); ev.preventDefault(); }
         if (ev.key === 'ArrowRight') { document.getElementById('carouselNext').click(); ev.preventDefault(); }
-        if (ev.key === 'Escape') cClosePanel();
     });
-
-    // Panel
-    var cOverlay = document.getElementById('carouselPanelOverlay');
-    var cPanelOrb = document.getElementById('carouselPanelOrb');
-    var cPanelTag = document.getElementById('carouselPanelTag');
-    var cPanelName = document.getElementById('carouselPanelName');
-    var cPanelDesc = document.getElementById('carouselPanelDesc');
-    var cPanelTags = document.getElementById('carouselPanelTags');
-
-    function cOpenPanel(idx) {
-        var e = CAROUSEL_ENGINES[cCurrentEngine];
-        var agent = e.agents[idx];
-        var grad = e.gradients[idx % e.gradients.length];
-        cPanelOrb.className = 'carousel-panel-orb ' + grad;
-        cPanelTag.querySelector('.carousel-dot').className = 'carousel-dot carousel-dot-' + cCurrentEngine;
-        cPanelTag.querySelector('span:last-child').textContent = 'Watoko ' + cCurrentEngine.charAt(0).toUpperCase() + cCurrentEngine.slice(1);
-        cPanelName.textContent = agent.name + ' Agent';
-        cPanelDesc.textContent = agent.desc;
-        cPanelTags.innerHTML = agent.tags.map(function(t) {
-            return '<span class="carousel-pill-ghost">' + t + '</span>';
-        }).join('');
-        cOverlay.classList.add('open');
-    }
-
-    function cClosePanel() { cOverlay.classList.remove('open'); }
-    document.getElementById('carouselPanelClose').addEventListener('click', cClosePanel);
-    cOverlay.addEventListener('click', function(ev) { if (ev.target === cOverlay) cClosePanel(); });
 
     // Init
     cBuildEngine('brain');
