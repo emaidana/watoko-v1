@@ -12928,7 +12928,7 @@ body.modal-open {
     cursor: pointer;
 }
 
-.carousel-cap[data-pos="0"] .carousel-cap-name:hover {
+.carousel-cap[data-pos="0"] .carousel-cap-name:hover .cap-name-text {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -12944,28 +12944,31 @@ body.modal-open {
     display: inline;
 }
 
-/* Arrow buttons — bare chevrons */
+/* Arrow buttons — bare chevrons with circle on hover */
 .carousel-arrow-btn {
     width: 28px;
     height: 28px;
     background: transparent;
     border: none;
+    border-radius: 50%;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: var(--text-tertiary);
-    transition: color 200ms, opacity 300ms;
+    transition: color 200ms, opacity 300ms, background 200ms;
     z-index: 10;
 }
 
 .carousel-arrow-btn:hover {
     color: var(--text);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .carousel-arrow-btn:active {
     color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .carousel-arrow-btn:disabled {

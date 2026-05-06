@@ -151,7 +151,7 @@
             cap.className = 'carousel-cap';
             cap.dataset.idx = i;
             cap.innerHTML =
-                '<div class="carousel-cap-name">' + agent.name + ' <span class="cap-link-arrow">&#8599;</span></div>' +
+                '<div class="carousel-cap-name"><span class="cap-name-text">' + agent.name + '</span> <span class="cap-link-arrow">&#8599;</span></div>' +
                 '<div class="carousel-cap-desc">' + agent.desc + '</div>';
             cap.addEventListener('click', function() {
                 var idx = parseInt(cap.dataset.idx, 10);
