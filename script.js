@@ -151,8 +151,14 @@
             cap.className = 'carousel-cap';
             cap.dataset.idx = i;
             cap.innerHTML =
-                '<div class="carousel-cap-name">' + agent.name + '</div>' +
+                '<div class="carousel-cap-name">' + agent.name + ' <span class="cap-link-arrow">&#8599;</span></div>' +
                 '<div class="carousel-cap-desc">' + agent.desc + '</div>';
+            cap.addEventListener('click', function() {
+                var idx = parseInt(cap.dataset.idx, 10);
+                if (idx === cCenterIndex) {
+                    window.location.href = CAROUSEL_ENGINES[cCurrentEngine].link;
+                }
+            });
             cCaptions.appendChild(cap);
         });
 
@@ -178,6 +184,9 @@
             cap.dataset.pos = diff;
         });
 
+        // Arrow disabled state at ends
+        document.getElementById('carouselPrev').disabled = (cCenterIndex === 0);
+        document.getElementById('carouselNext').disabled = (cCenterIndex === e.agents.length - 1);
     }
 
     // Tabs

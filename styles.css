@@ -12922,34 +12922,55 @@ body.modal-open {
 .carousel-cap[data-pos="-2"] { transform: translate(calc(-50% - 440px), 0); }
 .carousel-cap[data-pos="2"]  { transform: translate(calc(-50% + 440px), 0); }
 
-/* Arrow buttons */
+/* Center caption interactivity */
+.carousel-cap[data-pos="0"] {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.carousel-cap[data-pos="0"] .carousel-cap-name:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.carousel-cap-name .cap-link-arrow {
+    display: none;
+    font-size: 12px;
+    opacity: 0.45;
+    margin-left: 2px;
+}
+
+.carousel-cap[data-pos="0"] .carousel-cap-name .cap-link-arrow {
+    display: inline;
+}
+
+/* Arrow buttons — bare chevrons */
 .carousel-arrow-btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    border: 1px solid var(--border);
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--text-secondary);
-    transition: background 140ms, opacity 140ms, color 140ms;
+    color: var(--text-tertiary);
+    transition: color 200ms, opacity 300ms;
     z-index: 10;
 }
 
 .carousel-arrow-btn:hover {
-    background: var(--white);
     color: var(--text);
 }
 
 .carousel-arrow-btn:active {
-    opacity: 0.7;
+    color: var(--text-secondary);
 }
 
 .carousel-arrow-btn:disabled {
-    opacity: 0.4;
-    cursor: default;
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* Inline arrows — positioned between captions */
