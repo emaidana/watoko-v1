@@ -12848,27 +12848,27 @@ body.modal-open {
 
 .carousel-orb[data-pos="0"] { filter: none; }
 .carousel-orb[data-pos="0"]  { transform: translate(-50%, -50%) scale(1);    opacity: 1;    z-index: 5; }
-.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 328px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 328px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 528px), -50%) scale(0.58); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
-.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 528px), -50%) scale(0.58); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
+.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 275px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 275px), -50%) scale(0.62); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 460px), -50%) scale(0.58); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
+.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 460px), -50%) scale(0.58); opacity: 0.7; z-index: 3; filter: blur(0.4px) saturate(0.7); pointer-events: none; }
 .carousel-orb[data-pos="-3"],
 .carousel-orb[data-pos="3"] {
-    transform: translate(calc(-50% - 620px), -50%) scale(0.3);
+    transform: translate(calc(-50% - 560px), -50%) scale(0.3);
     opacity: 0;
     z-index: 1;
     pointer-events: none;
 }
-.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 620px), -50%) scale(0.3); }
+.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 560px), -50%) scale(0.3); }
 
-/* Gradient drift — living, breathing color movement inside the sphere */
+/* Gradient drift — translate moves color blobs visibly across the sphere */
 @keyframes orbGradientDrift {
-    0%   { transform: rotate(0deg) scale(1); }
-    20%  { transform: rotate(14deg) scale(1.08); }
-    40%  { transform: rotate(-10deg) scale(1.04); }
-    60%  { transform: rotate(18deg) scale(1.1); }
-    80%  { transform: rotate(-6deg) scale(1.03); }
-    100% { transform: rotate(0deg) scale(1); }
+    0%   { transform: translate(0%, 0%) rotate(0deg) scale(1); }
+    20%  { transform: translate(12%, -10%) rotate(15deg) scale(1.06); }
+    40%  { transform: translate(-10%, 12%) rotate(-12deg) scale(1.1); }
+    60%  { transform: translate(10%, 6%) rotate(20deg) scale(1.04); }
+    80%  { transform: translate(-12%, -8%) rotate(-15deg) scale(1.08); }
+    100% { transform: translate(0%, 0%) rotate(0deg) scale(1); }
 }
 
 /* Grain overlay */
@@ -12931,8 +12931,8 @@ body.modal-open {
 }
 
 .carousel-cap[data-pos="0"]  { transform: translateX(-50%); opacity: 1; }
-.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 328px), 0); opacity: 0.55; }
-.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 328px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 275px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 275px), 0); opacity: 0.55; }
 .carousel-cap[data-pos="-2"],
 .carousel-cap[data-pos="2"],
 .carousel-cap[data-pos="-3"],
@@ -13002,12 +13002,12 @@ body.modal-open {
 }
 
 .carousel-arrow-left {
-    left: calc(50% - 164px);
+    left: calc(50% - 138px);
     transform: translateX(-50%);
 }
 
 .carousel-arrow-right {
-    left: calc(50% + 164px);
+    left: calc(50% + 138px);
     transform: translateX(-50%);
 }
 
@@ -13096,17 +13096,17 @@ body.modal-open {
 /* Responsive */
 @media (max-width: 880px) {
     .carousel-orb { width: 240px; height: 240px; }
-    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 260px), -50%) scale(0.58); opacity: 0.9; }
-    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 260px), -50%) scale(0.58); opacity: 0.9; }
-    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 420px), -50%) scale(0.52); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
-    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 420px), -50%) scale(0.52); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
-    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 260px), 0); }
-    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 260px), 0); }
+    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 220px), -50%) scale(0.58); opacity: 0.9; }
+    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 220px), -50%) scale(0.58); opacity: 0.9; }
+    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 365px), -50%) scale(0.52); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
+    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 365px), -50%) scale(0.52); opacity: 0.6; filter: blur(0.4px) saturate(0.6); }
+    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 220px), 0); }
+    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 220px), 0); }
     .carousel-stage { height: 280px; }
     .carousel-top-bar { flex-direction: column; }
     .carousel-engine-meta { text-align: left; }
-    .carousel-arrow-left { left: calc(50% - 130px); }
-    .carousel-arrow-right { left: calc(50% + 130px); }
+    .carousel-arrow-left { left: calc(50% - 110px); }
+    .carousel-arrow-right { left: calc(50% + 110px); }
 }
 
 @media (max-width: 768px) {
