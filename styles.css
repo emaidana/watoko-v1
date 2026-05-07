@@ -12849,18 +12849,18 @@ body.modal-open {
 
 .carousel-orb[data-pos="0"] { filter: none; }
 .carousel-orb[data-pos="0"]  { transform: translate(-50%, -50%) scale(1);    opacity: 1;    z-index: 5; }
-.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 300px), -50%) scale(0.65); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 300px), -50%) scale(0.65); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
-.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 515px), -50%) scale(0.55); opacity: 0.55; z-index: 3; filter: blur(1px) saturate(0.65); pointer-events: none; }
-.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 515px), -50%) scale(0.55); opacity: 0.55; z-index: 3; filter: blur(1px) saturate(0.65); pointer-events: none; }
+.carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 325px), -50%) scale(0.65); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 325px), -50%) scale(0.65); opacity: 0.92; z-index: 4; filter: blur(0.2px) saturate(0.88); }
+.carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 560px), -50%) scale(0.55); opacity: 0.55; z-index: 3; filter: blur(1px) saturate(0.65); pointer-events: none; }
+.carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 560px), -50%) scale(0.55); opacity: 0.55; z-index: 3; filter: blur(1px) saturate(0.65); pointer-events: none; }
 .carousel-orb[data-pos="-3"],
 .carousel-orb[data-pos="3"] {
-    transform: translate(calc(-50% - 620px), -50%) scale(0.3);
+    transform: translate(calc(-50% - 680px), -50%) scale(0.3);
     opacity: 0;
     z-index: 1;
     pointer-events: none;
 }
-.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 620px), -50%) scale(0.3); }
+.carousel-orb[data-pos="3"] { transform: translate(calc(-50% + 680px), -50%) scale(0.3); }
 
 /* Gradient drift — translate moves color blobs visibly across the sphere */
 @keyframes orbGradientDrift {
@@ -12932,8 +12932,8 @@ body.modal-open {
 }
 
 .carousel-cap[data-pos="0"]  { transform: translateX(-50%); opacity: 1; }
-.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 300px), 0); opacity: 0.55; }
-.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 300px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 325px), 0); opacity: 0.55; }
+.carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 325px), 0); opacity: 0.55; }
 .carousel-cap[data-pos="-2"],
 .carousel-cap[data-pos="2"],
 .carousel-cap[data-pos="-3"],
@@ -13003,12 +13003,12 @@ body.modal-open {
 }
 
 .carousel-arrow-left {
-    left: calc(50% - 150px);
+    left: calc(50% - 163px);
     transform: translateX(-50%);
 }
 
 .carousel-arrow-right {
-    left: calc(50% + 150px);
+    left: calc(50% + 163px);
     transform: translateX(-50%);
 }
 
@@ -13097,12 +13097,12 @@ body.modal-open {
 /* Responsive */
 @media (max-width: 880px) {
     .carousel-orb { width: 240px; height: 240px; }
-    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 240px), -50%) scale(0.62); opacity: 0.9; }
-    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 240px), -50%) scale(0.62); opacity: 0.9; }
-    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 415px), -50%) scale(0.50); opacity: 0.5; filter: blur(1px) saturate(0.65); }
-    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 415px), -50%) scale(0.50); opacity: 0.5; filter: blur(1px) saturate(0.65); }
-    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 240px), 0); }
-    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 240px), 0); }
+    .carousel-orb[data-pos="-1"] { transform: translate(calc(-50% - 260px), -50%) scale(0.62); opacity: 0.9; }
+    .carousel-orb[data-pos="1"]  { transform: translate(calc(-50% + 260px), -50%) scale(0.62); opacity: 0.9; }
+    .carousel-orb[data-pos="-2"] { transform: translate(calc(-50% - 440px), -50%) scale(0.50); opacity: 0.5; filter: blur(1px) saturate(0.65); }
+    .carousel-orb[data-pos="2"]  { transform: translate(calc(-50% + 440px), -50%) scale(0.50); opacity: 0.5; filter: blur(1px) saturate(0.65); }
+    .carousel-cap[data-pos="-1"] { transform: translate(calc(-50% - 260px), 0); }
+    .carousel-cap[data-pos="1"]  { transform: translate(calc(-50% + 260px), 0); }
     .carousel-stage { height: 280px; }
     .carousel-top-bar { flex-direction: column; }
     .carousel-engine-meta { text-align: left; }
